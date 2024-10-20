@@ -1,0 +1,49 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+
+
+html{
+    font-size:10px;
+	font-family: 'inter';
+    scroll-behavior: smooth;
+}
+
+:root{
+	--blue:#0A3D62;
+	--green:#A4C639;
+	--lime:#F0F9F4;
+}
+
+
+.hide{
+	display:none;
+}
+
+.img{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 95%;
+}
+
+
+
+body{}
+
+
+#container{
+	width:100vw;
+    box-sizing: border-box;
+    min-width:300px;
+    max-width:1440px;
+    margin:0 auto;
+}
+
+	section{
+		box-sizing: border-box;
+		background:var(--lime);
+		min-height: 100vh;
+		padding:30px 16px;
+	}
