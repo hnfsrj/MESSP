@@ -1,62 +1,59 @@
 <script>
+    import {NavStore} from '../store/Store';
+    import ServicesButton from "./ServicesButton.svelte";
+
+
+    $: fix = $NavStore.fix;
+    $: wide = $NavStore.wide;
+    $: drop = $NavStore.drop;
 
 </script>
 
 
-<nav class="fixation">
+
+
+<nav class:fixation={fix} class:wide={wide}>
+
     <div class="top">
-        <div class="logo img"></div>
-        <p class="name">adamant<span>.</span></p>
 
-        <div class="menu img"></div>
-        <div class="close img hide"></div>
+        {#if fix}
+            <p class="name">adamant<span>.</span></p>
+        {:else}
+            <div class="logo img"></div>
+        {/if}
+
+        {#if !wide}
+            {#if drop}
+                <div class="close img"></div>
+            {:else}
+                <div class="menu img"></div>
+            {/if}
+        {/if}
+
     </div>
 
-    <div class="bottom hide">
-        
-        <p>About</p>
-        <p>Vision</p>
-        <p>Services</p>
-        <p>Distinction</p>
-        <p>Appoach</p>
-        <p>Contact</p>
-        
-    </div>
+    {#if drop || wide}
+        <div class="bottom">
+            
+            <p>About</p>
+            <p>Vision</p>
+            <p>Services</p>
+            <p>Distinction</p>
+            <p>Appoach</p>
+            <p>Contact</p>
+            
+        </div>
+    {/if}
+
+
+    {#if wide}
+        <ServicesButton />
+    {/if}
 
 </nav>
 
 
 <style>
-
-
-    nav.fixation{
-        background:var(--blue);
-        box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.4);
-    }
-
-        nav.fixation .top .logo{
-            display:none;
-        }
-
-        nav.fixation .top .name{
-            display:block;
-            color:white;
-            font-size:2rem;
-            font-weight:500;
-        }
-            nav.fixation .top .name>span{
-                font-size:2rem;
-                color:var(--green);
-            }
-
-        nav.fixation .top .menu{
-            background-image:url("/images/menu2.svg");
-        }
-
-        nav.fixation .top .close{
-            background-image:url("/images/close2.svg");
-        }
-
 
     nav{
         position:fixed;
@@ -66,6 +63,48 @@
         backdrop-filter: blur(5px);
         z-index:2;
     }
+
+    
+    nav.wide{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }  
+
+        nav.wide .bottom{
+            display:flex;
+            flex-direction: row;
+            flex-wrap:nowrap;
+            justify-content: space-between;
+            align-items: center;
+            background: none;
+            box-shadow: none;
+            backdrop-filter:blur(0px);
+            padding:0px;
+            gap:15px;
+        }
+
+        nav.wide .bottom p{
+            font-weight:500;
+            font-size:1.4rem;
+        }
+
+
+    nav.fixation{
+        box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.4);
+    }
+
+        nav.fixation .top{
+            background:var(--blue);
+        }
+
+        nav.fixation .top .menu{
+            background-image:url("/images/menu2.svg");
+        }
+
+        nav.fixation .top .close{
+            background-image:url("/images/close2.svg");
+        }
 
     
         .top{
@@ -84,7 +123,14 @@
 
 
             .name{
-                display:none;
+                color:white;
+                font-size:2rem;
+                font-weight:500;
+            }
+
+            .name>span{
+                font-size:2rem;
+                color:var(--green);
             }
 
 
@@ -111,13 +157,72 @@
             box-shadow: 0px 4px 9.5px 0px rgba(0,0,0,0.25);
         }
 
-        .bottom.hide{
-            display:none;
-        }
 
             .bottom>p{
                 font-size:1.6rem;
             }
+
+
+
+
+
+
+
+@media (min-width:401px){
+
+    .logo{
+        width:40px;
+    }
+
+    .menu{
+        width:30px;
+    }
+
+}
+
+
+            
+@media (min-width:550px){
+
+    .top{
+        padding:13px 25px;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:701px){
+
+    .top{
+        padding:0px;
+    }
+
+    nav.wide{
+        padding:13px 25px;
+    }
+
+}
+
+
 
 </style>
 

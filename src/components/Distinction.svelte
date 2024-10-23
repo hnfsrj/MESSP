@@ -78,7 +78,7 @@
                 border-radius:15px;
                 box-shadow: -3px 3px  3px 1px rgba(0,0,0,0.4);
                 box-sizing: border-box;
-                padding:20px 15px; 
+                padding:20px 15px;
 
             }
 

@@ -1,11 +1,7 @@
 
 
-<script>
-    export let marginTop = 0;
-</script>
 
-
-<div style="margin-top:{marginTop}%;" class="three_container">
+<div class="three_container">
     <div class="glow"></div>
 
     <canvas id="canvas"></canvas>
@@ -17,6 +13,7 @@
 
     .three_container{
         position:relative;
+        margin-top:20%;
     }
 
 
@@ -39,5 +36,31 @@
         top:50%;
         transform:translate(-50%,-50%);
     }
+
+
+@media (min-width:401px){
+    .three_container{
+        margin-top:30%;
+    }
+}
+
+
+@media (min-width:550px){
+    .three_container{
+        margin-top:20%;
+    }
+}
+
+
+
+@media (min-width:901px){
+
+    .three_container{
+        margin-top:13%;
+    }
+
+}
+
+
 
 </style>

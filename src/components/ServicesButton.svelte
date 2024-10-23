@@ -1,10 +1,10 @@
 
-
 <script>
-    export let marginTop = 0;
+    export let margined = false;
 </script>
 
-<div style="margin-top:{marginTop}%;">
+
+<div class:margined = {margined} class:unmargined = {!margined}>
     <button>Services</button>
 </div>
 
@@ -12,10 +12,13 @@
 <style>
 
     div{
-        width:100%;
         display:flex;
         justify-content: center;
     }
+
+        div.margined{
+            margin-top:20%;
+        }
 
     button{
         background:var(--green);
@@ -29,5 +32,43 @@
         border-radius: 15px;
         box-shadow: -3px 3px 4.4px 1.35px rgba(0,0,0,0.25);
     }
+
+
+@media (min-width:401px){
+
+    div.margined > button{
+        height:50px;
+    }
+
+}
+
+
+@media (min-width:550px){
+    div.margined{
+        margin-top:11%;
+        
+    }
+    
+
+}
+
+
+
+@media (min-width:701px){
+    button{
+        width:100px;
+        height:35px;
+        font-size:1.6rem;
+    }
+
+
+
+}
+
+
+
+
+
+
 
 </style>
