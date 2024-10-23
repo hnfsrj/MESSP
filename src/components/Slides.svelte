@@ -15,7 +15,7 @@
             <p>We focus on delivering top-notch solar panels and pumps, specifically crafted for rural areas. Our solutions empower communities by providing sustainable energy, reducing reliance on traditional power sources, and promoting eco-friendly practices. Whether for agriculture, homes, or businesses, our solar products are designed to be reliable and efficient, even in the most remote locations.</p>
         
             <div>
-                <p>products Offered</p>
+                <p>Products Offered</p>
                 <img src="/images/arrow.svg"/>
             </div>
         
@@ -114,5 +114,69 @@
             .cat2 .slide>div>img{
                 transform:rotate(180deg);
             }
+
+
+
+@media (min-width:401px){
+    
+    .slide{
+        padding:20px;
+    }
+
+
+    .slide>p:first-of-type{
+        font-size:2.3rem;
+    }
+
+
+    .slide>p:nth-of-type(2), .cat2 .slide > ul > li{
+        font-size:1.6rem;
+        font-weight:450;
+    }
+
+    .slide>div>p{
+        font-size:1.8rem;
+    }
+
+    .slide>div>img{
+        width:20px;
+    }
+}
+
+
+@media (min-width:501px){
+
+    .slide{
+        padding:30px 40px;
+    }
+
+
+}
+
+
+
+
+
+
+@media (min-width:901px){
+
+    .slides{
+        width:90%;
+        transform:translate(0px, 30px);
+    }
+
+    .slide{
+        /* padding:50px 40px; */
+        line-height:25px;
+        margin-bottom:0px;
+    }
+
+
+}
+
+
+
+
+
 
 </style>

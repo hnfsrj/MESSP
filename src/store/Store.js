@@ -3,6 +3,6 @@ import {writable} from 'svelte/store';
 
 export const NavStore = writable({
     "fix":true,
-    "wide":false,
+    "wide":true,
     "drop":false
 });

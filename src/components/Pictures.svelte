@@ -29,4 +29,27 @@
             width:100%;
         }
 
+
+
+@media (min-width:401px){
+    .pictures{
+        width:80%;
+    }
+
+
+}
+
+@media (min-width:501px){
+    .pictures{
+        width:60%;
+    }
+}
+
+@media (min-width:601px){
+    .pictures{
+        width:50%;
+    }
+}
+
+
 </style>

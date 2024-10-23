@@ -78,4 +78,45 @@
                 text-align:start;
             }
 
+
+
+@media (min-width:401px){
+
+    .choice{
+        gap:20px;
+    }
+
+    .choice_icon{
+        width:40px;
+    }
+
+    .choice>p{
+        font-size:2rem;
+    }
+
+
+
+    .choice_icon{
+
+    }
+
+    .choice>p{
+        font-size:1.8rem;
+    }
+
+
+
+}
+
+
+
+
+@media (min-width:901px){
+    .chooser{
+        /* background:red; */
+        width:95%;
+        margin-bottom:0px;
+    }
+}
+
 </style>
