@@ -69,6 +69,7 @@
         display:flex;
         justify-content: space-between;
         align-items: center;
+        background:var(--blue);
     }  
 
         nav.wide .bottom{
@@ -87,6 +88,7 @@
         nav.wide .bottom p{
             font-weight:500;
             font-size:1.4rem;
+            color:white;
         }
 
 
