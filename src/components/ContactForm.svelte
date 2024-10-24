@@ -76,4 +76,117 @@
                 font-weight:700;
             }
 
+
+
+
+
+@media (min-width:401px){
+
+    .form_container{
+        padding:25px 10px;
+        
+    }
+
+    .form_container>p{
+        margin-bottom:25px;
+        font-size:2rem;
+    }
+
+    form input:not([type="submit"]){
+        height:55px;
+        margin-bottom:15px;
+        font-size:1.8rem;
+    }
+
+
+    form textarea{
+        height:140px;
+        padding:10px;
+        font-size:1.8rem;
+    }
+
+
+    form input[type="submit"]{
+        height:50px;
+        font-size:2.5rem;
+    }
+
+
+
+}
+
+
+@media (min-width:501px){
+
+    .form_container{
+        width:90%;
+        margin:0 auto;
+        padding:25px 20px;
+    }
+
+    form input:not([type="submit"]){
+        height:50px;
+        margin-bottom:15px;
+        font-size:1.8rem;
+    }
+
+
+    form textarea{
+        height:140px;
+        padding:10px;
+        font-size:1.6rem;
+    }
+
+
+    form input[type="submit"]{
+        height:50px;
+        font-size:2.5rem;
+        width:70%
+    }
+
+
+}
+
+
+
+
+@media (min-width:601px){
+
+    .form_container{
+        width:75%;
+        /* padding:25px 20px; */
+    }
+
+}
+
+
+@media (min-width:801px){
+    .form_container{
+        width:65%;
+        /* padding:25px 20px; */
+    }
+}
+
+
+
+@media (min-width:901px){
+    
+    .form_container{
+        margin:0px;
+        width:50%;
+    }
+}
+
+
+@media (min-width:1001px){
+    
+    .form_container{
+        width:40%;
+    }
+
+}
+
+
+
+
 </style>
