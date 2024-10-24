@@ -115,7 +115,7 @@
 
 @media (min-width:701px){
     #services{
-        background:purple;
+        /* background:purple; */
 
         padding-right:18%;
         padding-left:18%;
@@ -126,7 +126,7 @@
 
 @media (min-width:801px){
     #services{
-        background:yellow;
+        /* background:yellow; */
     }
 
 }
@@ -163,7 +163,7 @@
 
 @media (min-width:1001px){
     #services{
-        background:pink;
+        /* background:pink; */
     }
 
 }
@@ -171,7 +171,7 @@
 
 @media (min-width:1301px){
     #services{
-        background:red;
+        /* background:red; */
     }
 
 }
