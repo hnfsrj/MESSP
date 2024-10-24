@@ -15,20 +15,24 @@
 
             <img src="/images/knowledge.svg" />
 
-            <p>Knowledge Transfer</p>
+            <div class="way_text">
+                <p>Knowledge Transfer</p>
 
-            <p>We believe in sharing knowledge and building skills. Adamant Engineering brings expertise from abroad to Ethiopia, driving innovation and helping our local workforce grow stronger.</p>
-        
+                <p>We believe in sharing knowledge and building skills. Adamant Engineering brings expertise from abroad to Ethiopia, driving innovation and helping our local workforce grow stronger.</p>
+            </div>
+
         </div>
 
         <div class="way">
 
             <img src="/images/client.svg" />
 
-            <p>Client Collaboration</p>
+            <div class="way_text">
+                <p>Client Collaboration</p>
 
-            <p>We work closely with our clients, helping them set up branches and expand their reach. Together, we grow and succeed, creating lasting partnerships.</p>
-        
+                <p>We work closely with our clients, helping them set up branches and expand their reach. Together, we grow and succeed, creating lasting partnerships.</p>
+            </div>
+
         </div>
 
 
@@ -36,10 +40,12 @@
 
             <img src="/images/future.svg" />
 
-            <p>Future Outlook</p>
+            <div class="way_text">
+                <p>Future Outlook</p>
 
-            <p>Looking ahead, Adamant Engineering is committed to pushing innovation, increasing collaboration, and supporting Ethiopia’s journey toward sustainable development.</p>
-        
+                <p>Looking ahead, Adamant Engineering is committed to pushing innovation, increasing collaboration, and supporting Ethiopia’s journey toward sustainable development.</p>
+            </div>
+
         </div>  
     </div>
 
@@ -61,6 +67,7 @@
 
         .ways_container{
             width:100%;
+            margin:0 auto;
         }
 
             .way{
@@ -73,7 +80,7 @@
                 }
 
 
-                .way > p:first-of-type{
+                .way_text > p:first-of-type{
                     color:var(--blue);
                     font-size:1.7rem;
                     font-weight:700;
@@ -81,10 +88,135 @@
                     margin-bottom:15px;
                 }
 
-                .way > p:last-of-type{
+                .way_text > p:last-of-type{
                     color:black;
                     font-size:1.3rem;
                     font-weight:500;
                 }
+
+
+
+
+@media (min-width:401px){
+
+    #approach{
+        background:red;
+        background:var(--lime);
+        padding:60px 16px;
+    }
+
+    #approach > p{
+        font-size:3.7rem;
+        margin-bottom:70px;
+    }
+
+    .way{
+        margin-bottom:70px;
+    }
+
+    .way > img{
+        width:65px;
+    }
+
+    .way_text > p:first-of-type{
+        font-size:2.2rem;
+    }
+
+    .way_text > p:last-of-type{
+        font-size:1.6rem;
+    }
+
+
+}
+
+
+
+@media (min-width:501px){
+
+    #approach{
+        background:green;
+        background:var(--lime);
+    }
+
+    .ways_container{
+        /* background:red; */
+        width:80%;
+        
+    }
+
+}
+
+
+
+@media (min-width:601px){
+
+    #approach{
+        background:blue;
+        background:var(--lime);
+    }
+
+    .way{
+        display: flex;
+        justify-content: space-between;
+        align-items:start;
+        gap:20px;
+    }
+
+    .way>img{
+        width:50px;
+    }
+
+    .way_text{
+        text-align:start;
+    }
+
+}
+
+
+
+
+@media (min-width:801px){
+
+    #approach{
+        background:yellow;
+        background:var(--lime);
+    }
+
+    .ways_container{
+        width:70%;
+    }
+
+}
+
+
+
+@media (min-width:1001px){
+
+    #approach{
+        background:purple;
+        background:var(--lime);
+    }
+
+    .ways_container{
+        width:60%;
+    }
+
+}
+
+
+@media (min-width:1301px){
+
+    #approach{
+        background:red;
+        background:var(--lime);
+    }
+
+    .ways_container{
+        width:50%;
+    }
+
+}
+
+
 
 </style>
