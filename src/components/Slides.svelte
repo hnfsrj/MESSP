@@ -6,10 +6,13 @@
 </script>
 
 
+
+
 <div class="slides">
 
-    <div class="cat1">
-        <div class="slide">
+    <div class="cat cat1">
+        
+        <div class="slide slide1">
             <p>1. Solar Energy Solutions</p>
 
             <p>We focus on delivering top-notch solar panels and pumps, specifically crafted for rural areas. Our solutions empower communities by providing sustainable energy, reducing reliance on traditional power sources, and promoting eco-friendly practices. Whether for agriculture, homes, or businesses, our solar products are designed to be reliable and efficient, even in the most remote locations.</p>
@@ -20,10 +23,10 @@
             </div>
         
         </div>
-    </div>
 
-    <div class="cat2 hide">
-        <div class="slide">
+
+
+        <div class="slide slide2">
             <p>Products Offered</p>
 
             <ul>
@@ -41,9 +44,12 @@
             </div>
         
         </div>
+
     </div>
 
 </div>
+
+
 
 
 
@@ -55,7 +61,7 @@
         z-index:1;
     }
 
-        .cat1{}
+        .cat{}
 
             .slide{
                 width:100%;
@@ -98,20 +104,26 @@
                     width:15px;
                 }
         
-        .cat2{}
+        .slide1{
+            /* display:none; */
+        }
 
-            .cat2 .slide > ul{
+        .slide2{
+            display:none;
+        }
+        
+            .slide2 > ul{
                 margin-left:10px;
             }
 
-            .cat2 .slide > ul > li{
+            .slide2 > ul > li{
                 font-size:1.3rem;
                 font-weight:300;
                 margin-bottom:10px;
             }
 
 
-            .cat2 .slide>div>img{
+            .slide2>div>img{
                 transform:rotate(180deg);
             }
 

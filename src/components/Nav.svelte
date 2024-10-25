@@ -11,48 +11,72 @@
     $: drop = $NavStore.drop;
 
 
+    function nav_buttons(e){
+
+        let target = e.target;
+
+
+        if (target == document.querySelector('.menu')){
+            NavStore.update(current_state => {
+                return {...current_state, "drop":true};
+            });
+            
+        }else if (target == document.querySelector('.close')){
+            NavStore.update(current_state => {
+                return {...current_state, "drop":false};
+            });
+        }
+
+    }
+
+
+    function handle_scrolling(){
+        let fix = window.scrollY > document.querySelector('#landing').clientHeight;
+        
+        if (fix){
+            NavStore.update(current_state => {
+                return {...current_state, "fix":true};
+            });
+        }else{
+            NavStore.update(current_state => {
+                return {...current_state, "fix":false};
+            });
+        }
+    
+    }
+
+
+
+
     onMount(()=>{
 
         const top = document.querySelector('.top');
 
-        function nav_buttons(e){
-
-            let target = e.target;
-            
-
-            if (target == document.querySelector('.menu')){
-                NavStore.update(current_state => {
-                    return {...current_state, "drop":true};
-                });
-                
-            }else if (target == document.querySelector('.close')){
-                NavStore.update(current_state => {
-                    return {...current_state, "drop":false};
-                });
-            }
-
-        }
-
-
         top.addEventListener('click',(e)=>{
             nav_buttons(e);
-        })
+        });
+
+        handle_scrolling();
+
+        window.addEventListener("scroll", handle_scrolling);
 
     });
 
 
-    // onDestroy(()=>{
-    //     top.removeEventListener('click',(e)=>{
-    //         nav_buttons(e);
-    //     })
-    // });
+    onDestroy(()=>{
+        top.removeEventListener('click',(e)=>{
+            nav_buttons(e);
+        })
+
+        window.removeEventListener("scroll", handle_scrolling);
+    });
 
 </script>
 
 
 
 
-<nav class:fixation={fix} class:wide={wide}>
+<nav class:fixation={fix} class:wide={wide} class:scrolled_wide={fix && wide}>
 
     <div class="top">
 
@@ -109,7 +133,7 @@
         display:flex;
         justify-content: space-between;
         align-items: center;
-        background:var(--blue);
+        /* background:var(--blue); */
     }  
 
         nav.wide .bottom{
@@ -128,8 +152,16 @@
         nav.wide .bottom p{
             font-weight:500;
             font-size:1.4rem;
-            color:white;
+            color:var(--blue);
         }
+
+            nav.scrolled_wide{
+                background:var(--blue);
+            }
+
+                nav.scrolled_wide .bottom p{
+                    color:white;
+                }
 
 
     nav.fixation{
