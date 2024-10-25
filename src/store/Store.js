@@ -2,7 +2,7 @@ import {writable} from 'svelte/store';
 
 
 export const NavStore = writable({
-    "fix":true,
+    "fix":false,
     "wide":false,
     "drop":false
 });

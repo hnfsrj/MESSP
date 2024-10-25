@@ -1,4 +1,7 @@
 <script>
+
+    import { onMount, onDestroy } from "svelte";
+
     import {NavStore} from '../store/Store';
     import ServicesButton from "./ServicesButton.svelte";
 
@@ -6,6 +9,43 @@
     $: fix = $NavStore.fix;
     $: wide = $NavStore.wide;
     $: drop = $NavStore.drop;
+
+
+    onMount(()=>{
+
+        const top = document.querySelector('.top');
+
+        function nav_buttons(e){
+
+            let target = e.target;
+            
+
+            if (target == document.querySelector('.menu')){
+                NavStore.update(current_state => {
+                    return {...current_state, "drop":true};
+                });
+                
+            }else if (target == document.querySelector('.close')){
+                NavStore.update(current_state => {
+                    return {...current_state, "drop":false};
+                });
+            }
+
+        }
+
+
+        top.addEventListener('click',(e)=>{
+            nav_buttons(e);
+        })
+
+    });
+
+
+    // onDestroy(()=>{
+    //     top.removeEventListener('click',(e)=>{
+    //         nav_buttons(e);
+    //     })
+    // });
 
 </script>
 

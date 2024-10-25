@@ -16,7 +16,7 @@
         <ServicesButton margined=true />
     {/if}
 
-    <ThirdDimension />
+    <!-- <ThirdDimension /> -->
 </section>
 
 
