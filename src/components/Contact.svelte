@@ -137,6 +137,8 @@
     #contact{
         background:red;
         background:var(--blue);
+        padding-top:60px;
+        padding-bottom:60px;
     }
 
     .contact_left>p:first-of-type{

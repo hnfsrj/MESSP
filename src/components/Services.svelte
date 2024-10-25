@@ -73,8 +73,8 @@
     #services{
         background:red;
         background:var(--lime);
-        padding-right:5%;
-        padding-left:5%;
+        padding-top:60px;
+        padding-bottom:60px;
     }
 
 

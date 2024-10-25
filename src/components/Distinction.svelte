@@ -113,7 +113,9 @@
         background:red;
         background:var(--lime);
 
-        padding:130px 16px;
+        /* padding-top:130px;
+        padding-bottom:130px; */
+        padding: 130px 16px;
     }
 
     #distinction > p{

@@ -99,12 +99,12 @@
     {#if drop || wide}
         <div class="bottom">
             
-            <p>About</p>
-            <p>Vision</p>
-            <p>Services</p>
-            <p>Distinction</p>
-            <p>Appoach</p>
-            <p>Contact</p>
+            <a href="#about"><p>About</p></a>
+            <a href="#vision"><p>Vision</p></a>
+            <a href="#services"><p>Services</p></a>
+            <a href="#distinction"><p>Distinction</p></a>
+            <a href="#approach"><p>Appoach</p></a>
+            <a href="#contact"><p>Contact</p></a>
             
         </div>
     {/if}
@@ -231,14 +231,18 @@
             box-shadow: 0px 4px 9.5px 0px rgba(0,0,0,0.25);
         }
 
+            .bottom a{
+                text-decoration: none;
+                color:black;
+            }
 
-            .bottom>p{
+            .bottom p{
                 font-size:1.6rem;
                 padding:10px;
                 border-radius:10px;
             }
 
-            .bottom>p:hover{
+            .bottom p:hover{
                 cursor:pointer;
                 background:var(--blue);
                 color:white;
