@@ -99,9 +99,9 @@
             }
 
             .block>p:last-of-type{
-                font-size:1.5rem;
-                font-weight:500;
-                text-align:justify;
+                font-size:1.7rem;
+                font-weight:400;
+                /* text-align:justify; */
             }
 
     .line{
@@ -119,9 +119,16 @@
         background:var(--lime);
     }
 
+    .eye_image{
+        width:16%;
+    }
+
+    .gear_image{
+        width:12%;
+    }
 
     .block>div>p{
-        font-size:3.3rem;
+        font-size:3rem;
     }
 
     .block>p:first-of-type{

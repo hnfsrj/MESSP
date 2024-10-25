@@ -37,10 +37,10 @@
         color:black;
         margin-top:10%;
         margin-bottom:50%;
-        font-size:1.8rem;
-        font-weight:500;
+        font-size:1.7rem;
+        font-weight:400;
     }
-
+    
 
 
 
@@ -50,6 +50,16 @@
     #about{
         /* background:red; */
     }
+
+    section>p:first-of-type{
+        font-size:3.3rem; 
+    }
+
+    section>p:last-of-type{
+        font-size:1.8rem;
+        font-weight:400;
+    }
+
 
     section>p:last-of-type{
         margin-bottom:30%;

@@ -66,7 +66,7 @@
             .slide{
                 width:100%;
                 box-sizing: border-box;
-                padding:20px 10px;
+                padding:20px 15px;
                 background:rgba(255,255,255,0.7);
                 border-radius:10px;
                 backdrop-filter: blur(6px);
@@ -75,14 +75,14 @@
             }
 
                 .slide>p:first-of-type{
-                    font-size:2rem;
+                    font-size:1.9rem;
                     font-weight:700;
                     margin-bottom:20px;
                 }
 
                 .slide>p:nth-of-type(2){
                     font-size:1.6rem;
-                    font-weight:300;
+                    font-weight:400;
                     margin-bottom:15px;
                 }
 
@@ -141,7 +141,7 @@
     }
 
 
-    .slide>p:nth-of-type(2), .cat2 .slide > ul > li{
+    .slide>p:nth-of-type(2), .slide2 > ul > li{
         font-size:1.6rem;
         font-weight:450;
     }

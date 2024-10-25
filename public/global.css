@@ -46,7 +46,8 @@ body{}
 		box-sizing: border-box;
 		background:var(--lime);
 		min-height: 100vh;
-		padding:30px 16px;
+		padding:30px 5%;
+		/* padding:30px 16px; */
 	}
 
 

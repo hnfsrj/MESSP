@@ -59,7 +59,7 @@
 
         #approach > p{
             text-align:center;
-            font-size:2.2rem;
+            font-size:3rem;
             font-weight:700;
             color:var(--blue);
             margin-bottom:40px;
@@ -82,7 +82,7 @@
 
                 .way_text > p:first-of-type{
                     color:var(--blue);
-                    font-size:1.7rem;
+                    font-size:1.9rem;
                     font-weight:700;
                     margin-top:10px;
                     margin-bottom:15px;
@@ -90,8 +90,8 @@
 
                 .way_text > p:last-of-type{
                     color:black;
-                    font-size:1.3rem;
-                    font-weight:500;
+                    font-size:1.4rem;
+                    font-weight:550;
                 }
 
 
@@ -102,11 +102,12 @@
     #approach{
         background:red;
         background:var(--lime);
-        padding:60px 16px;
+        padding-top:60px;
+        padding-bottom:60px;
     }
 
     #approach > p{
-        font-size:3.7rem;
+        font-size:3.3rem;
         margin-bottom:70px;
     }
 

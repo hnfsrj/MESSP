@@ -58,6 +58,10 @@
         position:relative;
     }
 
+        .contact_toper{
+            margin-bottom:50px;
+        }
+
         #contact_left{}
 
         .contact_left>p:first-of-type{
@@ -73,12 +77,13 @@
             font-weight:500;
             font-size:1.6rem;
             margin-bottom:20px;
+            line-height:22px;
         }
 
 
         .contact_left>p:last-of-type{
             color:white;
-            font-weight:500;
+            font-weight:400;
             font-size:1.4rem;
             margin-bottom:40px;
         }
@@ -107,7 +112,8 @@
 
             .info p{
                 font-size:1.5rem;
-                font-weight:500;
+                font-weight:400;
+                margin-bottom:7px;
             }
 
 
@@ -130,7 +136,7 @@
 @media (min-width:401px){
     #contact{
         background:red;
-        /* background:var(--blue); */
+        background:var(--blue);
     }
 
     .contact_left>p:first-of-type{
@@ -139,6 +145,8 @@
 
     .contact_left>p:nth-of-type(2){
         font-size:2rem;
+        font-weight:400;
+        line-height:25px;
     }
 
     .contact_left>p:last-of-type{

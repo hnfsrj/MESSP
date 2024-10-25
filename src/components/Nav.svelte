@@ -224,7 +224,7 @@
             display:flex;
             flex-wrap:wrap;
             flex-direction:column;
-            gap:5px;
+            gap:0px;
             padding:15px 16px;
             background:rgba(255,255,255,0.75);
             backdrop-filter: blur(5px);
@@ -234,6 +234,14 @@
 
             .bottom>p{
                 font-size:1.6rem;
+                padding:10px;
+                border-radius:10px;
+            }
+
+            .bottom>p:hover{
+                cursor:pointer;
+                background:var(--blue);
+                color:white;
             }
 
 
@@ -243,6 +251,15 @@
 
 
 @media (min-width:401px){
+
+    nav.fixation .top{
+        padding-top:12px;
+        padding-bottom:12px;
+    }
+
+    .name{
+        font-size:2.3rem;
+    }
 
     .logo{
         width:40px;

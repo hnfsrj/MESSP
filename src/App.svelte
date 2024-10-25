@@ -17,6 +17,8 @@
 	function resize_handler(){
 		let width = window.innerWidth;
 
+		console.log(width);
+		
 		if (width >= 701){
 			NavStore.update(current_state => {
                 return {...current_state, "wide":true};

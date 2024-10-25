@@ -52,7 +52,7 @@
 
         .top>p{
             color:var(--blue);
-            font-size:2rem;
+            font-size:2.2rem;
             font-weight:700;
             margin-bottom:50px;
         }
@@ -79,7 +79,7 @@
 
 
     .top>p{
-        font-size:3rem;
+        font-size:3.2rem;
     }
 
 

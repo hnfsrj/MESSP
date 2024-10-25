@@ -54,11 +54,14 @@
 
 <style>
 
-    #distinction{}
+    #distinction{
+        padding-top:60px;
+        padding-bottom:60px;
+    }
 
         #distinction > p{
             text-align:center;
-            font-size:2.2rem;
+            font-size:3rem;
             font-weight:700;
             color:var(--blue);
             margin-bottom:40px;
@@ -70,7 +73,7 @@
             flex-direction:column;
             justify-content: center;
             align-items: center;
-            gap:20px;
+            gap:25px;
         }
 
             .difference{
@@ -79,6 +82,7 @@
                 box-shadow: -3px 3px  3px 1px rgba(0,0,0,0.4);
                 box-sizing: border-box;
                 padding:20px 15px;
+                height:200px;
 
             }
 
@@ -93,8 +97,9 @@
                 .difference > p:last-child{
                     color:white;
                     text-align:start;
-                    font-size:1.4rem;
+                    font-size:1.5rem;
                     font-weight:500;
+                    line-height:22px;
                 }
 
 
@@ -112,7 +117,7 @@
     }
 
     #distinction > p{
-        font-size:3rem;
+        font-size:3.2rem;
         margin-bottom:70px;
     }
 
@@ -125,6 +130,7 @@
 
     .difference{
         padding:40px 25px;
+        height:225px;
     }
 
     .difference > p:first-child{
