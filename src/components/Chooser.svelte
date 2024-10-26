@@ -2,13 +2,60 @@
 
 <script>
 
+    import {onMount, onDestroy} from 'svelte';
+    import {OtherStates} from '../store/Other';
+
+
+    function choose_handler(e,choices){
+
+        const target = e.target;
+
+        choices.forEach((choice, index)=>{
+
+            choice.classList.remove('chosen');
+
+            if(choice == target || target == choice.lastElementChild){
+                choice.classList.add('chosen');
+
+                OtherStates.update(current_state => {
+                    return {...current_state, "chosen":"cat"+(index+1)};
+                });
+            }
+        });
+
+    }
+    
+
+    onMount(()=>{
+
+        const chooser = document.querySelector('.chooser');
+        const choices = document.querySelectorAll('.choice');
+
+        chooser.addEventListener('click',(e)=>{
+            choose_handler(e,choices);
+        });
+
+    
+
+    });
+
+
+
+    onDestroy(()=>{
+
+        chooser.removeEventListener('click',(e)=>{
+            choose_handler(e,choices);
+        });
+
+    });
+
 
 </script>
 
 
 <div class="chooser">
 
-    <div class="choice">
+    <div class="choice chosen">
         <div class="choice_icon img" style="background-image:url('/images/solar.svg');"></div>
         <p>Solar Energy Solutions</p>
     </div>
@@ -55,6 +102,18 @@
             margin-bottom:15px;
             padding:10px 0px;
             border-bottom:1px solid black;
+        }
+
+            .choice:hover{
+                cursor:pointer;
+            }
+        
+        /* .choice.chosen{
+            background: var(--green);
+        } */
+        .choice.chosen > p{
+            color:var(--blue);
+            font-weight: 700;
         }
 
             .choice_icon{
