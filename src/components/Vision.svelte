@@ -6,7 +6,7 @@
 
 </script>
 
-
+<div class="blocker">
 <section id="vision">
 
     <div class="vision_block_container">
@@ -45,7 +45,7 @@
     </div>
     
 </section>
-
+</div>
 
 <style>
 

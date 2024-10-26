@@ -5,6 +5,7 @@
     import ContactForm from './ContactForm.svelte';
 </script>
 
+<div class="blocker2">
 <section id="contact">
 
     <div class="contact_toper">
@@ -50,12 +51,17 @@
     <h6>© 2024 Adamant Engineering.<br/>All Rights Reserved.</h6>
 
 </section>
+</div>
+
 
 <style>
 
     #contact{
         background:var(--blue);
         position:relative;
+        min-width:300px;
+        max-width:1300px;
+        margin:0 auto;
     }
 
         .contact_toper{

@@ -5,7 +5,7 @@
 
 </script>
 
-
+<div class="blocker">
 <section id="about">
     <p>Who We Are</p>
 
@@ -17,6 +17,7 @@
 
     <Buildings />
 </section>
+</div>
 
 
 <style>

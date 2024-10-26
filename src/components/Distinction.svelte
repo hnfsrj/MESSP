@@ -5,7 +5,7 @@
 
 </script>
 
-
+<div class="blocker">
 <section id="distinction">
 
     <p>What Makes Us Different</p>
@@ -54,7 +54,7 @@
     
     
 </section>
-
+</div>
 
 <style>
 

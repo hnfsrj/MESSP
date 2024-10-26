@@ -6,7 +6,7 @@
 
 </script>
 
-
+<div class="blocker">
 <section id="landing">
     <p>Adamant <br/>Engineering</p>
 
@@ -18,7 +18,7 @@
 
     <!-- <ThirdDimension /> -->
 </section>
-
+</div>
 
 <style>
 

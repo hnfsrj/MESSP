@@ -8,7 +8,7 @@
 
 </script>
 
-
+<div class="blocker">
 <section id="services">
 
     <div class="services_container">
@@ -31,7 +31,7 @@
 
 
 </section>
-
+</div>
 
 <style>
 

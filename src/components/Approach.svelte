@@ -5,7 +5,7 @@
 
 </script>
 
-
+<div class="blocker">
 <section id="approach">
 
     <p>Adamant's Way</p>
@@ -51,7 +51,7 @@
 
 
 </section>
-
+</div>
 
 <style>
 
