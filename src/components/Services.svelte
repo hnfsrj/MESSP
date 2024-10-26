@@ -71,8 +71,6 @@
 @media (min-width:401px){
 
     #services{
-        background:red;
-        background:var(--lime);
         padding-top:60px;
         padding-bottom:60px;
     }
@@ -87,92 +85,76 @@
 
 
 
-@media (min-width:501px){
-    #services{
-        background:blue;
-        background:var(--lime);
-
-        /* padding-right:10%;
-        padding-left:10%; */
-    }
-
-
-
-}
-
-
-@media (min-width:601px){
-    #services{
-        background:green;
-        background:var(--lime);
-
-        /* padding-right:15%;
-        padding-left:15%; */
-    }
-
-}
-
-
 @media (min-width:701px){
-    #services{
-        /* background:purple; */
 
-        /* padding-right:18%;
-        padding-left:18%; */
+    #services{
+        padding-right:10%;
+        padding-left:10%;
     }
 
 }
 
 
 @media (min-width:801px){
+
     #services{
-        /* background:yellow; */
+        padding-right:15%;
+        padding-left:15%;
     }
 
 }
 
 
 @media (min-width:901px){
+
     #services{
-        background:orange;
-        background:var(--lime);
-        /* padding:100px 16px; */
+        padding-right:5%;
+        padding-left:5%;
     }
+
 
     .services_container{
         flex-direction: row;
         justify-content: space-between;
+        margin-bottom:10%;
     }
 
     .top{
         text-align:start;
-        width:40%;
-        /* background:green; */
+        width:45%;
     }
 
     .bottom{
-        /* background:purple; */
-        width:60%;
+        width:55%;
         display:flex;
         justify-content: end;
         align-items: center;
+        margin:0px;
     }
 
 }
 
 
-@media (min-width:1001px){
-    #services{
-        /* background:pink; */
+
+@media (min-width:901px){
+    .top{
+        width:45%;
+    }
+
+    .bottom{
+        width:50%;
     }
 
 }
 
 
-@media (min-width:1301px){
+@media (min-width:1051px){
+
     #services{
-        /* background:red; */
+        padding-right:10%;
+        padding-left:10%;
     }
+
 
 }
 

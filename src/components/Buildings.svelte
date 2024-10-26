@@ -83,10 +83,6 @@
 
 @media (min-width:401px){
 
-    .buildings{
-        /* background:red; */
-    }
-
     img.building{
         width:8%;
     }
@@ -99,11 +95,19 @@
 
     .buildings{
         padding-left:6%;
-        padding-right:6%;
+        /* padding-right:6%; */        
     }
 
     img.building{
         width:6%;
+    }
+}
+
+
+@media (min-width:601px){
+
+    img.building{
+        width:5.5%;
     }
 }
 
@@ -115,46 +119,44 @@
     }
 }
 
+@media (min-width:701px){
+    img.building{
+        width:4.5%;
+    }
+}
 
 @media (min-width:901px){
 
 
-    img.building{
-        width:4.5%;
+    .buildings{
+        padding-left:8%;
     }
 
-    /* img.building10{
-        display:inline-block;
-    }
-
-    img.building11{
-        display:inline-block;
-    } */
-
-
-
-}
-
-
-
-@media (min-width:1001px){
     img.building{
         width:4%;
     }
 
+
 }
 
 
 
+@media (min-width:1051px){
 
-
-@media (min-width:1301px){
+    /* .buildings{
+        padding-left:8%;
+    } */
 
     img.building{
         width:3.5%;
     }
 
 }
+
+
+
+
+
 
 
 </style>

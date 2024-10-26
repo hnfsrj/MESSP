@@ -135,8 +135,6 @@
 
 @media (min-width:401px){
     #contact{
-        background:red;
-        background:var(--blue);
         padding-top:60px;
         padding-bottom:60px;
     }
@@ -174,9 +172,17 @@
 
 
 @media (min-width:501px){
-    #contact{
-        background:blue;
-        background:var(--blue);
+    
+    .contact_left>p:nth-of-type(2){
+        font-weight:300;
+    }
+    
+    .contact_left>p:last-of-type{
+        font-weight:300;
+    }
+
+    .info p{
+        font-weight:300;
     }
 
     .infos_div{
@@ -187,12 +193,14 @@
     }
 
     .info{
-        width:40%;
+        width:45%;
         margin:0px;
     }
 
     .info>div{
         width:80%;
+        padding:0px;
+        height:35px;
     }
 
 }
@@ -200,50 +208,42 @@
 
 
 @media (min-width:601px){
-    #contact{
-        background:purple;
-        background:var(--blue);
-        /* padding:30px 50px; */
+
+    .contact_left>p:nth-of-type(2){
+        font-weight:300;
+    }
+    
+    .contact_left>p:last-of-type{
+        font-weight:300;
     }
 
-
-}
-
-
-
-
-@media (min-width:701px){
-    #contact{
-        background:green;
-        background:var(--blue);
-        /* padding:30px 100px; */
+    .infos_div{
+        margin-bottom:15%;
     }
 
+    .info p{
+        font-weight:300;
+    }
 
+    .info>div{
+        width:65%;
+
+    }
 }
-
-
-
 
 @media (min-width:801px){
-    #contact{
-        background:orange;
-        background:var(--blue);
+
+    .info>div{
+        width:60%;
     }
 
-
 }
-
-
-
 
 
 @media (min-width:901px){
     #contact{
-        background:pink;
-        background:var(--blue);
-
-        padding:60px 50px;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     .contact_toper{
@@ -261,22 +261,26 @@
     }
 
     .contact_left>p:last-of-type{
-        font-size:1.4rem;
+        font-size:1.6rem;
+    }
+
+    .infos_div{
+        margin: top 15%;
     }
 
     .info{
-        width:45%;
+        width:47%;
     }
 
     .info>div{
         width:90%;
-        padding:8px 0px;
+        height:35px;
         font-size:1.6rem;
     }
 
     
     .info p{
-        font-size:1.4rem;
+        font-size:1.5rem;
         margin-bottom:10px;
     }
 
@@ -289,11 +293,6 @@
 
 
 @media (min-width:1001px){
-    #contact{
-        background:yellow;
-        background:var(--blue);
-        /* padding:60px 100px; */
-    }
 
     .contact_left{
         width:50%;
@@ -304,21 +303,21 @@
     }
 
     .contact_left>p:last-of-type{
-        font-size:1.5rem;
+        /* font-size:1.5rem; */
     }
 
-    .infos_div{
+    /* .infos_div{
         margin-top: 80px;
-    }
+    } */
 
     .info{
         width:45%;
-        /* background:red; */
+
     }
 
     .info>div{
         width:70%;
-        padding:8px 0px;
+        /* height:35px; */
         font-size:1.7rem;
     }
 
@@ -327,18 +326,6 @@
 
 }
 
-
-
-
-@media (min-width:1301px){
-    #contact{
-        background:red;
-        background:var(--blue);
-        padding:60px 200px;
-    }
-
-
-}
 
 
 

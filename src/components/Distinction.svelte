@@ -11,44 +11,48 @@
     <p>What Makes Us Different</p>
 
     <div class="difference_container">
+        
+        
+        
+        <div class="difference">
+            <p>INNOVATION</p>
+            
+            <p>We push boundaries with advanced technology, delivering cutting-edge solutions tailored to local needs.</p>
+        </div>
+        
+        <div class="difference">
+            <p>RESEARCH</p>
+            
+            <p>We push boundaries with advanced technology, delivering cutting-edge solutions tailored to local needs.</p>
+        </div>
+        
+        <div class="difference">
+            <p>TECHNOLOGY</p>
+            
+            <p>We leverage the latest global advancements and bring them to East Africa, ensuring that our clients benefit from top-tier engineering and production capabilities.</p>
+        </div>
+        
         <div class="difference">
             <p>TRAINING AND GROWTH</p>
 
             <p>We focus on building local talent by sharing knowledge and providing hands-on training to strengthen our workforce.</p>
         </div>
-
-        <div class="difference">
-            <p>AFFORDABLE AND CLEAR ENERGY SOLUTIONS</p>
-
-            <p>Our energy solutions are cost-effective and clear, making sustainability accessible to all.</p>
-        </div>
-
+        
         <div class="difference">
             <p>COMMUNITY ENGAGEMENT</p>
-
+            
             <p>We create job opportunities and support local industries, giving back to the community.</p>
         </div>
-
+        
         <div class="difference">
-            <p>INNOVATION</p>
-
-            <p>We push boundaries with advanced technology, delivering cutting-edge solutions tailored to local needs.</p>
-        </div>
-
-        <div class="difference">
-            <p>RESEARCH</p>
-
-            <p>We push boundaries with advanced technology, delivering cutting-edge solutions tailored to local needs.</p>
-        </div>
-
-        <div class="difference">
-            <p>TECHNOLOGY</p>
-
-            <p>We leverage the latest global advancements and bring them to East Africa, ensuring that our clients benefit from top-tier engineering and production capabilities.</p>
+            <p>AFFORDABLE AND CLEAR ENERGY SOLUTIONS</p>
+            
+            <p>Our energy solutions are cost-effective and clear, making sustainability accessible to all.</p>
+            
         </div>
     </div>
-
-
+    
+    
 </section>
 
 
@@ -110,12 +114,8 @@
 @media (min-width:401px){
 
     #distinction{
-        background:red;
-        background:var(--lime);
-
-        /* padding-top:130px;
-        padding-bottom:130px; */
         padding: 130px 16px;
+
     }
 
     #distinction > p{
@@ -124,7 +124,6 @@
     }
 
     .difference_container{
-        /* background:yellow; */
         box-sizing: border-box;
         padding:0px 10px;
         gap:30px;
@@ -151,11 +150,6 @@
 
 @media (min-width:501px){
 
-    #distinction{
-        background:green;
-        background:var(--lime);
-    }
-
     
     .difference{
         width:80%;
@@ -167,22 +161,15 @@
 
 @media (min-width:601px){
 
-    #distinction{
-        background:blue;
-        background:var(--lime);
-    }
-
 
     .difference_container{
         flex-direction:row;
         flex-wrap:wrap;
-        /* background:red; */
-        /* width:100%; */
     }
 
     .difference{
         width:45%;
-        height:300px;
+        height:310px;
     }
 
 
@@ -191,37 +178,31 @@
 
 @media (min-width:701px){
 
-#distinction{
-    background:purple;
-    background:var(--lime);
+    .difference{
+        width:45%;
+        height:250px;
+    }
+
+    .difference > p:first-child{
+        font-size:2rem;
+        margin-bottom:20px;
+    }
+
+    .difference > p:last-child{
+        font-size:1.8rem;
+        font-weight:350;
+    }
+
+    
 }
 
-
-}
-
-
-
-@media (min-width:801px){
-
-#distinction{
-    background:orange;
-    background:var(--lime);
-}
-
-
-}
 
 
 @media (min-width:901px){
 
-    #distinction{
-        background:pink;
-        background:var(--lime);
-    }
-
-
     .difference{
         width:30%;
+        height:300px;
     }
 
 }
@@ -229,28 +210,12 @@
 
 @media (min-width:1001px){
 
-    #distinction{
-        background:yellow;
-        background:var(--lime);
-    }
-
     .difference{
         width:25%;
+        height:280px;
     }
 
 }
-
-
-@media (min-width:1301px){
-
-#distinction{
-    background:red;
-    background:var(--lime);
-}
-
-
-}
-
 
 
 

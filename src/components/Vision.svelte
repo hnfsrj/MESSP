@@ -114,10 +114,6 @@
 
 
 @media (min-width:401px){
-    #vision{
-        background:red;
-        background:var(--lime);
-    }
 
     .eye_image{
         width:16%;
@@ -145,10 +141,6 @@
 }
 
 @media (min-width:501px){
-    #vision{
-        background:green;
-        background:var(--lime);
-    }
 
     .eye_image{
         width:12%;
@@ -160,59 +152,72 @@
 
 }
 
+
+
 @media (min-width:601px){
     #vision{
-        background:blue;
-        background:var(--lime);
 
         padding-top:20%;
         padding-bottom:20%;
 
-        padding-left:10%;
-        padding-right:10%;
     }
 
     .eye_image{
-        width:9%;
-        transform:translate(0px, -5px);
+        width:11%;
+        transform:translate(0px, -3px);
     }
     
+    .gear_image{
+        width:8%;
+    }
+
+}
+
+
+@media (min-width:651px){
+
+    .eye_image{
+        width:10%;
+    }
+
     .gear_image{
         width:7%;
     }
 
 }
 
-@media (min-width:701px){
-    #vision{
-        background:purple;
-        background:var(--lime);
 
-        padding-left:15%;
-        padding-right:15%;
+@media (min-width:701px){
+    .eye_image{
+        width:9%;
+    }
+
+    .gear_image{
+        width:6.7%;
     }
 
 }
 
 
 @media (min-width:801px){
-    #vision{
-        background:pink;
-        background:var(--lime);
-
+    .eye_image{
+        width:8%;
     }
 
-        
+    .gear_image{
+        width:6.2%;
+    }
 
 }
 
+
+
+
 @media (min-width:995px){
     #vision{
-        background:orange;
-        background:var(--lime);
-
         padding-left:10%;
         padding-right:10%;
+
     }
 
     .vision_block_container{
@@ -229,36 +234,72 @@
         .block>p>br{
             display:block;
         }
-}
+    
+    #vision div.block:first-of-type > div{
+        /* background:red; */
+        transform:translate(0px,-5px);
+    }
+    
+    #vision div.block:last-of-type > div{
+        /* background:blue; */
+    }
 
-@media (min-width:1001px){
-    #vision{
-        background:yellow;
-        background:var(--lime);
+    .eye_image{
+        width:14%;
+    }
 
-        padding-top:15%;
-        padding-bottom:15%;
+    .gear_image{
+        width:11.1%;
     }
 
 }
 
-
-@media (min-width:1301px){
-    #vision{
-        background:red;
-        background:var(--lime);
-
-        padding-left:15%;
-        padding-right:15%;
+@media (min-width:1051px){
+    #vision div.block:first-of-type > div{
+        /* background:red; */
+        /* transform:translate(0px,-5px); */
+    }
+    
+    #vision div.block:last-of-type > div{
+        /* background:blue; */
     }
 
-        #vision div.block{
-            width:40%;
-        }
 
+
+    .eye_image{
+        width:14%;
+    }
+
+    .gear_image{
+        width:10.5%;
+    }
 
 }
 
+@media (min-width:1101px){
+    #vision div.block:first-of-type > div{
+        /* background:red; */
+        transform:translate(0px,-8px);
+    }
+}
+
+@media (min-width:1101px){
+    #vision div.block:first-of-type > div{
+        /* background:red; */
+        transform:translate(0px,-12px);
+    }
+}
+
+@media (min-width:1190px){
+    
+    .eye_image{
+        transform:translate(0px, -2px);
+    }
+
+    .gear_image{
+        width:9.5%;
+    }
+}
 
 
 </style>

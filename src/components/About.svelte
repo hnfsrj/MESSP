@@ -47,10 +47,6 @@
 
 @media (min-width:401px){
 
-    #about{
-        /* background:red; */
-    }
-
     section>p:first-of-type{
         font-size:3.3rem; 
     }
@@ -58,24 +54,16 @@
     section>p:last-of-type{
         font-size:1.8rem;
         font-weight:400;
-    }
-
-
-    section>p:last-of-type{
         margin-bottom:30%;
     }
+
+
 
 
 }
 
 
 @media (min-width:501px){
-    #about{
-        /* background:green; */
-        /* background:var(--lime); */
-        /* padding-left:10%;
-        padding-right:10%; */
-    }
 
     section>p:first-of-type{
         margin-top:15%;
@@ -89,37 +77,26 @@
 
 
 @media (min-width:601px){
-    #about{
-        /* background:yellow; */
-        /* background:var(--lime); */
-    }
 
     section>p:first-of-type{
         margin-top:12%;
         
     }
-
-}
-
-
-
-
-@media (min-width:701px){
-    #about{
-        /* background:blue; */
-        /* background:var(--lime); */
+    
+    section>p:last-of-type{
+        margin-top:7%;
     }
 
 }
+
+
+
+
 
 
 
 
 @media (min-width:801px){
-    #about{
-        /* background:purple; */
-        /* background:var(--lime); */
-    }
 
     section>p:first-of-type{
         margin-top:9%;
@@ -127,7 +104,7 @@
     }
 
     section>p:last-of-type{
-        margin-top:8%;
+        margin-top:6%;
     }
 
 }
@@ -135,14 +112,7 @@
 
 
 @media (min-width:901px){
-    #about{
-        /* background:pink; */
-        /* background:var(--lime); */
-        padding-left:17%;
-        padding-right:17%;
-    }
 
-        
 
     section>p:first-of-type{
         margin-top:6%;
@@ -159,38 +129,16 @@
 
 @media (min-width:1001px){
     #about{
-        /* background:orange; */
-        /* background:var(--lime); */
-        padding-left:20%;
-        padding-right:20%;
+        /* padding-left:20%;
+        padding-right:20%; */
     }
 
     section>p:last-of-type{
-        font-weight: 600;
+        /* font-weight: 600; */
     }
 
 }
 
-
-@media (min-width:1301px){
-    #about{
-        /* background:red; */
-        /* background:var(--lime); */
-        padding-left:24%;
-        padding-right:24%;
-    }
-
-    section>p:first-of-type{
-        font-size:3.5rem;
-    }
-    
-    section>p:last-of-type{
-        margin-top:6%;
-        font-size:2rem;
-        font-weight: 600;
-    }
-
-}
 
 
 

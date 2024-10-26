@@ -57,6 +57,9 @@
         box-shadow: -3px 3px 4.4px 1.35px rgba(0,0,0,0.25);
     }
 
+    button:hover{
+        cursor:pointer;
+    }
 
 @media (min-width:401px){
 
@@ -78,7 +81,7 @@
 
 
 
-@media (min-width:701px){
+@media (min-width:771px){
     button{
         width:100px;
         height:35px;

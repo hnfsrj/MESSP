@@ -100,8 +100,6 @@
 @media (min-width:401px){
 
     #approach{
-        background:red;
-        background:var(--lime);
         padding-top:60px;
         padding-bottom:60px;
     }
@@ -134,13 +132,8 @@
 
 @media (min-width:501px){
 
-    #approach{
-        background:green;
-        background:var(--lime);
-    }
 
     .ways_container{
-        /* background:red; */
         width:80%;
         
     }
@@ -150,10 +143,9 @@
 
 
 @media (min-width:601px){
-
-    #approach{
-        background:blue;
-        background:var(--lime);
+    .ways_container{
+        /* background:red; */
+        width:90%;
     }
 
     .way{
@@ -176,47 +168,26 @@
 
 
 
-@media (min-width:801px){
-
-    #approach{
-        background:yellow;
-        background:var(--lime);
-    }
+@media (min-width:901px){
 
     .ways_container{
-        width:70%;
+        width:95%;
     }
 
 }
 
 
 
-@media (min-width:1001px){
-
-    #approach{
-        background:purple;
-        background:var(--lime);
-    }
+@media (min-width:1051px){
 
     .ways_container{
-        width:60%;
+        width:90%;
     }
 
 }
 
 
-@media (min-width:1301px){
 
-    #approach{
-        background:red;
-        background:var(--lime);
-    }
-
-    .ways_container{
-        width:50%;
-    }
-
-}
 
 
 

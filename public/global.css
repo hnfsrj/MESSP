@@ -31,14 +31,16 @@ html{
 
 
 
-body{}
+body{
+	background:var(--lime);
+}
 
 
 #container{
 	width:100vw;
     box-sizing: border-box;
     min-width:300px;
-    max-width:1600px;
+    max-width:1300px;
     margin:0 auto;
 }
 
@@ -57,8 +59,14 @@ body{}
 	}
 }
 
-@media (min-width:1001px){
+@media (min-width:901px){
 	section{
-		/* padding:30px 20%; */
+		padding:30px 15%;
+	}
+}
+
+@media (min-width:1051px){
+	section{
+		padding:30px 20%;
 	}
 }

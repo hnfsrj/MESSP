@@ -51,5 +51,21 @@
     }
 }
 
+@media (min-width:851px){
+    .pictures{
+        width:45%;
+    }
+}
 
+@media (min-width:1001px){
+    .pictures{
+        width:40%;
+    }
+}
+
+@media (min-width:1101px){
+    .pictures{
+        width:35%;
+    }
+}
 </style>

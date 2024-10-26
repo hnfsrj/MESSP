@@ -119,7 +119,7 @@
 @media (min-width:501px){
 
     .form_container{
-        width:90%;
+        width:95%;
         margin:0 auto;
         padding:25px 20px;
     }
@@ -153,20 +153,34 @@
 @media (min-width:601px){
 
     .form_container{
-        width:85%;
-        /* padding:25px 20px; */
+        width:87%;
+        padding:30px 5%;
     }
+
+}
+
+@media (min-width:751px){
+
+.form_container{
+    width:85%;
+    padding:30px 5%;
+}
 
 }
 
 
 @media (min-width:801px){
     .form_container{
-        width:65%;
-        /* padding:25px 20px; */
+        width:80%;
     }
 }
 
+
+@media (min-width:851px){
+    .form_container{
+        width:70%;
+    }
+}
 
 
 @media (min-width:901px){
@@ -174,6 +188,7 @@
     .form_container{
         margin:0px;
         width:50%;
+        padding:30px 2%;
     }
 }
 
@@ -182,6 +197,7 @@
     
     .form_container{
         width:45%;
+        padding:40px 3%;
     }
 
 }

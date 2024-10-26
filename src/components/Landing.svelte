@@ -147,14 +147,13 @@
 
 }
 
-
-@media (min-width:1300px){
-
-    section>p:first-of-type{
-        margin-top:6%;
-    }
-
-
+@media (min-width:1051px){
+	#landing{
+		padding-left:15%;
+		padding-right:15%;
+	}
 }
+
+
 
 </style>

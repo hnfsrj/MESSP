@@ -25,6 +25,10 @@
             NavStore.update(current_state => {
                 return {...current_state, "drop":false};
             });
+        }else{
+            NavStore.update(current_state => {
+                return {...current_state, "drop":false};
+            });
         }
 
     }
@@ -50,7 +54,7 @@
 
     onMount(()=>{
 
-        const top = document.querySelector('.top');
+        const top = document.querySelector('nav');
 
         top.addEventListener('click',(e)=>{
             nav_buttons(e);
@@ -121,6 +125,8 @@
 
     nav{
         position:fixed;
+        top:0px;
+        left:0px;
         width:100%;
         box-sizing: border-box;
         background:var(--translucent_lime);
@@ -305,46 +311,54 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width:701px){
+@media (min-width:771px){
 
     .top{
         padding:0px;
     }
 
     nav.wide{
+        padding:15px 3.5%;
+    }
 
+    nav.wide>div.bottom{
+        position:absolute;
+        top:52%;
+        left:50%;
+        transform:translate(-50%,-50%);
+    }
+
+    nav.wide>div.bottom p{
+        font-size:1.6rem;
+        font-weight:500;
+    }
+
+
+    nav.scrolled_wide{
+        padding:5px 3.5%;
+    }
+
+
+}
+
+
+
+
+
+
+@media (min-width:801px){
+    nav.wide{
+
+        padding:15px 5%;
+    }
+
+    nav.scrolled_wide{
         padding:5px 3.5%;
     }
 
 }
 
-@media (min-width:801px){
-    nav.wide{
 
-        padding:5px 5%;
-    }
-
-}
-
-
-@media (min-width:1301px){
-    nav.wide{
-
-        padding:5px 8%;
-    }
-
-}
 
 </style>
 

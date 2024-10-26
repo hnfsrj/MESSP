@@ -172,7 +172,6 @@
 
 @media (min-width:901px){
     .chooser{
-        /* background:red; */
         width:95%;
         margin-bottom:0px;
     }
