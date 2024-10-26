@@ -3,8 +3,53 @@
 <script>
 
     import {onMount, onDestroy} from 'svelte';
-    import {OtherStates} from '../store/Other';
+    import {ServicesState} from '../store/Other';
 
+    let chosenElement;
+    let loaded = false;
+
+    function chooseElement() {
+
+        if(loaded){
+
+            document.querySelector('.chosen').classList.remove('chosen');
+            document.querySelectorAll('.choice')[chosenElement].classList.add('chosen');
+
+        }
+
+    }
+
+
+    $: {
+        chosenElement = Number($ServicesState.chosen[3]) - 1;
+        chooseElement();
+    }
+
+
+
+
+
+
+    
+    // function choose_handler(e,choices){
+
+    //     const target = e.target;
+
+    //     choices.forEach((choice, index)=>{
+
+    //         choice.classList.remove('chosen');
+
+    //         if(choice == target || target == choice.lastElementChild){
+    //             choice.classList.add('chosen');
+
+    //             ServicesState.update(current_state => {
+    //                 return {...current_state, "chosen":"cat"+(index+1)};
+    //             });
+    //         }
+    //     });
+
+    // }
+    
 
     function choose_handler(e,choices){
 
@@ -12,21 +57,21 @@
 
         choices.forEach((choice, index)=>{
 
-            choice.classList.remove('chosen');
-
             if(choice == target || target == choice.lastElementChild){
-                choice.classList.add('chosen');
 
-                OtherStates.update(current_state => {
+                ServicesState.update(current_state => {
                     return {...current_state, "chosen":"cat"+(index+1)};
                 });
             }
         });
 
     }
-    
+
+
 
     onMount(()=>{
+
+        loaded = true;
 
         const chooser = document.querySelector('.chooser');
         const choices = document.querySelectorAll('.choice');

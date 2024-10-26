@@ -3,10 +3,8 @@
 <script>
 
     import {onMount, onDestroy} from 'svelte';
-    import {OtherStates} from '../store/Other';
+    import {ServicesState} from '../store/Other';
 
-
-    // $: chosen = $OtherStates.chosen;
 
 
     function slide_click_handler(e){
@@ -63,21 +61,63 @@
     }
 
     $: {
-        chosenElement = document.querySelector('.' + $OtherStates.chosen);
+        chosenElement = document.querySelector('.' + $ServicesState.chosen);
         scrollToChosenElement();
     }
 
+
+
+
+
+    function getPosition(slides){
+        const total_width = slides.scrollWidth;
+        const individual_width = total_width/6;
+        const scroll_position = slides.scrollLeft;
+
+        const selected = Math.trunc(scroll_position/individual_width + 1);
+
+        ServicesState.update(current_state => {
+            return {...current_state, "chosen":"cat"+(selected)};
+        });
+
+    }
+
+
     onMount(()=>{
         const slides = document.querySelector('.slides');
+        // const cats = document.querySelectorAll('.cat');
+        let scrollTimeout;
+
+        const scrollPosition = window.scrollY;
+        document.querySelector('.cat1').scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+        window.scrollTo(0, scrollPosition);
 
         slides.addEventListener("click", (e)=>{
             slide_click_handler(e);
+        })
+
+        slides.addEventListener("scroll",(e)=>{
+
+            clearTimeout(scrollTimeout);
+
+            scrollTimeout = setTimeout(()=>{
+                getPosition(slides);
+            },100);
         })
     });
 
     onDestroy(()=>{
         slides.removeEventListener("click", (e)=>{
             slide_click_handler(e);
+        })
+
+        slides.removeEventListener("scroll",(e)=>{
+
+            clearTimeout(scrollTimeout);
+
+            scrollTimeout = setTimeout(()=>{
+                getPosition(slides);
+            },100);
         })
     });
 
