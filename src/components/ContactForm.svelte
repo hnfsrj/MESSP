@@ -153,7 +153,7 @@
 @media (min-width:601px){
 
     .form_container{
-        width:75%;
+        width:85%;
         /* padding:25px 20px; */
     }
 
@@ -181,7 +181,7 @@
 @media (min-width:1001px){
     
     .form_container{
-        width:40%;
+        width:45%;
     }
 
 }

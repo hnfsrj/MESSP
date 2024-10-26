@@ -186,7 +186,7 @@
 @media (min-width:701px){
     #vision{
         background:purple;
-        /* background:var(--lime); */
+        background:var(--lime);
 
         padding-left:15%;
         padding-right:15%;

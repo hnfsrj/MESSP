@@ -29,7 +29,7 @@
 
 
                 <div class="info">
-                    <div>Dubain Branch</div>
+                    <div>Dubai Branch</div>
 
                     <p>MOB: +971 50 968 1540</p>
                     <p>OFF: +971 4 345 7172</p>
@@ -182,11 +182,13 @@
     .infos_div{
         display:flex;
         justify-content: space-between;
+        align-items: start;
         margin-bottom:40px;
     }
 
     .info{
         width:40%;
+        margin:0px;
     }
 
     .info>div{
@@ -200,8 +202,8 @@
 @media (min-width:601px){
     #contact{
         background:purple;
-        /* background:var(--blue); */
-        padding:30px 50px;
+        background:var(--blue);
+        /* padding:30px 50px; */
     }
 
 
@@ -213,8 +215,8 @@
 @media (min-width:701px){
     #contact{
         background:green;
-        /* background:var(--blue); */
-        padding:30px 100px;
+        background:var(--blue);
+        /* padding:30px 100px; */
     }
 
 
@@ -239,7 +241,7 @@
 @media (min-width:901px){
     #contact{
         background:pink;
-        /* background:var(--blue); */
+        background:var(--blue);
 
         padding:60px 50px;
     }
@@ -290,7 +292,7 @@
     #contact{
         background:yellow;
         background:var(--blue);
-        padding:60px 100px;
+        /* padding:60px 100px; */
     }
 
     .contact_left{

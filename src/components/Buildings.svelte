@@ -16,8 +16,8 @@
     <img src="/images/building4.svg" class="building building7"/>
     <img src="/images/building5.svg" class="building building8"/>
     <img src="/images/building2.svg" class="building building9"/>
-    <img src="/images/building5.svg" class="building building10 hide"/>
-    <img src="/images/building5.svg" class="building building11 hide"/>
+    <!-- <img src="/images/building5.svg" class="building building10 hide"/> -->
+    <!-- <img src="/images/building5.svg" class="building building11 hide"/> -->
 
 </div>
 
@@ -71,13 +71,13 @@
             width:33px;
         }
 
-        img.building10{
+        /* img.building10{
             width:40px;
         }
 
         img.building11{
             width:21px;
-        }
+        } */
 
 
 
@@ -123,13 +123,13 @@
         width:4.5%;
     }
 
-    img.building10{
+    /* img.building10{
         display:inline-block;
     }
 
     img.building11{
         display:inline-block;
-    }
+    } */
 
 
 

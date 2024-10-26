@@ -73,8 +73,8 @@
     #about{
         /* background:green; */
         /* background:var(--lime); */
-        padding-left:10%;
-        padding-right:10%;
+        /* padding-left:10%;
+        padding-right:10%; */
     }
 
     section>p:first-of-type{

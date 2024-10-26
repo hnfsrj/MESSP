@@ -92,8 +92,8 @@
         background:blue;
         background:var(--lime);
 
-        padding-right:10%;
-        padding-left:10%;
+        /* padding-right:10%;
+        padding-left:10%; */
     }
 
 
@@ -106,8 +106,8 @@
         background:green;
         background:var(--lime);
 
-        padding-right:15%;
-        padding-left:15%;
+        /* padding-right:15%;
+        padding-left:15%; */
     }
 
 }
@@ -117,8 +117,8 @@
     #services{
         /* background:purple; */
 
-        padding-right:18%;
-        padding-left:18%;
+        /* padding-right:18%;
+        padding-left:18%; */
     }
 
 }
@@ -136,7 +136,7 @@
     #services{
         background:orange;
         background:var(--lime);
-        padding:100px 16px;
+        /* padding:100px 16px; */
     }
 
     .services_container{

@@ -146,7 +146,7 @@
             box-shadow: none;
             backdrop-filter:blur(0px);
             padding:0px;
-            gap:15px;
+            gap:0px;
         }
 
         nav.wide .bottom p{
@@ -154,6 +154,16 @@
             font-size:1.4rem;
             color:var(--blue);
         }
+
+            nav.wide .bottom p:hover{
+                color:white;
+            }
+            
+            nav.wide.fixation .bottom p:hover{
+                color:white;
+                background:var(--green);
+            }
+
 
             nav.scrolled_wide{
                 background:var(--blue);
@@ -277,10 +287,11 @@
 
 
             
-@media (min-width:550px){
+@media (min-width:601px){
 
     .top{
-        padding:13px 25px;
+        padding-left:5%;
+        padding-right:5%;
     }
 
 
@@ -312,12 +323,28 @@
     }
 
     nav.wide{
-        padding:13px 25px;
+
+        padding:5px 3.5%;
+    }
+
+}
+
+@media (min-width:801px){
+    nav.wide{
+
+        padding:5px 5%;
     }
 
 }
 
 
+@media (min-width:1301px){
+    nav.wide{
+
+        padding:5px 8%;
+    }
+
+}
 
 </style>
 

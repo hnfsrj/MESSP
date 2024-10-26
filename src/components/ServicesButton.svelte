@@ -1,6 +1,30 @@
 
 <script>
+
+    import { onDestroy, onMount } from "svelte";
+
     export let margined = false;
+
+    let button;
+
+    function handle_click(){
+
+        document.querySelector('#services').scrollIntoView({ behavior: 'smooth'});
+    }
+
+    onMount(()=>{
+
+        button = document.querySelector('button');
+
+        button.addEventListener('click',handle_click);
+    });
+
+
+    onDestroy(()=>{
+        if(button){
+            button.removeEventListener('click',handle_click);
+        }
+    });
 </script>
 
 

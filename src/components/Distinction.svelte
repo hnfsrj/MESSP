@@ -156,9 +156,6 @@
         background:var(--lime);
     }
 
-    .difference_container{
-        align-items:stretch;
-    }
     
     .difference{
         width:80%;
@@ -185,6 +182,7 @@
 
     .difference{
         width:45%;
+        height:300px;
     }
 
 
