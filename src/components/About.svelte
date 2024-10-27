@@ -128,17 +128,6 @@
 
 
 
-@media (min-width:1001px){
-    #about{
-        /* padding-left:20%;
-        padding-right:20%; */
-    }
-
-    section>p:last-of-type{
-        /* font-weight: 600; */
-    }
-
-}
 
 
 

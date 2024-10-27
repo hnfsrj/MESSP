@@ -139,7 +139,6 @@
         display:flex;
         justify-content: space-between;
         align-items: center;
-        /* background:var(--blue); */
     }  
 
         nav.wide .bottom{

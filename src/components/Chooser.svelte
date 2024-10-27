@@ -131,10 +131,8 @@
             .choice:hover{
                 cursor:pointer;
             }
-        
-        /* .choice.chosen{
-            background: var(--green);
-        } */
+
+            
         .choice.chosen > p{
             color:var(--blue);
             font-weight: 700;

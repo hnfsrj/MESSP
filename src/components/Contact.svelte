@@ -68,7 +68,6 @@
             margin-bottom:50px;
         }
 
-        #contact_left{}
 
         .contact_left>p:first-of-type{
             color:var(--green);
@@ -125,7 +124,6 @@
 
     h6{
         color:white;
-        /* margin-top:60px; */
         font-size:1.4rem;
         font-weight:500;
         text-align:center;
@@ -308,13 +306,7 @@
         font-size:1.9rem;
     }
 
-    .contact_left>p:last-of-type{
-        /* font-size:1.5rem; */
-    }
 
-    /* .infos_div{
-        margin-top: 80px;
-    } */
 
     .info{
         width:45%;
@@ -323,7 +315,6 @@
 
     .info>div{
         width:70%;
-        /* height:35px; */
         font-size:1.7rem;
     }
 

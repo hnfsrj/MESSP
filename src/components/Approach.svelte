@@ -144,7 +144,6 @@
 
 @media (min-width:601px){
     .ways_container{
-        /* background:red; */
         width:90%;
     }
 

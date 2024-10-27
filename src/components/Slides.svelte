@@ -107,12 +107,11 @@
         loaded = true;
 
         const slides = document.querySelector('.slides');
-        // const cats = document.querySelectorAll('.cat');
         let scrollTimeout;
 
-        // const scrollPosition = window.scrollY;
-        // document.querySelector('.cat1').scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
-        // window.scrollTo(0, scrollPosition);
+        const scrollPosition = window.scrollY;
+        document.querySelector('.cat1').scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+        window.scrollTo(0, scrollPosition);
 
         slides.addEventListener("click", (e)=>{
             slide_click_handler(e);
@@ -133,6 +132,8 @@
             slide_click_handler(e);
         })
 
+        loaded = false;
+
         // slides.removeEventListener("scroll",(e)=>{
 
         //     clearTimeout(scrollTimeout);
@@ -141,6 +142,7 @@
         //         getPosition(slides);
         //     },100);
         // })
+    
     });
 
 </script>
@@ -398,14 +400,12 @@
     .slides{
         width:100%;
         height: 430px;
-        /* height: fit-content; */
         position:relative;
         z-index:1;
-        /* background:red; */
         display:flex;
         flex-wrap:nowrap;
         align-items: center;
-        overflow:scroll;
+        overflow:hidden;
         scroll-snap-type:x mandatory;
         scroll-behavior: smooth;
         margin-bottom:100px;
@@ -419,14 +419,11 @@
             scroll-snap-align: center;
             flex: 0 0 auto;
             height:100%;
-            /* height: 430px; */
-            /* background:blue; */
         }
 
             .slide{
                 position:relative;
                 width:100%;
-                /* flex: 0 0 auto; */
                 min-height:100%;
                 box-sizing: border-box;
                 padding:20px 15px;
@@ -434,7 +431,6 @@
                 border-radius:10px;
                 backdrop-filter: blur(6px);
                 box-shadow: 0px 5px 3px 3px rgba(0,0,0,0.25);
-                /* margin-bottom:100px; */
             }
 
                 .slide>p:first-of-type{
@@ -458,7 +454,7 @@
                     justify-content: end;
                     align-items:center;
                     gap:5px;
-                    /* margin-top:20px; */
+
                 }
 
                     .slide>div:hover{
@@ -582,7 +578,6 @@
     }
 
     .slide{
-        /* padding:50px 40px; */
         line-height:25px;
         margin-bottom:0px;
     }

@@ -61,7 +61,6 @@
         .block>div{
             display:flex;
             justify-content: start;
-            /* align-items: end; */
             gap:10px;
         }
 
@@ -101,7 +100,6 @@
             .block>p:last-of-type{
                 font-size:1.7rem;
                 font-weight:400;
-                /* text-align:justify; */
             }
 
     .line{
@@ -236,13 +234,9 @@
         }
     
     #vision div.block:first-of-type > div{
-        /* background:red; */
         transform:translate(0px,-5px);
     }
     
-    #vision div.block:last-of-type > div{
-        /* background:blue; */
-    }
 
     .eye_image{
         width:14%;
@@ -255,16 +249,6 @@
 }
 
 @media (min-width:1051px){
-    #vision div.block:first-of-type > div{
-        /* background:red; */
-        /* transform:translate(0px,-5px); */
-    }
-    
-    #vision div.block:last-of-type > div{
-        /* background:blue; */
-    }
-
-
 
     .eye_image{
         width:14%;
@@ -278,14 +262,12 @@
 
 @media (min-width:1101px){
     #vision div.block:first-of-type > div{
-        /* background:red; */
         transform:translate(0px,-8px);
     }
 }
 
 @media (min-width:1101px){
     #vision div.block:first-of-type > div{
-        /* background:red; */
         transform:translate(0px,-12px);
     }
 }
