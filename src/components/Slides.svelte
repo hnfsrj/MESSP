@@ -51,18 +51,37 @@
 
     }
 
-    let chosenElement;
 
-    function scrollToChosenElement() {
-        if(chosenElement){
-            chosenElement.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
-    
-        }
-    }
+
+
+
+
+    let loaded = false;
+
+
 
     $: {
-        chosenElement = document.querySelector('.' + $ServicesState.chosen);
-        scrollToChosenElement();
+        let element = document.querySelector(`.${$ServicesState.chosen}`);
+
+        if(loaded){
+
+            let container = document.querySelector('.slides');
+
+
+            const rect = element.getBoundingClientRect();
+            const containerRect = container.getBoundingClientRect();
+
+            const scrollLeft = container.scrollLeft;
+            const elementLeft = rect.left - containerRect.left + scrollLeft;
+
+            container.scrollTo({
+                left: elementLeft,
+                behavior: 'smooth'
+            });
+
+
+
+        }
     }
 
 
@@ -76,6 +95,7 @@
 
         const selected = Math.trunc(scroll_position/individual_width + 1);
 
+
         ServicesState.update(current_state => {
             return {...current_state, "chosen":"cat"+(selected)};
         });
@@ -84,26 +104,28 @@
 
 
     onMount(()=>{
+        loaded = true;
+
         const slides = document.querySelector('.slides');
         // const cats = document.querySelectorAll('.cat');
         let scrollTimeout;
 
-        const scrollPosition = window.scrollY;
-        document.querySelector('.cat1').scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
-        window.scrollTo(0, scrollPosition);
+        // const scrollPosition = window.scrollY;
+        // document.querySelector('.cat1').scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+        // window.scrollTo(0, scrollPosition);
 
         slides.addEventListener("click", (e)=>{
             slide_click_handler(e);
         })
 
-        slides.addEventListener("scroll",(e)=>{
+        // slides.addEventListener("scroll",(e)=>{
 
-            clearTimeout(scrollTimeout);
+        //     clearTimeout(scrollTimeout);
 
-            scrollTimeout = setTimeout(()=>{
-                getPosition(slides);
-            },100);
-        })
+        //     scrollTimeout = setTimeout(()=>{
+        //         getPosition(slides);
+        //     },100);
+        // })
     });
 
     onDestroy(()=>{
@@ -111,14 +133,14 @@
             slide_click_handler(e);
         })
 
-        slides.removeEventListener("scroll",(e)=>{
+        // slides.removeEventListener("scroll",(e)=>{
 
-            clearTimeout(scrollTimeout);
+        //     clearTimeout(scrollTimeout);
 
-            scrollTimeout = setTimeout(()=>{
-                getPosition(slides);
-            },100);
-        })
+        //     scrollTimeout = setTimeout(()=>{
+        //         getPosition(slides);
+        //     },100);
+        // })
     });
 
 </script>

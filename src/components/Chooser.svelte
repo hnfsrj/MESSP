@@ -26,29 +26,6 @@
     }
 
 
-
-
-
-
-    
-    // function choose_handler(e,choices){
-
-    //     const target = e.target;
-
-    //     choices.forEach((choice, index)=>{
-
-    //         choice.classList.remove('chosen');
-
-    //         if(choice == target || target == choice.lastElementChild){
-    //             choice.classList.add('chosen');
-
-    //             ServicesState.update(current_state => {
-    //                 return {...current_state, "chosen":"cat"+(index+1)};
-    //             });
-    //         }
-    //     });
-
-    // }
     
 
     function choose_handler(e,choices){
@@ -91,6 +68,8 @@
         chooser.removeEventListener('click',(e)=>{
             choose_handler(e,choices);
         });
+        
+        loaded = false;
 
     });
 
