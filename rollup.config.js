@@ -35,7 +35,16 @@ export default {
 		sourcemap: true,
 		format: 'iife',
 		name: 'app',
-		file: 'public/build/bundle.js'
+		file: 'public/build/bundle.js',
+
+		assetFileNames: (chunkInfo) => {
+            return chunkInfo.name === 'style.css' ? 'style.css' : 'assets/[name]-[hash][extname]';
+        },
+        
+		
+        paths: {
+            base: process.env.NODE_ENV === 'production' ? '/Adamant/' : '',
+        }
 	},
 	plugins: [
 		svelte({
