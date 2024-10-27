@@ -7,15 +7,15 @@
 
 <div class="buildings">
 
-    <img src="/images/building1.svg" class="building building1"/>
-    <img src="/images/building2.svg" class="building building2"/>
-    <img src="/images/building3.svg" class="building building3"/>
-    <img src="/images/building4.svg" class="building building4"/>
-    <img src="/images/building2.svg" class="building building5"/>
-    <img src="/images/building3.svg" class="building building6"/>
-    <img src="/images/building4.svg" class="building building7"/>
-    <img src="/images/building5.svg" class="building building8"/>
-    <img src="/images/building2.svg" class="building building9"/>
+    <img src="/Adamant/images/building1.svg" class="building building1"/>
+    <img src="/Adamant/images/building2.svg" class="building building2"/>
+    <img src="/Adamant/images/building3.svg" class="building building3"/>
+    <img src="/Adamant/images/building4.svg" class="building building4"/>
+    <img src="/Adamant/images/building2.svg" class="building building5"/>
+    <img src="/Adamant/images/building3.svg" class="building building6"/>
+    <img src="/Adamant/images/building4.svg" class="building building7"/>
+    <img src="/Adamant/images/building5.svg" class="building building8"/>
+    <img src="/Adamant/images/building2.svg" class="building building9"/>
 
 </div>
 

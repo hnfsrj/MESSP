@@ -107,7 +107,7 @@
             <a href="#vision"><p>Vision</p></a>
             <a href="#services"><p>Services</p></a>
             <a href="#distinction"><p>Distinction</p></a>
-            <a href="#approach"><p>Appoach</p></a>
+            <a href="#approach"><p>Approach</p></a>
             <a href="#contact"><p>Contact</p></a>
             
         </div>

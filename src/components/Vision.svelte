@@ -14,7 +14,7 @@
         <div class="block">
 
             <div>
-                <img class="eye_image" src="/images/eye.svg"/>
+                <img class="eye_image" src="/Adamant/images/eye.svg"/>
                 <p>Vision</p>
             </div>
 
@@ -32,7 +32,7 @@
         <div class="block">
 
             <div>
-                <img class="gear_image" src="/images/gear.svg"/>
+                <img class="gear_image" src="/Adamant/images/gear.svg"/>
                 <p>Mission</p>
             </div>
 

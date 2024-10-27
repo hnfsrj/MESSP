@@ -13,7 +13,7 @@
     <div class="ways_container">
         <div class="way">
 
-            <img src="/images/knowledge.svg" />
+            <img src="/Adamant/images/knowledge.svg" />
 
             <div class="way_text">
                 <p>Knowledge Transfer</p>
@@ -25,7 +25,7 @@
 
         <div class="way">
 
-            <img src="/images/client.svg" />
+            <img src="/Adamant/images/client.svg" />
 
             <div class="way_text">
                 <p>Client Collaboration</p>
@@ -38,7 +38,7 @@
 
         <div class="way">
 
-            <img src="/images/future.svg" />
+            <img src="/Adamant/images/future.svg" />
 
             <div class="way_text">
                 <p>Future Outlook</p>
