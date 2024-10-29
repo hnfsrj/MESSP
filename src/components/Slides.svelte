@@ -88,19 +88,19 @@
 
 
 
-    function getPosition(slides){
-        const total_width = slides.scrollWidth;
-        const individual_width = total_width/6;
-        const scroll_position = slides.scrollLeft;
+    // function getPosition(slides){
+    //     const total_width = slides.scrollWidth;
+    //     const individual_width = total_width/6;
+    //     const scroll_position = slides.scrollLeft;
 
-        const selected = Math.trunc(scroll_position/individual_width + 1);
+    //     const selected = Math.trunc(scroll_position/individual_width + 1);
 
 
-        ServicesState.update(current_state => {
-            return {...current_state, "chosen":"cat"+(selected)};
-        });
+    //     ServicesState.update(current_state => {
+    //         return {...current_state, "chosen":"cat"+(selected)};
+    //     });
 
-    }
+    // }
 
 
     onMount(()=>{
