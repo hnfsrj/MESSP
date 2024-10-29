@@ -44,12 +44,12 @@
 
 <div class="pictures">
 
-    <img class="pic pic1" src="/Adamant/images/solar/solar.png" />
-    <img class="pic pic2" src="/Adamant/images/hvac/hvac.png" />
-    <img class="pic pic3" src="/Adamant/images/ventilation/ventilation.png" />
-    <img class="pic pic4" src="/Adamant/images/steel/steel.png" />
-    <img class="pic pic5" src="/Adamant/images/display/display.png" />
-    <img class="pic pic6" src="/Adamant/images/furniture/furniture.png" />
+    <img class="pic pic1" src="/images/solar/solar.png" />
+    <img class="pic pic2" src="/images/hvac/hvac.png" />
+    <img class="pic pic3" src="/images/ventilation/ventilation.png" />
+    <img class="pic pic4" src="/images/steel/steel.png" />
+    <img class="pic pic5" src="/images/display/display.png" />
+    <img class="pic pic6" src="/images/furniture/furniture.png" />
 
 </div>
 

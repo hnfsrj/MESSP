@@ -1,26 +1,106 @@
 
 <script>
+    import {getContext, onMount} from 'svelte';
 
+    const observeElements = getContext('observeElements');
+    const unobserveElements = getContext('unobserveElements');
+
+
+    
+
+    onMount(()=>{
+        let elements = [];
+
+        elements.push(document.querySelector('.building1'));
+        elements.push(document.querySelector('.building2'));
+        elements.push(document.querySelector('.building3'));
+        elements.push(document.querySelector('.building4'));
+        elements.push(document.querySelector('.building5'));
+        elements.push(document.querySelector('.building6'));
+        elements.push(document.querySelector('.building7'));
+        elements.push(document.querySelector('.building8'));
+        elements.push(document.querySelector('.building9'));
+        elements.push(document.querySelector('.buildings'));
+
+        observeElements(elements);
+
+        return () => unobserveElements(elements);
+    });
 
 </script>
 
 
-<div class="buildings">
+<div class="effect_line animate_line buildings">
 
-    <img src="/Adamant/images/building1.svg" class="building building1"/>
-    <img src="/Adamant/images/building2.svg" class="building building2"/>
-    <img src="/Adamant/images/building3.svg" class="building building3"/>
-    <img src="/Adamant/images/building4.svg" class="building building4"/>
-    <img src="/Adamant/images/building2.svg" class="building building5"/>
-    <img src="/Adamant/images/building3.svg" class="building building6"/>
-    <img src="/Adamant/images/building4.svg" class="building building7"/>
-    <img src="/Adamant/images/building5.svg" class="building building8"/>
-    <img src="/Adamant/images/building2.svg" class="building building9"/>
+    <img src="/images/building1.svg" class="effect_up animate_up animate_up1 building building1"/>
+    <img src="/images/building2.svg" class="effect_up animate_up animate_up2 building building2"/>
+    <img src="/images/building3.svg" class="effect_up animate_up animate_up3 building building3"/>
+    <img src="/images/building4.svg" class="effect_up animate_up animate_up4 building building4"/>
+    <img src="/images/building2.svg" class="effect_up animate_up animate_up5 building building5"/>
+    <img src="/images/building3.svg" class="effect_up animate_up animate_up6 building building6"/>
+    <img src="/images/building4.svg" class="effect_up animate_up animate_up7 building building7"/>
+    <img src="/images/building5.svg" class="effect_up animate_up animate_up8 building building8"/>
+    <img src="/images/building2.svg" class="effect_up animate_up animate_up9 building building9"/>
 
 </div>
 
 
 <style>
+
+    div.effect_line{
+        border-bottom: none;
+    }
+
+    .animate_line{
+        transition: border 0.5s;
+        transition-delay:2s;
+    }
+
+
+    .effect_up{
+        transform: translate(0px, 30px);
+    }
+
+    .animate_up{
+        transition: transform 0.7s;
+    }
+
+
+    .animate_up1{
+        transition-delay: 0s;
+    }
+
+    .animate_up2{
+        transition-delay: 0.2s;
+    }
+
+    .animate_up3{
+        transition-delay: 0.4s;
+    }
+
+    .animate_up4{
+        transition-delay: 0.6s;
+    }
+
+    .animate_up5{
+        transition-delay: 0.8s;
+    }
+
+    .animate_up6{
+        transition-delay: 1s;
+    }
+
+    .animate_up7{
+        transition-delay: 1.2s;
+    }
+
+    .animate_up8{
+        transition-delay: 1.4s;
+    }
+
+    .animate_up9{
+        transition-delay: 1.6s;
+    }
 
     .buildings{
         border-bottom:2px solid black;

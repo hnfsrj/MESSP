@@ -1,6 +1,7 @@
 <script>
 
-	import { onMount, onDestroy } from "svelte";
+	import { onMount, onDestroy, setContext } from "svelte";
+
 	import {NavStore} from './store/Store';
 	import {OtherStates} from './store/Other';
 	// import {ServicesState} from './store/Other';
@@ -13,6 +14,81 @@
 	import Distinction from './components/Distinction.svelte';
 	import Approach from './components/Approach.svelte';
 	import Contact from './components/Contact.svelte';
+
+
+
+
+
+
+	const observer = new IntersectionObserver((entries) => {
+		entries.forEach(entry => {
+			if (entry.isIntersecting) {
+				const classes = Array.from(entry.target.classList);
+
+				entry.target.classList.remove(classes[0]);
+
+				observer.unobserve(entry.target);
+			}
+			
+		});
+	}, {
+		rootMargin: '-20px',
+		threshold: 0
+	});
+
+
+
+	const parent_observer = new IntersectionObserver((entries) => {
+		entries.forEach(entry => {
+			if (entry.isIntersecting) {
+
+				const elements = Array.from(entry.target.children);
+
+				elements.forEach(element=>{
+
+					const classes = Array.from(element.classList);
+
+					element.classList.remove(classes[0]);
+
+				});
+
+				observer.unobserve(entry.target);
+				
+			}
+			
+		});
+	}, {
+		rootMargin: '-20px',
+		threshold: 0
+	});
+
+
+
+	function observeElements(elements) {
+        elements.forEach((element) => {
+            observer.observe(element);
+        });
+    }
+
+    function unobserveElements(elements) {
+        elements.forEach((element) => {
+            observer.unobserve(element);
+        });
+    }
+
+	setContext('observer', observer);
+	setContext('parent_observer', parent_observer);
+	setContext('observeElements', observeElements);
+	setContext('unobserveElements', unobserveElements);
+
+
+
+
+
+
+
+
+
 
 
 	function resize_handler(){

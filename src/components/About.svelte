@@ -3,6 +3,7 @@
 
     import Buildings from './Buildings.svelte';
 
+
 </script>
 
 <div class="blocker">

@@ -2,6 +2,19 @@
 
 <script>
 
+    import { getContext, onMount } from "svelte";
+
+    const observeElements = getContext('observeElements');
+    const unobserveElements = getContext('unobserveElements');
+
+
+    onMount(()=>{
+        let elements = [...document.querySelectorAll('.way')];
+
+        observeElements(elements);
+
+        return () => unobserveElements(elements);
+    });
 
 </script>
 
@@ -11,9 +24,9 @@
     <p>Adamant's Way</p>
 
     <div class="ways_container">
-        <div class="way">
+        <div class="effect_right animate_right way">
 
-            <img src="/Adamant/images/knowledge.svg" />
+            <img src="/images/knowledge.svg" />
 
             <div class="way_text">
                 <p>Knowledge Transfer</p>
@@ -23,9 +36,9 @@
 
         </div>
 
-        <div class="way">
+        <div class="effect_right animate_right way">
 
-            <img src="/Adamant/images/client.svg" />
+            <img src="/images/client.svg" />
 
             <div class="way_text">
                 <p>Client Collaboration</p>
@@ -36,9 +49,9 @@
         </div>
 
 
-        <div class="way">
+        <div class="effect_right animate_right way">
 
-            <img src="/Adamant/images/future.svg" />
+            <img src="/images/future.svg" />
 
             <div class="way_text">
                 <p>Future Outlook</p>
@@ -54,7 +67,15 @@
 </div>
 
 <style>
+    
+    .effect_right{
+        transform: translate(-100px, 0px);
+    }
 
+    .animate_right{
+        transition: transform 0.5s;
+    }
+    
     #approach{}
 
         #approach > p{

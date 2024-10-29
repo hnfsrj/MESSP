@@ -2,7 +2,7 @@
 
 <script>
 
-    import {onMount, onDestroy} from 'svelte';
+    import {getContext, onMount, onDestroy} from 'svelte';
     import {ServicesState} from '../store/Other';
 
     let chosenElement;
@@ -46,12 +46,20 @@
 
 
 
+    const parent_observer = getContext('parent_observer');
+
+
+
+
     onMount(()=>{
 
         loaded = true;
 
         const chooser = document.querySelector('.chooser');
         const choices = document.querySelectorAll('.choice');
+
+
+        parent_observer.observe(document.querySelector('.chooser'));
 
         chooser.addEventListener('click',(e)=>{
             choose_handler(e,choices);
@@ -71,6 +79,8 @@
         
         loaded = false;
 
+        parent_observer.unobserve(document.querySelector('.chooser'));
+
     });
 
 
@@ -79,33 +89,33 @@
 
 <div class="chooser">
 
-    <div class="choice chosen">
-        <div class="choice_icon img" style="background-image:url('/Adamant/images/solar.svg');"></div>
+    <div class="effect_accordion animate_accordion animate_accordion1 choice chosen">
+        <div class="choice_icon img" style="background-image:url('/images/solar.svg');"></div>
         <p>Solar Energy Solutions</p>
     </div>
 
-    <div class="choice">
-        <div class="choice_icon img" style="background-image:url('/Adamant/images/hvac.svg');"></div>
+    <div class="effect_accordion animate_accordion animate_accordion2 choice">
+        <div class="choice_icon img" style="background-image:url('/images/hvac.svg');"></div>
         <p>HVAC System Integration and Technologies</p>
     </div>
 
-    <div class="choice">
-        <div class="choice_icon img" style="background-image:url('/Adamant/images/ventilation.svg');"></div>
+    <div class="effect_accordion animate_accordion animate_accordion3 choice">
+        <div class="choice_icon img" style="background-image:url('/images/ventilation.svg');"></div>
         <p>Industrial Ventilation Systems</p>
     </div>
 
-    <div class="choice">
-        <div class="choice_icon img" style="background-image:url('/Adamant/images/steel.svg');"></div>
+    <div class="effect_accordion animate_accordion animate_accordion4 choice">
+        <div class="choice_icon img" style="background-image:url('/images/steel.svg');"></div>
         <p>Stainless Steel Fabrication</p>
     </div>
 
-    <div class="choice">
-        <div class="choice_icon img" style="background-image:url('/Adamant/images/display.svg');"></div>
+    <div class="effect_accordion animate_accordion animate_accordion5 choice">
+        <div class="choice_icon img" style="background-image:url('/images/display.svg');"></div>
         <p>Customized Display and Exhibition Solutions</p>
     </div>
 
-    <div class="choice">
-        <div class="choice_icon img" style="background-image:url('/Adamant/images/furniture.svg');"></div>
+    <div class="effect_accordion animate_accordion animate_accordion6 choice">
+        <div class="choice_icon img" style="background-image:url('/images/furniture.svg');"></div>
         <p>Furniture Manufacturing</p>
     </div>
 
@@ -113,6 +123,41 @@
 
 
 <style>
+
+    .effect_accordion{
+        transform:translate(0px,100px);
+    }
+
+    .animate_accordion{
+        transition: transform 0.5s;
+    }
+
+    .animate_accordion1{
+        transition-delay: 0s;
+    }
+
+
+    .animate_accordion2{
+        transition-delay: 0.2s;
+    }
+
+    .animate_accordion3{
+        transition-delay: 0.4s;
+    }
+
+    .animate_accordion4{
+        transition-delay: 0.6s;
+    }
+
+    .animate_accordion5{
+        transition-delay: 0.8s;
+    }
+
+    .animate_accordion6{
+        transition-delay: 1s;
+    }
+
+
 
     .chooser{
         margin-bottom:50px;

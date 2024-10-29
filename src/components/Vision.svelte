@@ -1,8 +1,31 @@
 
 
 <script>
+    import {getContext, onMount} from 'svelte';
 
     import {OtherStates} from '../store/Other';
+
+
+    const observeElements = getContext('observeElements');
+    const unobserveElements = getContext('unobserveElements');
+    
+
+    onMount(()=>{
+        let elements = [];
+
+        elements.push(document.querySelector('.eye_image'));
+        elements.push(document.querySelector('.gear_image'));
+
+        const first = document.querySelectorAll('.block>p:first-of-type')
+        const last = document.querySelectorAll('.block>p:last-of-type')
+
+        elements = [...elements, ...first, ...last];
+
+
+        observeElements(elements);
+
+        return () => unobserveElements(elements);
+    });
 
 </script>
 
@@ -14,13 +37,13 @@
         <div class="block">
 
             <div>
-                <img class="eye_image" src="/Adamant/images/eye.svg"/>
+                <img class="effect_open animate_open eye_image" src="/images/eye.svg"/>
                 <p>Vision</p>
             </div>
 
-            <p>Engineering the Future, Globally <br/>and Locally</p>
+            <p class="effect_up animate_up1">Engineering the Future, Globally <br/>and Locally</p>
 
-            <p>We envision a world where cutting-edge engineering solutions drive progress, transforming both global and local communities. Our goal is to lead the charge in innovation, providing sustainable, high-quality systems that meet the evolving needs of industries and individuals worldwide. By merging global expertise with a local focus, we ensure that our solutions are not only impactful but also tailored to enhance the specific environments and communities we serve. Through our work, we aspire to shape a smarter, more efficient, and technologically advanced future.</p>
+            <p class="effect_up animate_up2">We envision a world where cutting-edge engineering solutions drive progress, transforming both global and local communities. Our goal is to lead the charge in innovation, providing sustainable, high-quality systems that meet the evolving needs of industries and individuals worldwide. By merging global expertise with a local focus, we ensure that our solutions are not only impactful but also tailored to enhance the specific environments and communities we serve. Through our work, we aspire to shape a smarter, more efficient, and technologically advanced future.</p>
             
         </div>
 
@@ -32,13 +55,13 @@
         <div class="block">
 
             <div>
-                <img class="gear_image" src="/Adamant/images/gear.svg"/>
+                <img class="effect_rotate animate_rotate gear_image" src="/images/gear.svg"/>
                 <p>Mission</p>
             </div>
 
-            <p>Committed to Delivering Premium <br/>Engineering Solutions</p>
+            <p class="effect_up animate_up1">Committed to Delivering Premium <br/>Engineering Solutions</p>
 
-            <p>Our mission is to consistently deliver top-tier engineering solutions that exceed expectations. We are dedicated to excellence in every aspect of our work, from design and installation to maintenance and long-term support. Through our commitment to quality, innovation, and precision, we provide solutions that are both functional and sustainable, improving the lives of our clients and the communities they operate in. Our expertise across diverse sectors enables us to offer customized, premium engineering services, always aiming for the highest standards of safety, efficiency, and client satisfaction.</p>
+            <p class="effect_up animate_up2">Our mission is to consistently deliver top-tier engineering solutions that exceed expectations. We are dedicated to excellence in every aspect of our work, from design and installation to maintenance and long-term support. Through our commitment to quality, innovation, and precision, we provide solutions that are both functional and sustainable, improving the lives of our clients and the communities they operate in. Our expertise across diverse sectors enables us to offer customized, premium engineering services, always aiming for the highest standards of safety, efficiency, and client satisfaction.</p>
             
         </div>
     
@@ -48,6 +71,36 @@
 </div>
 
 <style>
+
+    img.effect_open{
+        transform:scale(0.1);
+    }
+
+    img.animate_open{
+        transition: transform 1.5s;
+    }
+
+
+    .effect_rotate{
+        transform: rotate(270deg);
+    }
+
+    .animate_rotate{
+        transition: transform 2s;
+    }
+
+    .effect_up{
+        transform:translate(0px, 50px);
+    }
+
+    .animate_up1{
+        transition: transform 1s;
+    }
+    
+    .animate_up2{
+        transition: transform 1s;
+        transition-delay: 0.5s;
+    }
 
     #vision{
         padding-top:30%;

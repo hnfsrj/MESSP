@@ -161,7 +161,7 @@
         
             <div class="products">
                 <p>Products Offered</p>
-                <img src="/Adamant/images/arrow.svg"/>
+                <img src="/images/arrow.svg"/>
             </div>
         
         </div>
@@ -181,7 +181,7 @@
             </ul>
 
             <div class="back">
-                <img class="reverse" src="/Adamant/images/arrow.svg"/>
+                <img class="reverse" src="/images/arrow.svg"/>
                 <p>Back</p>
             </div>
         
@@ -200,7 +200,7 @@
         
             <div class="products">
                 <p>Products Offered</p>
-                <img src="/Adamant/images/arrow.svg"/>
+                <img src="/images/arrow.svg"/>
             </div>
         
         </div>
@@ -221,7 +221,7 @@
             </ul>
 
             <div class="back">
-                <img class="reverse" src="/Adamant/images/arrow.svg"/>
+                <img class="reverse" src="/images/arrow.svg"/>
                 <p>Back</p>
             </div>
         
@@ -241,7 +241,7 @@
         
             <div class="products">
                 <p>Products Offered</p>
-                <img src="/Adamant/images/arrow.svg"/>
+                <img src="/images/arrow.svg"/>
             </div>
         
         </div>
@@ -261,7 +261,7 @@
             </ul>
 
             <div class="back">
-                <img class="reverse" src="/Adamant/images/arrow.svg"/>
+                <img class="reverse" src="/images/arrow.svg"/>
                 <p>Back</p>
             </div>
         
@@ -280,7 +280,7 @@
         
             <div class="products">
                 <p>Products Offered</p>
-                <img src="/Adamant/images/arrow.svg"/>
+                <img src="/images/arrow.svg"/>
             </div>
         
         </div>
@@ -300,7 +300,7 @@
             </ul>
 
             <div class="back">
-                <img class="reverse" src="/Adamant/images/arrow.svg"/>
+                <img class="reverse" src="/images/arrow.svg"/>
                 <p>Back</p>
             </div>
         
@@ -320,7 +320,7 @@
         
             <div class="products">
                 <p>Products Offered</p>
-                <img src="/Adamant/images/arrow.svg"/>
+                <img src="/images/arrow.svg"/>
             </div>
         
         </div>
@@ -340,7 +340,7 @@
             </ul>
 
             <div class="back">
-                <img class="reverse" src="/Adamant/images/arrow.svg"/>
+                <img class="reverse" src="/images/arrow.svg"/>
                 <p>Back</p>
             </div>
         
@@ -361,7 +361,7 @@
         
             <div class="products">
                 <p>Products Offered</p>
-                <img src="/Adamant/images/arrow.svg"/>
+                <img src="/images/arrow.svg"/>
             </div>
         
         </div>
@@ -381,7 +381,7 @@
             </ul>
 
             <div class="back">
-                <img class="reverse" src="/Adamant/images/arrow.svg"/>
+                <img class="reverse" src="/images/arrow.svg"/>
                 <p>Back</p>
             </div>
         

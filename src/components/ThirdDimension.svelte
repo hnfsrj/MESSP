@@ -3,6 +3,9 @@
 
 <script>
 
+    import { getContext, onMount } from "svelte";
+
+
     // import { onMount, onDestroy } from "svelte";
 
     // import * as THREE from 'three';
@@ -102,20 +105,45 @@
     // });
 
 
+    const observeElements = getContext('observeElements');
+    const unobserveElements = getContext('unobserveElements');
+
+
+    onMount(()=>{
+        let elements = [];
+
+        elements.push(document.querySelector('.three_container'));
+
+        observeElements(elements);
+
+        return () => unobserveElements(elements);
+    });
+
+
 </script>
 
 
 
-<div class="three_container">
+<div class="effect_shrink animate_shrink three_container">
     <div class="glow"></div>
 
     <!-- <canvas id="canvas"></canvas> -->
-    <img src="/Adamant/images/helmet/helmet.png" class="landing_pic" />
+    <img src="/images/helmet/helmet.png" class="landing_pic" />
 </div>
 
 
 
 <style>
+
+
+    .effect_shrink{
+        transform: scale(0.1);
+    }
+
+    .animate_shrink{
+        transition: transform 1.5s;
+    }
+
 
     .three_container{
         position:relative;

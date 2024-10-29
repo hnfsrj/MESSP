@@ -2,6 +2,19 @@
 
 <script>
 
+    import { getContext, onMount } from "svelte";
+
+    const observeElements = getContext('observeElements');
+    const unobserveElements = getContext('unobserveElements');
+
+
+    onMount(()=>{
+        let elements = [...document.querySelectorAll('.difference')];
+
+        observeElements(elements);
+
+        return () => unobserveElements(elements);
+    });
 
 </script>
 
@@ -14,37 +27,37 @@
         
         
         
-        <div class="difference">
+        <div class="effect_shrink animate_shrink difference">
             <p>INNOVATION</p>
             
             <p>We push boundaries with advanced technology, delivering cutting-edge solutions tailored to local needs.</p>
         </div>
         
-        <div class="difference">
+        <div class="effect_shrink animate_shrink difference">
             <p>RESEARCH</p>
             
-            <p>We push boundaries with advanced technology, delivering cutting-edge solutions tailored to local needs.</p>
+            <p>We drive discovery through rigorous exploration and analysis, developing evidence-based solutions tailored to address complex local challenges.</p>
         </div>
         
-        <div class="difference">
+        <div class="effect_shrink animate_shrink difference">
             <p>TECHNOLOGY</p>
             
             <p>We leverage the latest global advancements and bring them to East Africa, ensuring that our clients benefit from top-tier engineering and production capabilities.</p>
         </div>
         
-        <div class="difference">
+        <div class="effect_shrink animate_shrink difference">
             <p>TRAINING AND GROWTH</p>
 
             <p>We focus on building local talent by sharing knowledge and providing hands-on training to strengthen our workforce.</p>
         </div>
         
-        <div class="difference">
+        <div class="effect_shrink animate_shrink difference">
             <p>COMMUNITY ENGAGEMENT</p>
             
             <p>We create job opportunities and support local industries, giving back to the community.</p>
         </div>
         
-        <div class="difference">
+        <div class="effect_shrink animate_shrink difference">
             <p>AFFORDABLE AND CLEAR ENERGY SOLUTIONS</p>
             
             <p>Our energy solutions are cost-effective and clear, making sustainability accessible to all.</p>
@@ -57,6 +70,15 @@
 </div>
 
 <style>
+
+    .effect_shrink{
+        transform: scale(0.1);
+    }
+
+    .animate_shrink{
+        transition: transform 0.5s;
+    }
+
 
     #distinction{
         padding-top:60px;

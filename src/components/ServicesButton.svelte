@@ -1,7 +1,8 @@
 
 <script>
 
-    import { onDestroy, onMount } from "svelte";
+    import { getContext, onDestroy, onMount } from "svelte";
+    import { InstancedInterleavedBuffer } from "three";
 
     export let margined = false;
 
@@ -12,7 +13,23 @@
         document.querySelector('#services').scrollIntoView({ behavior: 'smooth'});
     }
 
+
+
+    const observeElements = getContext('observeElements');
+    const unobserveElements = getContext('unobserveElements');
+
+
+    let elements = [];
+
     onMount(()=>{
+
+
+        // if (margined){
+    
+            elements.push(document.querySelector('button'));
+    
+            observeElements(elements);
+        // }
 
         button = document.querySelector('button');
 
@@ -24,12 +41,20 @@
         if(button){
             button.removeEventListener('click',handle_click);
         }
+
+        if (margined){
+
+            unobserveElements(elements);
+        }
+
     });
 </script>
 
 
 <div class:margined = {margined} class:unmargined = {!margined}>
-    <button>Services</button>
+
+    <button class = "effect_blur animation_blur">Services</button>
+    
 </div>
 
 
@@ -43,6 +68,14 @@
         div.margined{
             margin-top:20%;
         }
+
+            div.margined .effect_blur{
+                transform: translate(0px, 50px)
+            }
+            
+            div.margined .animation_blur{
+                transition: transform 1s;
+            }
 
     button{
         background:var(--green);

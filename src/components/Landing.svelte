@@ -1,16 +1,41 @@
 
 <script>
+
+    import {getContext, onMount} from 'svelte';
+
     import {NavStore} from '../store/Store';
     import ServicesButton from './ServicesButton.svelte';
     import ThirdDimension from './ThirdDimension.svelte';
 
+
+
+
+    const observeElements = getContext('observeElements');
+    const unobserveElements = getContext('unobserveElements');
+
+
+    
+
+    onMount(()=>{
+        let elements = [];
+
+        elements.push(document.querySelector('section>p:first-of-type'));
+        elements.push(document.querySelector('section>p:last-of-type'));
+
+        observeElements(elements);
+
+        return () => unobserveElements(elements);
+    });
+
 </script>
+
+
 
 <div class="blocker">
 <section id="landing">
-    <p>Adamant <br/>Engineering</p>
+    <p class="effect_blur animate_blur">Adamant <br/>Engineering</p>
 
-    <p>Committed to delivering premium<br/> engineering solutions</p>
+    <p class="effect_blur animate_blur">Committed to delivering premium<br/> engineering solutions</p>
 
     {#if !$NavStore.wide}
         <ServicesButton margined=true />
@@ -21,6 +46,17 @@
 </div>
 
 <style>
+    
+    .effect_blur{
+        filter: blur(20px);
+        transform: scale(2);
+    }
+
+    .animate_blur{
+        transition: filter 1s, transform 1.5s;
+    }
+
+
 
     #landing{
         min-height:100vh;
