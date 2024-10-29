@@ -32,15 +32,15 @@
 
 <div class="effect_line animate_line buildings">
 
-    <img src="/images/building1.svg" class="effect_up animate_up animate_up1 building building1"/>
-    <img src="/images/building2.svg" class="effect_up animate_up animate_up2 building building2"/>
-    <img src="/images/building3.svg" class="effect_up animate_up animate_up3 building building3"/>
-    <img src="/images/building4.svg" class="effect_up animate_up animate_up4 building building4"/>
-    <img src="/images/building2.svg" class="effect_up animate_up animate_up5 building building5"/>
-    <img src="/images/building3.svg" class="effect_up animate_up animate_up6 building building6"/>
-    <img src="/images/building4.svg" class="effect_up animate_up animate_up7 building building7"/>
-    <img src="/images/building5.svg" class="effect_up animate_up animate_up8 building building8"/>
-    <img src="/images/building2.svg" class="effect_up animate_up animate_up9 building building9"/>
+    <img src="/Adamant/images/building1.svg" class="effect_up animate_up animate_up1 building building1"/>
+    <img src="/Adamant/images/building2.svg" class="effect_up animate_up animate_up2 building building2"/>
+    <img src="/Adamant/images/building3.svg" class="effect_up animate_up animate_up3 building building3"/>
+    <img src="/Adamant/images/building4.svg" class="effect_up animate_up animate_up4 building building4"/>
+    <img src="/Adamant/images/building2.svg" class="effect_up animate_up animate_up5 building building5"/>
+    <img src="/Adamant/images/building3.svg" class="effect_up animate_up animate_up6 building building6"/>
+    <img src="/Adamant/images/building4.svg" class="effect_up animate_up animate_up7 building building7"/>
+    <img src="/Adamant/images/building5.svg" class="effect_up animate_up animate_up8 building building8"/>
+    <img src="/Adamant/images/building2.svg" class="effect_up animate_up animate_up9 building building9"/>
 
 </div>
 
