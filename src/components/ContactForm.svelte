@@ -32,8 +32,8 @@
 
 <style>
 
-    .effect_wide{
-        width:0% !important;
+    form>input[type="submit"].effect_wide{
+        width:0%;
 
     }
 
