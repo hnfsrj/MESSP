@@ -1,6 +1,16 @@
 
 <script>
+    import { getContext, onMount } from "svelte";
 
+    const observer = getContext('observer');
+
+
+    onMount(()=>{
+
+        observer.observe(document.querySelector("form>input[type='submit']"));
+
+        return () => observer.unobserve(document.querySelector("form>input[type='submit']"));
+    });
 </script>
 
 <div class="form_container">
@@ -14,13 +24,23 @@
         <input type="text" placeholder="Subject"/>
         <textarea placeholder="Message"></textarea>
 
-        <input type="submit" value="Submit" />
+        <input class="effect_wide animate_wide" type="submit" value="Submit" />
     </form>
 
 
 </div>
 
 <style>
+
+    .effect_wide{
+        width:0% !important;
+
+    }
+
+    .animate_wide{
+        transition: width 0.5s;
+    }
+
 
     .form_container{
         background:white;
