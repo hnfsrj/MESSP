@@ -16,7 +16,21 @@
 	import Contact from './components/Contact.svelte';
 
 
+	const nav_observer = new IntersectionObserver((entries) => {
+		entries.forEach(entry => {
+			if (entry.isIntersecting) {
+				const classes = Array.from(entry.target.classList);
 
+				entry.target.classList.remove(classes[0]);
+
+				observer.unobserve(entry.target);
+			}
+			
+		});
+	}, {
+		rootMargin: '0px',
+		threshold: 0
+	});
 
 
 
@@ -76,6 +90,7 @@
         });
     }
 
+	setContext('nav_observer', nav_observer);
 	setContext('observer', observer);
 	setContext('parent_observer', parent_observer);
 	setContext('observeElements', observeElements);

@@ -50,17 +50,24 @@
     }
 
 
-    const observeElements = getContext('observeElements');
-    const unobserveElements = getContext('unobserveElements');
+    function navigation_function(e){
+        const target = e.target;
 
-    let elements = [];
+        if (target.matches('.bottom>p')){
+            
+            const to = target.innerText.toLowerCase();
+            document.querySelector(`#${to}`).scrollIntoView({ behavior: 'smooth'});
+        }
+
+    }
+
+
+    const nav_observer = getContext('nav_observer');
+
 
     onMount(()=>{
 
-
-        elements.push(document.querySelector('nav'));
-
-        observeElements(elements);
+        nav_observer.observe(document.querySelector('nav'));
         
 
         const top = document.querySelector('nav');
@@ -73,6 +80,10 @@
 
         window.addEventListener("scroll", handle_scrolling);
 
+        document.addEventListener("click",(e)=>{
+            navigation_function(e);
+        })
+
     });
 
 
@@ -82,8 +93,12 @@
         })
         
         window.removeEventListener("scroll", handle_scrolling);
-        
-        unobserveElements(elements);
+
+        document.removeEventListener('click',(e)=>{
+            navigation_function(e);
+        })
+
+        nav_observer.unobserve(document.querySelector('nav'));
     });
 
 </script>
@@ -114,12 +129,12 @@
     {#if drop || wide}
         <div class="bottom">
             
-            <a href="#about"><p>About</p></a>
-            <a href="#vision"><p>Vision</p></a>
-            <a href="#services"><p>Services</p></a>
-            <a href="#distinction"><p>Distinction</p></a>
-            <a href="#approach"><p>Approach</p></a>
-            <a href="#contact"><p>Contact</p></a>
+            <p>About</p>
+            <p>Vision</p>
+            <p>Services</p>
+            <p>Distinction</p>
+            <p>Approach</p>
+            <p>Contact</p>
             
         </div>
     {/if}
@@ -265,10 +280,6 @@
             box-shadow: 0px 4px 9.5px 0px rgba(0,0,0,0.25);
         }
 
-            .bottom a{
-                text-decoration: none;
-                color:black;
-            }
 
             .bottom p{
                 font-size:1.6rem;
