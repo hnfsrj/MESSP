@@ -412,6 +412,8 @@
         margin-bottom:100px;
         gap:10px;
         padding:5px;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
     }
 
         .cat{
