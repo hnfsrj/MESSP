@@ -50,13 +50,41 @@
             })
         }
 
-        // console.log($ServicesState.chosen);
 
     }
 
 
 
 
+    function observe_sliding(slides){
+
+        const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+
+                const slide = Array.from(entry.target.classList)[1];
+
+                // console.log(slide);
+
+                ServicesState.update(() => {
+                    return {"chosen":slide};
+                });
+
+            }
+        });
+        }, 
+        {
+            root: slides,
+            threshold: 1
+        });
+
+
+        const cats = document.querySelectorAll('.cat');
+
+        cats.forEach(cat=> observer.observe(cat));
+
+
+    }
 
 
     let loaded = false;
@@ -98,10 +126,11 @@
         loaded = true;
 
         const slides = document.querySelector('.slides');
-
         slides.addEventListener("click", (e)=>{
             slide_click_handler(e);
         })
+        
+        observe_sliding(slides);
 
 
     });
@@ -375,7 +404,7 @@
         display:flex;
         flex-wrap:nowrap;
         align-items: center;
-        overflow:hidden;
+        overflow:scroll;
         scroll-snap-type:x mandatory;
         scroll-behavior: smooth;
         margin-bottom:100px;
