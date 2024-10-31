@@ -4,7 +4,7 @@
 
 	import {NavStore} from './store/Store';
 	import {OtherStates} from './store/Other';
-	// import {ServicesState} from './store/Other';
+	import {ServicesState} from './store/Other';
 
 	import Nav from './components/Nav.svelte';
 	import Landing from './components/Landing.svelte';
@@ -109,9 +109,9 @@
 	function resize_handler(){
 		let width = window.innerWidth;
 
-		// ServicesState.update(current_state => {
-        //     return {...current_state, "chosen":"cat1"};
-        // });
+		ServicesState.update(current_state => {
+            return {...current_state};
+        });
 
 		if (width >= 771){
 			NavStore.update(current_state => {

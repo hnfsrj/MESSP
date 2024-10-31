@@ -9,6 +9,8 @@
 
     function slide_click_handler(e){
 
+        // console.log($ServicesState.chosen);
+
         const products = document.querySelectorAll('.slide1>div');
         const backs = document.querySelectorAll('.slide2>div');
 
@@ -48,6 +50,7 @@
             })
         }
 
+        // console.log($ServicesState.chosen);
 
     }
 
@@ -59,26 +62,30 @@
     let loaded = false;
 
 
+    function scroller(el){
+        let container = document.querySelector('.slides');
+        let element = document.querySelector(el);
+
+        const rect = element.getBoundingClientRect();
+        const containerRect = container.getBoundingClientRect();
+
+        const scrollLeft = container.scrollLeft;
+        const elementLeft = rect.left - containerRect.left + scrollLeft;
+
+        container.scrollTo({
+            left: elementLeft,
+            behavior: 'smooth'
+        });
+
+    }
+
 
     $: {
-        let element = document.querySelector(`.${$ServicesState.chosen}`);
+        let el = `.${$ServicesState.chosen}`;
 
         if(loaded){
 
-            let container = document.querySelector('.slides');
-
-
-            const rect = element.getBoundingClientRect();
-            const containerRect = container.getBoundingClientRect();
-
-            const scrollLeft = container.scrollLeft;
-            const elementLeft = rect.left - containerRect.left + scrollLeft;
-
-            container.scrollTo({
-                left: elementLeft,
-                behavior: 'smooth'
-            });
-
+            scroller(el);
 
 
         }
@@ -87,44 +94,16 @@
 
 
 
-
-    // function getPosition(slides){
-    //     const total_width = slides.scrollWidth;
-    //     const individual_width = total_width/6;
-    //     const scroll_position = slides.scrollLeft;
-
-    //     const selected = Math.trunc(scroll_position/individual_width + 1);
-
-
-    //     ServicesState.update(current_state => {
-    //         return {...current_state, "chosen":"cat"+(selected)};
-    //     });
-
-    // }
-
-
     onMount(()=>{
         loaded = true;
 
         const slides = document.querySelector('.slides');
-        let scrollTimeout;
-
-        const scrollPosition = window.scrollY;
-        document.querySelector('.cat1').scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
-        window.scrollTo(0, scrollPosition);
 
         slides.addEventListener("click", (e)=>{
             slide_click_handler(e);
         })
 
-        // slides.addEventListener("scroll",(e)=>{
 
-        //     clearTimeout(scrollTimeout);
-
-        //     scrollTimeout = setTimeout(()=>{
-        //         getPosition(slides);
-        //     },100);
-        // })
     });
 
     onDestroy(()=>{
@@ -133,15 +112,6 @@
         })
 
         loaded = false;
-
-        // slides.removeEventListener("scroll",(e)=>{
-
-        //     clearTimeout(scrollTimeout);
-
-        //     scrollTimeout = setTimeout(()=>{
-        //         getPosition(slides);
-        //     },100);
-        // })
     
     });
 
@@ -161,7 +131,7 @@
         
             <div class="products">
                 <p>Products Offered</p>
-                <img src="/images/arrow.svg"/>
+                <img src="images/arrow.svg"/>
             </div>
         
         </div>
@@ -181,7 +151,7 @@
             </ul>
 
             <div class="back">
-                <img class="reverse" src="/images/arrow.svg"/>
+                <img class="reverse" src="images/arrow.svg"/>
                 <p>Back</p>
             </div>
         
@@ -200,7 +170,7 @@
         
             <div class="products">
                 <p>Products Offered</p>
-                <img src="/images/arrow.svg"/>
+                <img src="images/arrow.svg"/>
             </div>
         
         </div>
@@ -221,7 +191,7 @@
             </ul>
 
             <div class="back">
-                <img class="reverse" src="/images/arrow.svg"/>
+                <img class="reverse" src="images/arrow.svg"/>
                 <p>Back</p>
             </div>
         
@@ -241,7 +211,7 @@
         
             <div class="products">
                 <p>Products Offered</p>
-                <img src="/images/arrow.svg"/>
+                <img src="images/arrow.svg"/>
             </div>
         
         </div>
@@ -261,7 +231,7 @@
             </ul>
 
             <div class="back">
-                <img class="reverse" src="/images/arrow.svg"/>
+                <img class="reverse" src="images/arrow.svg"/>
                 <p>Back</p>
             </div>
         
@@ -280,7 +250,7 @@
         
             <div class="products">
                 <p>Products Offered</p>
-                <img src="/images/arrow.svg"/>
+                <img src="images/arrow.svg"/>
             </div>
         
         </div>
@@ -300,7 +270,7 @@
             </ul>
 
             <div class="back">
-                <img class="reverse" src="/images/arrow.svg"/>
+                <img class="reverse" src="images/arrow.svg"/>
                 <p>Back</p>
             </div>
         
@@ -320,7 +290,7 @@
         
             <div class="products">
                 <p>Products Offered</p>
-                <img src="/images/arrow.svg"/>
+                <img src="images/arrow.svg"/>
             </div>
         
         </div>
@@ -340,7 +310,7 @@
             </ul>
 
             <div class="back">
-                <img class="reverse" src="/images/arrow.svg"/>
+                <img class="reverse" src="images/arrow.svg"/>
                 <p>Back</p>
             </div>
         
@@ -361,7 +331,7 @@
         
             <div class="products">
                 <p>Products Offered</p>
-                <img src="/images/arrow.svg"/>
+                <img src="images/arrow.svg"/>
             </div>
         
         </div>
@@ -381,7 +351,7 @@
             </ul>
 
             <div class="back">
-                <img class="reverse" src="/images/arrow.svg"/>
+                <img class="reverse" src="images/arrow.svg"/>
                 <p>Back</p>
             </div>
         

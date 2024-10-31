@@ -37,7 +37,7 @@
         <div class="block">
 
             <div>
-                <img class="effect_open animate_open eye_image" src="/Adamant/images/eye.svg"/>
+                <img class="effect_open animate_open eye_image" src="images/eye.svg"/>
                 <p>Vision</p>
             </div>
 
@@ -55,7 +55,7 @@
         <div class="block">
 
             <div>
-                <img class="effect_rotate animate_rotate gear_image" src="/Adamant/images/gear.svg"/>
+                <img class="effect_rotate animate_rotate gear_image" src="images/gear.svg"/>
                 <p>Mission</p>
             </div>
 

@@ -26,7 +26,7 @@
     <div class="ways_container">
         <div class="effect_right animate_right way">
 
-            <img src="/Adamant/images/knowledge.svg" />
+            <img src="images/knowledge.svg" />
 
             <div class="way_text">
                 <p>Knowledge Transfer</p>
@@ -38,7 +38,7 @@
 
         <div class="effect_right animate_right way">
 
-            <img src="/Adamant/images/client.svg" />
+            <img src="images/client.svg" />
 
             <div class="way_text">
                 <p>Client Collaboration</p>
@@ -51,7 +51,7 @@
 
         <div class="effect_right animate_right way">
 
-            <img src="/Adamant/images/future.svg" />
+            <img src="images/future.svg" />
 
             <div class="way_text">
                 <p>Future Outlook</p>

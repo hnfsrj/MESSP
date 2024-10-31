@@ -90,32 +90,32 @@
 <div class="chooser">
 
     <div class="effect_accordion animate_accordion animate_accordion1 choice chosen">
-        <div class="choice_icon img" style="background-image:url('/Adamant/images/solar.svg');"></div>
+        <div class="choice_icon img" style="background-image:url('images/solar.svg');"></div>
         <p>Solar Energy Solutions</p>
     </div>
 
     <div class="effect_accordion animate_accordion animate_accordion2 choice">
-        <div class="choice_icon img" style="background-image:url('/Adamant/images/hvac.svg');"></div>
+        <div class="choice_icon img" style="background-image:url('images/hvac.svg');"></div>
         <p>HVAC System Integration and Technologies</p>
     </div>
 
     <div class="effect_accordion animate_accordion animate_accordion3 choice">
-        <div class="choice_icon img" style="background-image:url('/Adamant/images/ventilation.svg');"></div>
+        <div class="choice_icon img" style="background-image:url('images/ventilation.svg');"></div>
         <p>Industrial Ventilation Systems</p>
     </div>
 
     <div class="effect_accordion animate_accordion animate_accordion4 choice">
-        <div class="choice_icon img" style="background-image:url('/Adamant/images/steel.svg');"></div>
+        <div class="choice_icon img" style="background-image:url('images/steel.svg');"></div>
         <p>Stainless Steel Fabrication</p>
     </div>
 
     <div class="effect_accordion animate_accordion animate_accordion5 choice">
-        <div class="choice_icon img" style="background-image:url('/Adamant/images/display.svg');"></div>
+        <div class="choice_icon img" style="background-image:url('images/display.svg');"></div>
         <p>Customized Display and Exhibition Solutions</p>
     </div>
 
     <div class="effect_accordion animate_accordion animate_accordion6 choice">
-        <div class="choice_icon img" style="background-image:url('/Adamant/images/furniture.svg');"></div>
+        <div class="choice_icon img" style="background-image:url('images/furniture.svg');"></div>
         <p>Furniture Manufacturing</p>
     </div>
 

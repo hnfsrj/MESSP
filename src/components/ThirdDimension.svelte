@@ -128,7 +128,7 @@
     <div class="glow"></div>
 
     <!-- <canvas id="canvas"></canvas> -->
-    <img src="/Adamant/images/helmet/helmet.png" class="landing_pic" />
+    <img src="images/helmet/helmet.png" class="landing_pic" />
 </div>
 
 

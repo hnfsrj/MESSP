@@ -222,11 +222,11 @@
         }
 
         nav.fixation .top .menu{
-            background-image:url("/Adamant/images/menu2.svg");
+            background-image:url("images/menu2.svg");
         }
 
         nav.fixation .top .close{
-            background-image:url("/Adamant/images/close2.svg");
+            background-image:url("images/close2.svg");
         }
 
     
@@ -241,7 +241,7 @@
             .logo{
                 width:30px;
                 aspect-ratio: 1/1;
-                background-image:url("/Adamant/images/logo.svg");
+                background-image:url("images/logo.svg");
             }
 
 
@@ -260,13 +260,13 @@
             .menu{
                 width:25px;
                 aspect-ratio: 1/1;
-                background-image:url("/Adamant/images/menu1.svg");
+                background-image:url("images/menu1.svg");
             }
 
             .close{
                 width:25px;
                 aspect-ratio: 1/1;
-                background-image:url("/Adamant/images/close1.svg");
+                background-image:url("images/close1.svg");
             }
 
         .bottom{
