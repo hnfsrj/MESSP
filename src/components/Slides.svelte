@@ -54,11 +54,11 @@
     }
 
 
-
+    let observer;
 
     function observe_sliding(slides){
 
-        const observer = new IntersectionObserver((entries) => {
+        observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
 
@@ -141,7 +141,8 @@
         })
 
         loaded = false;
-    
+
+        document.querySelectorAll('.cat').forEach(cat=> observer.unobserve(cat));
     });
 
 </script>
@@ -404,7 +405,8 @@
         display:flex;
         flex-wrap:nowrap;
         align-items: center;
-        overflow:scroll;
+        overflow-x:scroll;
+        overflow-y:hidden;
         scroll-snap-type:x mandatory;
         scroll-behavior: smooth;
         margin-bottom:100px;

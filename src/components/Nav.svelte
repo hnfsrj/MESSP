@@ -25,6 +25,8 @@
             NavStore.update(current_state => {
                 return {...current_state, "drop":false};
             });
+        }else if (target == document.querySelector('.name')){
+            document.querySelector('#landing').scrollIntoView({ behavior: 'smooth'});
         }else{
             NavStore.update(current_state => {
                 return {...current_state, "drop":false};
@@ -250,6 +252,10 @@
                 font-size:2rem;
                 font-weight:500;
             }
+
+                .name:hover{
+                    cursor:pointer;
+                }
 
             .name>span{
                 font-size:2rem;
