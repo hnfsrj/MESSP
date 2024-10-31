@@ -32,12 +32,21 @@
 
 <style>
 
-    form>input[type="submit"].effect_wide{
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+form>input[type="submit"].effect_wide{
         width:0%;
 
     }
 
     .animate_wide{
+        -webkit-transition: width 0.5s;
+        -o-transition: width 0.5s;
         transition: width 0.5s;
     }
 
@@ -45,10 +54,12 @@
     .form_container{
         background:white;
         font-family:"itim";
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
         width:100%;
         border-radius:10px;
-        box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.25);
+        -webkit-box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.25);
+                box-shadow: 0px 0px 4px 2px rgba(0,0,0,0.25);
         padding:20px 10px;
         font-size:1.6rem;
         
@@ -64,7 +75,8 @@
                 border:2px solid black;
                 border-radius:10px;
                 width:100%;
-                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                        box-sizing: border-box;
                 padding:0px 10px;
                 height:40px;
                 margin-bottom:10px;
@@ -73,7 +85,8 @@
             form textarea{
                 border:2px solid black;
                 border-radius:10px;
-                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                        box-sizing: border-box;
                 padding:5px 10px;
                 width:100%;
                 resize: none;
@@ -86,7 +99,8 @@
                 background:var(--green);
                 outline:none;
                 border:none;
-                box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.25);
+                -webkit-box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.25);
+                        box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.25);
                 width:80%;
                 margin:0 auto;
                 margin-top:30px;

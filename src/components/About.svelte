@@ -23,9 +23,16 @@
 
 <style>
 
-    #about{
-        position:relative;
-    }
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+#about{
+    position:relative;
+}
 
     section>p:first-of-type{
         margin-top:20%;

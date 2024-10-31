@@ -124,37 +124,62 @@
 
 <style>
 
-    .effect_accordion{
-        transform:translate(0px,100px);
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.effect_accordion{
+        -webkit-transform:translate(0px,100px);
+            -ms-transform:translate(0px,100px);
+                transform:translate(0px,100px);
     }
 
     .animate_accordion{
+        -webkit-transition: -webkit-transform 0.5s;
+        transition: -webkit-transform 0.5s;
+        -o-transition: transform 0.5s;
         transition: transform 0.5s;
+        transition: transform 0.5s, -webkit-transform 0.5s;
     }
 
     .animate_accordion1{
-        transition-delay: 0s;
+        -webkit-transition-delay: 0s;
+             -o-transition-delay: 0s;
+                transition-delay: 0s;
     }
 
 
     .animate_accordion2{
-        transition-delay: 0.2s;
+        -webkit-transition-delay: 0.2s;
+             -o-transition-delay: 0.2s;
+                transition-delay: 0.2s;
     }
 
     .animate_accordion3{
-        transition-delay: 0.4s;
+        -webkit-transition-delay: 0.4s;
+             -o-transition-delay: 0.4s;
+                transition-delay: 0.4s;
     }
 
     .animate_accordion4{
-        transition-delay: 0.6s;
+        -webkit-transition-delay: 0.6s;
+             -o-transition-delay: 0.6s;
+                transition-delay: 0.6s;
     }
 
     .animate_accordion5{
-        transition-delay: 0.8s;
+        -webkit-transition-delay: 0.8s;
+             -o-transition-delay: 0.8s;
+                transition-delay: 0.8s;
     }
 
     .animate_accordion6{
-        transition-delay: 1s;
+        -webkit-transition-delay: 1s;
+             -o-transition-delay: 1s;
+                transition-delay: 1s;
     }
 
 
@@ -164,9 +189,15 @@
     }
 
         .choice{
+            display:-webkit-box;
+            display:-ms-flexbox;
             display:flex;
-            justify-content: start;
-            align-items: center;
+            -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                    justify-content: start;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             gap:10px;
             margin-bottom:15px;
             padding:10px 0px;
@@ -185,9 +216,13 @@
 
             .choice_icon{
                 background:var(--blue);
-                flex-shrink: 0;
-                flex-grow: 0;
-                flex-basis: auto;
+                -ms-flex-negative: 0;
+                    flex-shrink: 0;
+                -webkit-box-flex: 0;
+                    -ms-flex-positive: 0;
+                        flex-grow: 0;
+                -ms-flex-preferred-size: auto;
+                    flex-basis: auto;
                 width:30px;
                 aspect-ratio: 1/1;
                 border-radius:50%;

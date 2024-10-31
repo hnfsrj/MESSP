@@ -68,12 +68,25 @@
 
 <style>
     
-    .effect_right{
-        transform: translate(-100px, 0px);
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.effect_right{
+        -webkit-transform: translate(-100px, 0px);
+            -ms-transform: translate(-100px, 0px);
+                transform: translate(-100px, 0px);
     }
 
     .animate_right{
+        -webkit-transition: -webkit-transform 0.5s;
+        transition: -webkit-transform 0.5s;
+        -o-transition: transform 0.5s;
         transition: transform 0.5s;
+        transition: transform 0.5s, -webkit-transform 0.5s;
     }
     
     #approach{}
@@ -169,9 +182,15 @@
     }
 
     .way{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
-        align-items:start;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align:start;
+            -ms-flex-align:start;
+                align-items:start;
         gap:20px;
     }
 

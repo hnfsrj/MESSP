@@ -47,59 +47,94 @@
 
 <style>
 
-    div.effect_line{
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+div.effect_line{
         border-bottom: none;
     }
 
     .animate_line{
+        -webkit-transition: border 0.5s;
+        -o-transition: border 0.5s;
         transition: border 0.5s;
-        transition-delay:2s;
+        -webkit-transition-delay:2s;
+             -o-transition-delay:2s;
+                transition-delay:2s;
     }
 
 
     .effect_up{
-        transform: translate(0px, 30px);
+        -webkit-transform: translate(0px, 30px);
+            -ms-transform: translate(0px, 30px);
+                transform: translate(0px, 30px);
     }
 
     .animate_up{
+        -webkit-transition: -webkit-transform 0.7s;
+        transition: -webkit-transform 0.7s;
+        -o-transition: transform 0.7s;
         transition: transform 0.7s;
+        transition: transform 0.7s, -webkit-transform 0.7s;
     }
 
 
     .animate_up1{
-        transition-delay: 0s;
+        -webkit-transition-delay: 0s;
+             -o-transition-delay: 0s;
+                transition-delay: 0s;
     }
 
     .animate_up2{
-        transition-delay: 0.2s;
+        -webkit-transition-delay: 0.2s;
+             -o-transition-delay: 0.2s;
+                transition-delay: 0.2s;
     }
 
     .animate_up3{
-        transition-delay: 0.4s;
+        -webkit-transition-delay: 0.4s;
+             -o-transition-delay: 0.4s;
+                transition-delay: 0.4s;
     }
 
     .animate_up4{
-        transition-delay: 0.6s;
+        -webkit-transition-delay: 0.6s;
+             -o-transition-delay: 0.6s;
+                transition-delay: 0.6s;
     }
 
     .animate_up5{
-        transition-delay: 0.8s;
+        -webkit-transition-delay: 0.8s;
+             -o-transition-delay: 0.8s;
+                transition-delay: 0.8s;
     }
 
     .animate_up6{
-        transition-delay: 1s;
+        -webkit-transition-delay: 1s;
+             -o-transition-delay: 1s;
+                transition-delay: 1s;
     }
 
     .animate_up7{
-        transition-delay: 1.2s;
+        -webkit-transition-delay: 1.2s;
+             -o-transition-delay: 1.2s;
+                transition-delay: 1.2s;
     }
 
     .animate_up8{
-        transition-delay: 1.4s;
+        -webkit-transition-delay: 1.4s;
+             -o-transition-delay: 1.4s;
+                transition-delay: 1.4s;
     }
 
     .animate_up9{
-        transition-delay: 1.6s;
+        -webkit-transition-delay: 1.6s;
+             -o-transition-delay: 1.6s;
+                transition-delay: 1.6s;
     }
 
     .buildings{
@@ -108,7 +143,8 @@
         width:100%;
         bottom:0px;
         left:0px;
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
         padding-left:16px;
     }
 

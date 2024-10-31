@@ -56,7 +56,14 @@
 
 <style>
 
-    #contact{
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+#contact{
         background:var(--blue);
         position:relative;
         min-width:300px;
@@ -106,9 +113,15 @@
                 border-radius:13px;
                 width:50%;
                 padding:7px 0px;
+                display:-webkit-box;
+                display:-ms-flexbox;
                 display:flex;
-                justify-content: center;
-                align-items: center;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
                 font-size:1.5rem;
                 font-weight:600;
                 margin-bottom:15px;
@@ -190,9 +203,15 @@
     }
 
     .infos_div{
+        display:-webkit-box;
+        display:-ms-flexbox;
         display:flex;
-        justify-content: space-between;
-        align-items: start;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: start;
         margin-bottom:40px;
     }
 
@@ -251,8 +270,12 @@
     }
 
     .contact_toper{
+        display:-webkit-box;
+        display:-ms-flexbox;
         display:flex;
-        justify-content: space-between;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
     }
 
 

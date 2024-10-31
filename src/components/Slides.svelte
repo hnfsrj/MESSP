@@ -397,17 +397,30 @@
 
 <style>
 
-    .slides{
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.slides{
         width:100%;
         height: 430px;
         position:relative;
         z-index:1;
+        display:-webkit-box;
+        display:-ms-flexbox;
         display:flex;
-        flex-wrap:nowrap;
-        align-items: center;
+        -ms-flex-wrap:nowrap;
+            flex-wrap:nowrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         overflow-x:scroll;
         overflow-y:hidden;
-        scroll-snap-type:x mandatory;
+        -ms-scroll-snap-type:x mandatory;
+            scroll-snap-type:x mandatory;
         scroll-behavior: smooth;
         margin-bottom:100px;
         gap:10px;
@@ -417,10 +430,13 @@
     }
 
         .cat{
-            flex-shrink: 0;
+            -ms-flex-negative: 0;
+                flex-shrink: 0;
             width:100%;
             scroll-snap-align: center;
-            flex: 0 0 auto;
+            -webkit-box-flex: 0;
+                -ms-flex: 0 0 auto;
+                    flex: 0 0 auto;
             height:100%;
         }
 
@@ -428,12 +444,15 @@
                 position:relative;
                 width:100%;
                 min-height:100%;
-                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                        box-sizing: border-box;
                 padding:20px 15px;
                 background:rgba(255,255,255,0.7);
                 border-radius:10px;
-                backdrop-filter: blur(6px);
-                box-shadow: 0px 5px 3px 3px rgba(0,0,0,0.25);
+                -webkit-backdrop-filter: blur(6px);
+                        backdrop-filter: blur(6px);
+                -webkit-box-shadow: 0px 5px 3px 3px rgba(0,0,0,0.25);
+                        box-shadow: 0px 5px 3px 3px rgba(0,0,0,0.25);
             }
 
                 .slide>p:first-of-type{
@@ -453,9 +472,15 @@
                     bottom:0px;
                     right:0px;
                     padding:20px 15px;
+                    display:-webkit-box;
+                    display:-ms-flexbox;
                     display:flex;
-                    justify-content: end;
-                    align-items:center;
+                    -webkit-box-pack: end;
+                        -ms-flex-pack: end;
+                            justify-content: end;
+                    -webkit-box-align:center;
+                        -ms-flex-align:center;
+                            align-items:center;
                     gap:5px;
 
                 }
@@ -492,7 +517,9 @@
 
 
             .slide2>div>img{
-                transform:rotate(180deg);
+                -webkit-transform:rotate(180deg);
+                    -ms-transform:rotate(180deg);
+                        transform:rotate(180deg);
             }
 
 
@@ -576,7 +603,9 @@
     .slides{
         width:100%;
         height:420px;
-        transform:translate(0px, 30px);
+        -webkit-transform:translate(0px, 30px);
+            -ms-transform:translate(0px, 30px);
+                transform:translate(0px, 30px);
         margin:0px;
     }
 

@@ -151,12 +151,25 @@
 
 <style>
 
-    .effect_down{
-        transform: translate(0px, -50px);
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.effect_down{
+        -webkit-transform: translate(0px, -50px);
+            -ms-transform: translate(0px, -50px);
+                transform: translate(0px, -50px);
     }
 
     .animate_down{
+        -webkit-transition: -webkit-transform 1.5s;
+        transition: -webkit-transform 1.5s;
+        -o-transition: transform 1.5s;
         transition: transform 1.5s;
+        transition: transform 1.5s, -webkit-transform 1.5s;
     }
 
     nav{
@@ -164,28 +177,48 @@
         top:0px;
         left:0px;
         width:100%;
-        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
         background:var(--translucent_lime);
-        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+                backdrop-filter: blur(5px);
         z-index:2;
     }
 
     
     nav.wide{
+        display:-webkit-box;
+        display:-ms-flexbox;
         display:flex;
-        justify-content: space-between;
-        align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }  
 
         nav.wide .bottom{
+            display:-webkit-box;
+            display:-ms-flexbox;
             display:flex;
-            flex-direction: row;
-            flex-wrap:nowrap;
-            justify-content: space-between;
-            align-items: center;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
+            -ms-flex-wrap:nowrap;
+                flex-wrap:nowrap;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
             background: none;
-            box-shadow: none;
-            backdrop-filter:blur(0px);
+            -webkit-box-shadow: none;
+                    box-shadow: none;
+            -webkit-backdrop-filter:blur(0px);
+                    backdrop-filter:blur(0px);
             padding:0px;
             gap:0px;
         }
@@ -216,7 +249,8 @@
 
 
     nav.fixation{
-        box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.4);
+        -webkit-box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.4);
+                box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.4);
     }
 
         nav.fixation .top{
@@ -233,9 +267,15 @@
 
     
         .top{
+            display:-webkit-box;
+            display:-ms-flexbox;
             display:flex;
-            justify-content: space-between;
-            align-items: end;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            -webkit-box-align: end;
+                -ms-flex-align: end;
+                    align-items: end;
             padding:10px 16px;
         }
 
@@ -276,14 +316,22 @@
             }
 
         .bottom{
+            display:-webkit-box;
+            display:-ms-flexbox;
             display:flex;
-            flex-wrap:wrap;
-            flex-direction:column;
+            -ms-flex-wrap:wrap;
+                flex-wrap:wrap;
+            -webkit-box-orient:vertical;
+            -webkit-box-direction:normal;
+                -ms-flex-direction:column;
+                    flex-direction:column;
             gap:0px;
             padding:15px 16px;
             background:rgba(255,255,255,0.75);
-            backdrop-filter: blur(5px);
-            box-shadow: 0px 4px 9.5px 0px rgba(0,0,0,0.25);
+            -webkit-backdrop-filter: blur(5px);
+                    backdrop-filter: blur(5px);
+            -webkit-box-shadow: 0px 4px 9.5px 0px rgba(0,0,0,0.25);
+                    box-shadow: 0px 4px 9.5px 0px rgba(0,0,0,0.25);
         }
 
 
@@ -360,7 +408,9 @@
         position:absolute;
         top:52%;
         left:50%;
-        transform:translate(-50%,-50%);
+        -webkit-transform:translate(-50%,-50%);
+            -ms-transform:translate(-50%,-50%);
+                transform:translate(-50%,-50%);
     }
 
     nav.wide>div.bottom p{

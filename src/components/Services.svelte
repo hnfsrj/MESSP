@@ -35,14 +35,28 @@
 
 <style>
 
-    #services{
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+#services{
         position:relative;
     }
 
     .services_container{
+        display:-webkit-box;
+        display:-ms-flexbox;
         display:flex;
-        flex-direction:column;
-        justify-content: center;
+        -webkit-box-orient:vertical;
+        -webkit-box-direction:normal;
+            -ms-flex-direction:column;
+                flex-direction:column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
         .top{
@@ -113,8 +127,13 @@
 
 
     .services_container{
-        flex-direction: row;
-        justify-content: space-between;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
         margin-bottom:10%;
     }
 
@@ -125,9 +144,15 @@
 
     .bottom{
         width:55%;
+        display:-webkit-box;
+        display:-ms-flexbox;
         display:flex;
-        justify-content: end;
-        align-items: center;
+        -webkit-box-pack: end;
+            -ms-flex-pack: end;
+                justify-content: end;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         margin:0px;
     }
 

@@ -70,25 +70,41 @@
 
 <style>
 
-    .pictures{
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.pictures{
         width:90%;
         position:absolute;
         bottom:0px;
         right:0px;
+        display:-webkit-box;
+        display:-ms-flexbox;
         display:flex;
-        flex-wrap:nowrap;
-        align-items: center;
+        -ms-flex-wrap:nowrap;
+            flex-wrap:nowrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         overflow:hidden;
-        scroll-snap-type:x mandatory;
+        -ms-scroll-snap-type:x mandatory;
+            scroll-snap-type:x mandatory;
         scroll-behavior: smooth;
         gap:10px;
     }
 
         .pic{
             width:100%;
-            flex-shrink: 0;
+            -ms-flex-negative: 0;
+                flex-shrink: 0;
             scroll-snap-align: none;
-            flex: 0 0 auto;
+            -webkit-box-flex: 0;
+                -ms-flex: 0 0 auto;
+                    flex: 0 0 auto;
         }
 
 
