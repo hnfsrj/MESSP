@@ -19,10 +19,10 @@
 
     <form action="https://formsubmit.co/contact@adamantengineering.com" method="POST">
 
-        <input type="text" placeholder="Name" required />
-        <input type="email" placeholder="Email" required />
-        <input type="text" placeholder="Subject" required />
-        <textarea placeholder="Message" required></textarea>
+        <input type="text" placeholder="Name" name="Name" required />
+        <input type="email" placeholder="Email" name="Email" required />
+        <input type="text" placeholder="Subject" name="Subject" required />
+        <textarea placeholder="Message" name="Message" required></textarea>
 
         <input class="effect_wide animate_wide" type="submit" value="Submit" />
     </form>
