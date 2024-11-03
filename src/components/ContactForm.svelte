@@ -17,7 +17,7 @@
 
     <p>Get in Touch</p>
 
-    <form>
+    <form action="https://formsubmit.co/contact@adamantengineering.com" method="POST">
 
         <input type="text" placeholder="Name"/>
         <input type="email" placeholder="Email"/>
