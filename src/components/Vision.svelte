@@ -72,65 +72,34 @@
 
 <style>
 
-    /*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-img.effect_open{
-        -webkit-transform:scale(0.1);
-            -ms-transform:scale(0.1);
-                transform:scale(0.1);
+    img.effect_open{
+        transform:scale(0.1);
     }
 
     img.animate_open{
-        -webkit-transition: -webkit-transform 1.5s;
-        transition: -webkit-transform 1.5s;
-        -o-transition: transform 1.5s;
         transition: transform 1.5s;
-        transition: transform 1.5s, -webkit-transform 1.5s;
     }
 
 
     .effect_rotate{
-        -webkit-transform: rotate(270deg);
-            -ms-transform: rotate(270deg);
-                transform: rotate(270deg);
+        transform: rotate(270deg);
     }
 
     .animate_rotate{
-        -webkit-transition: -webkit-transform 2s;
-        transition: -webkit-transform 2s;
-        -o-transition: transform 2s;
         transition: transform 2s;
-        transition: transform 2s, -webkit-transform 2s;
     }
 
     .effect_up{
-        -webkit-transform:translate(0px, 50px);
-            -ms-transform:translate(0px, 50px);
-                transform:translate(0px, 50px);
+        transform:translate(0px, 50px);
     }
 
     .animate_up1{
-        -webkit-transition: -webkit-transform 1s;
-        transition: -webkit-transform 1s;
-        -o-transition: transform 1s;
         transition: transform 1s;
-        transition: transform 1s, -webkit-transform 1s;
     }
     
     .animate_up2{
-        -webkit-transition: -webkit-transform 1s;
-        transition: -webkit-transform 1s;
-        -o-transition: transform 1s;
         transition: transform 1s;
-        transition: transform 1s, -webkit-transform 1s;
-        -webkit-transition-delay: 0.5s;
-             -o-transition-delay: 0.5s;
-                transition-delay: 0.5s;
+        transition-delay: 0.5s;
     }
 
     #vision{
@@ -143,25 +112,17 @@ img.effect_open{
     }
 
         .block>div{
-            display:-webkit-box;
-            display:-ms-flexbox;
             display:flex;
-            -webkit-box-pack: start;
-                -ms-flex-pack: start;
-                    justify-content: start;
+            justify-content: start;
             gap:10px;
         }
 
         .block:first-of-type > div{
-            -webkit-box-align: end;
-                -ms-flex-align: end;
-                    align-items: end;
+            align-items: end;
         }
         
         .block:last-of-type > div{
-            -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center;
+            align-items: center;
         }
 
             .eye_image{
@@ -254,9 +215,7 @@ img.effect_open{
 
     .eye_image{
         width:11%;
-        -webkit-transform:translate(0px, -3px);
-            -ms-transform:translate(0px, -3px);
-                transform:translate(0px, -3px);
+        transform:translate(0px, -3px);
     }
     
     .gear_image{
@@ -313,14 +272,8 @@ img.effect_open{
     }
 
     .vision_block_container{
-        display:-webkit-box;
-        display:-ms-flexbox;
         display:flex;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between;
-        height:-webkit-fit-content;
-        height:-moz-fit-content;
+        justify-content: space-between;
         height:fit-content;
     }
 
@@ -334,9 +287,7 @@ img.effect_open{
         }
     
     #vision div.block:first-of-type > div{
-        -webkit-transform:translate(0px,-5px);
-            -ms-transform:translate(0px,-5px);
-                transform:translate(0px,-5px);
+        transform:translate(0px,-5px);
     }
     
 
@@ -364,26 +315,20 @@ img.effect_open{
 
 @media (min-width:1101px){
     #vision div.block:first-of-type > div{
-        -webkit-transform:translate(0px,-8px);
-            -ms-transform:translate(0px,-8px);
-                transform:translate(0px,-8px);
+        transform:translate(0px,-8px);
     }
 }
 
 @media (min-width:1101px){
     #vision div.block:first-of-type > div{
-        -webkit-transform:translate(0px,-12px);
-            -ms-transform:translate(0px,-12px);
-                transform:translate(0px,-12px);
+        transform:translate(0px,-12px);
     }
 }
 
 @media (min-width:1190px){
     
     .eye_image{
-        -webkit-transform:translate(0px, -2px);
-            -ms-transform:translate(0px, -2px);
-                transform:translate(0px, -2px);
+        transform:translate(0px, -2px);
     }
 
     .gear_image{

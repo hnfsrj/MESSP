@@ -136,25 +136,12 @@
 <style>
 
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-.effect_shrink{
-        -webkit-transform: scale(0.1);
-            -ms-transform: scale(0.1);
-                transform: scale(0.1);
+    .effect_shrink{
+        transform: scale(0.1);
     }
 
     .animate_shrink{
-        -webkit-transition: -webkit-transform 1.5s;
-        transition: -webkit-transform 1.5s;
-        -o-transition: transform 1.5s;
         transition: transform 1.5s;
-        transition: transform 1.5s, -webkit-transform 1.5s;
     }
 
 
@@ -169,8 +156,7 @@
         aspect-ratio: 1/1;
         background:var(--green);
         opacity: 80%;
-        -webkit-filter:blur(40px);
-                filter:blur(40px);
+        filter:blur(40px);
         margin:0 auto;
     }
 
@@ -179,9 +165,7 @@
         position:absolute;
         left:50%;
         top:50%;
-        -webkit-transform:translate(-50%,-50%);
-            -ms-transform:translate(-50%,-50%);
-                transform:translate(-50%,-50%);
+        transform:translate(-50%,-50%);
     }
 
     /* canvas{ */

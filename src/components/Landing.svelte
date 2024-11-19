@@ -47,27 +47,13 @@
 
 <style>
     
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-.effect_blur{
-        -webkit-filter: blur(20px);
-                filter: blur(20px);
-        -webkit-transform: scale(2);
-            -ms-transform: scale(2);
-                transform: scale(2);
+    .effect_blur{
+        filter: blur(20px);
+        transform: scale(2);
     }
 
     .animate_blur{
-        -webkit-transition: -webkit-filter 1s, -webkit-transform 1.5s;
-        transition: -webkit-filter 1s, -webkit-transform 1.5s;
-        -o-transition: filter 1s, transform 1.5s;
         transition: filter 1s, transform 1.5s;
-        transition: filter 1s, transform 1.5s, -webkit-filter 1s, -webkit-transform 1.5s;
     }
 
 

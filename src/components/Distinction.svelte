@@ -71,25 +71,12 @@
 
 <style>
 
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-.effect_shrink{
-        -webkit-transform: scale(0.1);
-            -ms-transform: scale(0.1);
-                transform: scale(0.1);
+    .effect_shrink{
+        transform: scale(0.1);
     }
 
     .animate_shrink{
-        -webkit-transition: -webkit-transform 0.5s;
-        transition: -webkit-transform 0.5s;
-        -o-transition: transform 0.5s;
         transition: transform 0.5s;
-        transition: transform 0.5s, -webkit-transform 0.5s;
     }
 
 
@@ -108,29 +95,18 @@
 
         .difference_container{
             width:100%;
-            display:-webkit-box;
-            display:-ms-flexbox;
             display:flex;
-            -webkit-box-orient:vertical;
-            -webkit-box-direction:normal;
-                -ms-flex-direction:column;
-                    flex-direction:column;
-            -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                    justify-content: center;
-            -webkit-box-align: center;
-                -ms-flex-align: center;
-                    align-items: center;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
             gap:25px;
         }
 
             .difference{
                 background:var(--blue);
                 border-radius:15px;
-                -webkit-box-shadow: -3px 3px  3px 1px rgba(0,0,0,0.4);
-                        box-shadow: -3px 3px  3px 1px rgba(0,0,0,0.4);
-                -webkit-box-sizing: border-box;
-                        box-sizing: border-box;
+                box-shadow: -3px 3px  3px 1px rgba(0,0,0,0.4);
+                box-sizing: border-box;
                 padding:20px 15px;
                 height:200px;
 
@@ -170,8 +146,7 @@
     }
 
     .difference_container{
-        -webkit-box-sizing: border-box;
-                box-sizing: border-box;
+        box-sizing: border-box;
         padding:0px 10px;
         gap:30px;
     }
@@ -210,12 +185,8 @@
 
 
     .difference_container{
-        -webkit-box-orient:horizontal;
-        -webkit-box-direction:normal;
-            -ms-flex-direction:row;
-                flex-direction:row;
-        -ms-flex-wrap:wrap;
-            flex-wrap:wrap;
+        flex-direction:row;
+        flex-wrap:wrap;
     }
 
     .difference{
