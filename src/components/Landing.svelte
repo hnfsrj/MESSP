@@ -5,7 +5,6 @@
 
     import {NavStore} from '../store/Store';
     import ServicesButton from './ServicesButton.svelte';
-    import ThirdDimension from './ThirdDimension.svelte';
 
 
 
@@ -41,7 +40,6 @@
         <ServicesButton margined=true />
     {/if}
 
-    <ThirdDimension />
 </section>
 </div>
 

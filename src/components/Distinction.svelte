@@ -9,7 +9,7 @@
 
 
     onMount(()=>{
-        let elements = [...document.querySelectorAll('.difference')];
+        let elements = [...document.querySelectorAll('.difference_content')];
 
         observeElements(elements);
 
@@ -21,48 +21,90 @@
 <div class="blocker">
 <section id="distinction">
 
-    <p>What Makes Us Different</p>
+    <p>Services</p>
 
     <div class="difference_container">
         
-        
-        
-        <div class="effect_shrink animate_shrink difference">
-            <p>INNOVATION</p>
-            
-            <p>We push boundaries with advanced technology, delivering cutting-edge solutions tailored to local needs.</p>
-        </div>
-        
-        <div class="effect_shrink animate_shrink difference">
-            <p>RESEARCH</p>
-            
-            <p>We drive discovery through rigorous exploration and analysis, developing evidence-based solutions tailored to address complex local challenges.</p>
-        </div>
-        
-        <div class="effect_shrink animate_shrink difference">
-            <p>TECHNOLOGY</p>
-            
-            <p>We leverage the latest global advancements and bring them to East Africa, ensuring that our clients benefit from top-tier engineering and production capabilities.</p>
-        </div>
-        
-        <div class="effect_shrink animate_shrink difference">
-            <p>TRAINING AND GROWTH</p>
+        <a href="#">
+            <div class="effect_shrink animate_shrink difference_content">
 
-            <p>We focus on building local talent by sharing knowledge and providing hands-on training to strengthen our workforce.</p>
+                <div class="difference_pic"></div>
+
+                <p>Air-Condition Trading</p>
+
+            </div>
+        </a>
+
+        <a href="#">
+        <div class="effect_shrink animate_shrink difference_content">
+
+            <div class="difference_pic"></div>
+
+            <p>Pumps, Valves & Engines</p>
+
         </div>
+        </a>
+
+        <a href="#">
+        <div class="effect_shrink animate_shrink difference_content">
+
+            <div class="difference_pic"></div>
+
+            <p>Lifts & Escalators</p>
+ 
+        </div>
+        </a>
+
+        <a href="#">
+        <div class="effect_shrink animate_shrink difference_content">
+
+            <div class="difference_pic"></div>
+
+            <p>Solar Systems & Components</p>
+
+        </div>
+        </a>
         
-        <div class="effect_shrink animate_shrink difference">
-            <p>COMMUNITY ENGAGEMENT</p>
-            
-            <p>We create job opportunities and support local industries, giving back to the community.</p>
+        <a href="#">
+        <div class="effect_shrink animate_shrink difference_content">
+
+            <div class="difference_pic"></div>
+
+            <p>Power Equipment & Distribution</p>
+                
         </div>
-        
-        <div class="effect_shrink animate_shrink difference">
-            <p>AFFORDABLE AND CLEAR ENERGY SOLUTIONS</p>
-            
-            <p>Our energy solutions are cost-effective and clear, making sustainability accessible to all.</p>
+        </a>
+
+        <a href="#">
+        <div class="effect_shrink animate_shrink difference_content">
+
+            <div class="difference_pic"></div>
+
+            <p>Handling & Lifting Equipment</p>
             
         </div>
+        </a>
+
+        <a href="#">
+        <div class="effect_shrink animate_shrink difference_content">
+
+            <div class="difference_pic"></div>
+
+            <p>Industrial Equipment & Spare Parts</p>
+            
+        </div>
+        </a>
+
+        <a href="#">
+        <div class="effect_shrink animate_shrink difference_content">
+
+            <div class="difference_pic"></div>
+
+            <p>Refrigeration & Cold Storage</p>
+            
+        </div>
+        </a>
+
     </div>
     
     
@@ -102,31 +144,33 @@
             gap:25px;
         }
 
-            .difference{
-                background:var(--blue);
-                border-radius:15px;
-                box-shadow: -3px 3px  3px 1px rgba(0,0,0,0.4);
-                box-sizing: border-box;
-                padding:20px 15px;
-                height:200px;
+        a{
+            width:100%;
+            text-decoration: none;
+            color:inherit;
+        }
 
+        .difference_content{
+            box-sizing: border-box;
+            width:100%;
+        }
+
+            .difference_pic{
+                width:100%;
+                aspect-ratio: 16/9;
+                background:silver;
+                margin-bottom:10px;
             }
 
-                .difference > p:first-child{
-                    color:var(--green);
-                    text-align:center;
-                    font-size:1.7rem;
-                    font-weight:600;
-                    margin-bottom:15px;
-                }
 
-                .difference > p:last-child{
-                    color:white;
-                    text-align:start;
-                    font-size:1.5rem;
-                    font-weight:500;
-                    line-height:22px;
-                }
+            .difference_content > p{
+                color:var(--green);
+                text-align:center;
+                font-size:1.7rem;
+                font-weight:600;
+                margin-bottom:15px;
+            }
+
 
 
 
@@ -151,34 +195,15 @@
         gap:30px;
     }
 
-    .difference{
-        padding:40px 25px;
-        height:225px;
-    }
 
-    .difference > p:first-child{
+    .difference_content > p{
         font-size:2.3rem;
         margin-bottom:20px;
     }
 
-    .difference > p:last-child{
-        font-size:1.8rem;
-        font-weight:400;
-    }
-
 }
 
 
-
-@media (min-width:501px){
-
-    
-    .difference{
-        width:80%;
-    }
-    
-    
-}
 
 
 @media (min-width:601px){
@@ -189,54 +214,19 @@
         flex-wrap:wrap;
     }
 
-    .difference{
-        width:45%;
-        height:310px;
-    }
-
 
 }
 
 
 @media (min-width:701px){
 
-    .difference{
-        width:45%;
-        height:250px;
-    }
-
-    .difference > p:first-child{
+    .difference_content > p{
         font-size:2rem;
         margin-bottom:20px;
     }
 
-    .difference > p:last-child{
-        font-size:1.8rem;
-        font-weight:350;
-    }
 
     
-}
-
-
-
-@media (min-width:901px){
-
-    .difference{
-        width:30%;
-        height:300px;
-    }
-
-}
-
-
-@media (min-width:1001px){
-
-    .difference{
-        width:25%;
-        height:280px;
-    }
-
 }
 
 

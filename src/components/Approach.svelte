@@ -21,7 +21,13 @@
 <div class="blocker">
 <section id="approach">
 
-    <p>Adamant's Way</p>
+    <p>Team</p>
+
+    <p class="team_writing">
+        The foundation of MESSP’s success lies in our dedicated team of seasoned professionals and experienced management, boasting over 25 years of expertise in the electromechanical industry. Complemented by a team of highly skilled and self-driven technical staff, we bring unparalleled value to our clients.
+        <br/><br/>
+        At MESSP, our team is more than just a group of individuals; it is a community of passionate, honest, and solution-oriented experts. We believe that extraordinary results emerge when people work collaboratively with tenacity and a shared commitment to tackling the most complex challenges.
+    </p>
 
     <div class="ways_container">
         <div class="effect_right animate_right way">
@@ -29,9 +35,9 @@
             <img src="images/knowledge.svg" />
 
             <div class="way_text">
-                <p>Knowledge Transfer</p>
+                <p>Electrical Engineers</p>
 
-                <p>We believe in sharing knowledge and building skills. Adamant Engineering brings expertise from abroad to Ethiopia, driving innovation and helping our local workforce grow stronger.</p>
+                <p>Designing and implementing innovative electrical systems, ensuring efficiency, reliability, and adherence to safety standards.</p>
             </div>
 
         </div>
@@ -41,9 +47,9 @@
             <img src="images/client.svg" />
 
             <div class="way_text">
-                <p>Client Collaboration</p>
+                <p>Mechanical Engineers</p>
 
-                <p>We work closely with our clients, helping them set up branches and expand their reach. Together, we grow and succeed, creating lasting partnerships.</p>
+                <p>Developing and maintaining mechanical systems, focusing on precision, durability, and seamless functionality for diverse applications.</p>
             </div>
 
         </div>
@@ -54,12 +60,27 @@
             <img src="images/future.svg" />
 
             <div class="way_text">
-                <p>Future Outlook</p>
+                <p>Technicians</p>
 
-                <p>Looking ahead, Adamant Engineering is committed to pushing innovation, increasing collaboration, and supporting Ethiopia’s journey toward sustainable development.</p>
+                <p>Providing hands-on expertise in installation, troubleshooting, and maintenance to keep systems running smoothly and effectively.</p>
             </div>
 
         </div>  
+
+
+        <div class="effect_right animate_right way">
+
+            <img src="images/future.svg" />
+
+            <div class="way_text">
+                <p>Administration Staffs</p>
+
+                <p>Managing operations, logistics, and client relations to ensure seamless service delivery and organizational efficiency.</p>
+            </div>
+
+        </div>  
+
+        
     </div>
 
 
@@ -84,6 +105,15 @@
             font-weight:700;
             color:var(--blue);
             margin-bottom:40px;
+        }
+
+        #approach > .team_writing{
+            color:black;
+            margin-top:10%;
+            margin-bottom:80px;
+            font-size:1.7rem;
+            font-weight:400;
+            text-align:start;
         }
 
         .ways_container{

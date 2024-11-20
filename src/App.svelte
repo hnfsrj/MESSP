@@ -9,9 +9,9 @@
 	import Nav from './components/Nav.svelte';
 	import Landing from './components/Landing.svelte';
 	import About from './components/About.svelte';
-	import Vision from './components/Vision.svelte';
-	import Services from './components/Services.svelte';
 	import Distinction from './components/Distinction.svelte';
+	import Vision from './components/Vision.svelte';
+	import Credibility from './components/Credibility.svelte';
 	import Approach from './components/Approach.svelte';
 	import Contact from './components/Contact.svelte';
 
@@ -153,9 +153,9 @@
 	<Nav/>
 	<Landing/>
 	<About/>
-	<Vision/>
-	<Services/>
 	<Distinction/>
+	<Vision/>
+	<Credibility/>
 	<Approach/>
 	<Contact/>
 </div>

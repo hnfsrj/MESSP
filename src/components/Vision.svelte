@@ -41,9 +41,9 @@
                 <p>Vision</p>
             </div>
 
-            <p class="effect_up animate_up1">Engineering the Future, Globally <br/>and Locally</p>
+            <p class="effect_up animate_up1">Becoming the Preferred Electro  <br/>mechanical Partner</p>
 
-            <p class="effect_up animate_up2">We envision a world where cutting-edge engineering solutions drive progress, transforming both global and local communities. Our goal is to lead the charge in innovation, providing sustainable, high-quality systems that meet the evolving needs of industries and individuals worldwide. By merging global expertise with a local focus, we ensure that our solutions are not only impactful but also tailored to enhance the specific environments and communities we serve. Through our work, we aspire to shape a smarter, more efficient, and technologically advanced future.</p>
+            <p class="effect_up animate_up2">Our vision is to establish ourselves as the go-to electromechanical solutions provider across the Middle East and East African regions. We aim to be recognized not only for our technical expertise but also for our unwavering commitment to delivering lasting solutions tailored to the unique needs of our clients. By prioritizing the quality of materials, the reliability of services, and the satisfaction of our clients, we aspire to set new benchmarks in the electromechanical industry.</p>
             
         </div>
 
@@ -59,9 +59,9 @@
                 <p>Mission</p>
             </div>
 
-            <p class="effect_up animate_up1">Committed to Delivering Premium <br/>Engineering Solutions</p>
+            <p class="effect_up animate_up1">Delivering Genuine Materials and  <br/>Professional Services with Excellence</p>
 
-            <p class="effect_up animate_up2">Our mission is to consistently deliver top-tier engineering solutions that exceed expectations. We are dedicated to excellence in every aspect of our work, from design and installation to maintenance and long-term support. Through our commitment to quality, innovation, and precision, we provide solutions that are both functional and sustainable, improving the lives of our clients and the communities they operate in. Our expertise across diverse sectors enables us to offer customized, premium engineering services, always aiming for the highest standards of safety, efficiency, and client satisfaction.</p>
+            <p class="effect_up animate_up2">Our mission is to supply authentic materials and advanced machinery while providing highly standardized and professional services that exceed customer expectations. We are committed to meeting our clients' needs with precision, reliability, and a focus on timeliness, ensuring their success in every project. By adhering to the highest standards of quality and service delivery, we strive to build trust and long-term partnerships that drive mutual growth and satisfaction.</p>
             
         </div>
     

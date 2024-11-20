@@ -112,11 +112,7 @@
 
     <div class="top">
 
-        {#if fix}
-            <p class="name">adamant<span>.</span></p>
-        {:else}
-            <div class="logo img"></div>
-        {/if}
+        <p class="name">MESSP</p>
 
         {#if !wide}
             {#if drop}
@@ -132,10 +128,10 @@
         <div class="bottom">
             
             <p>About</p>
-            <p>Vision</p>
             <p>Services</p>
-            <p>Distinction</p>
-            <p>Approach</p>
+            <p>Vision</p>
+            <p>Credibility</p>
+            <p>Team</p>
             <p>Contact</p>
             
         </div>
@@ -237,18 +233,13 @@
             justify-content: space-between;
             align-items: end;
             padding:10px 16px;
+            height:30px;
         }
 
 
-            .logo{
-                width:30px;
-                aspect-ratio: 1/1;
-                background-image:url("images/logo.svg");
-            }
-
 
             .name{
-                color:white;
+                color:var(--metal);
                 font-size:2rem;
                 font-weight:500;
             }
@@ -257,10 +248,6 @@
                     cursor:pointer;
                 }
 
-            .name>span{
-                font-size:2rem;
-                color:var(--green);
-            }
 
 
             .menu{

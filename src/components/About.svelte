@@ -1,22 +1,18 @@
 
 <script>
 
-    import Buildings from './Buildings.svelte';
-
-
 </script>
 
 <div class="blocker">
 <section id="about">
-    <p>Who We Are</p>
+    <p>Background</p>
 
     <p>
-        Adamant Engineering is a new chapter in our journey, launched in 2022 with a focus on self-reliance and local production. As part of Adamant Holding, we build on years of experience in global trade and industry, but this venture is different. It’s about bringing innovation to East Africa and reducing the need for imports by growing what we can produce here at home.
+        MESSP ELELECTRO MECHANICAL LLC is a sister company of Netgear Industrial Solutions PLC a company established before 10 years to provide industrial solutions for various manufacturing industries in Ethiopia.  We have been in the industry for more than a decade and with an exceptional industry knowledge, stock of various materials and quality service, we are proud to say we are preferred technical contractors for the major food and beverage industries in Ethiopia. 
         <br/><br/>
-        Led by Mr. Ketema, our team is committed to changing how we view engineering and production. We’re not just creating systems; we’re shaping a future where East African industries stand strong, backed by the latest technology and international partnerships. Adamant Engineering isn’t just a business—it’s a mission to strengthen local manufacturing, push boundaries, and lead the way in building sustainable solutions for our economy.
+        Service is our main priority to our clients from different part of the world.  We are specialized in providing our customers maintenance in their food and beverage lines, supply generators, complete energy solutions, transformers, heat and cooling systems, complete turnkey projects, commissioning and  many more. 
     </p>
 
-    <Buildings />
 </section>
 </div>
 
