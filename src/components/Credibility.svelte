@@ -12,35 +12,142 @@
 
     <div class="trusts_container">
 
-        <div class="trust">
+        <div class="trusted">
 
-            <div class="trust_pic"></div>
-            <p class="trust_p">
-                Coca Cola
-            </p>
+            <div class="trust">
+
+                <div class="trust_pic"></div>
+                <p class="trust_p">
+                    Coca Cola
+                </p>
+
+            </div>
+
+            <div class="trust">
+
+                <div class="trust_pic"></div>
+                <p class="trust_p">
+                    Maaza International
+                </p>
+
+            </div>
+
+            <div class="trust">
+
+                <div class="trust_pic"></div>
+                <p class="trust_p">
+                    BGI Ethiopia
+                </p>
+
+            </div>
+
+            <div class="trust">
+
+                <div class="trust_pic"></div>
+                <p class="trust_p">
+                    Zebidar Brewery
+                </p>
+
+            </div>
+
+            <div class="trust">
+
+                <div class="trust_pic"></div>
+                <p class="trust_p">
+                    Dashen Brewery
+                </p>
+
+            </div>
+
+
+            <div class="trust">
+
+                <div class="trust_pic"></div>
+                <p class="trust_p">
+                    Awash Winery
+                </p>
+
+            </div>
+            
+            <div class="trust">
+
+                <div class="trust_pic"></div>
+                <p class="trust_p">
+                    Ambo Mineral Water
+                </p>
+
+            </div>
 
         </div>
 
-        <div class="trust">
 
-            <div class="trust_pic"></div>
-            <p class="trust_p">
-                Maaza
-            </p>
+        <div class="trusted">
+
+            <div class="trust">
+
+                <div class="trust_pic"></div>
+                <p class="trust_p">
+                    Coca Cola
+                </p>
+
+            </div>
+
+            <div class="trust">
+
+                <div class="trust_pic"></div>
+                <p class="trust_p">
+                    Maaza International
+                </p>
+
+            </div>
+
+            <div class="trust">
+
+                <div class="trust_pic"></div>
+                <p class="trust_p">
+                    BGI Ethiopia
+                </p>
+
+            </div>
+
+            <div class="trust">
+
+                <div class="trust_pic"></div>
+                <p class="trust_p">
+                    Zebidar Brewery
+                </p>
+
+            </div>
+
+            <div class="trust">
+
+                <div class="trust_pic"></div>
+                <p class="trust_p">
+                    Dashen Brewery
+                </p>
+
+            </div>
+
+
+            <div class="trust">
+
+                <div class="trust_pic"></div>
+                <p class="trust_p">
+                    Awash Winery
+                </p>
+
+            </div>
+            
+            <div class="trust">
+
+                <div class="trust_pic"></div>
+                <p class="trust_p">
+                    Ambo Mineral Water
+                </p>
+
+            </div>
 
         </div>
-
-
-        <div class="trust">
-
-            <div class="trust_pic"></div>
-            <p class="trust_p">
-                BGI Ethiopia
-            </p>
-
-        </div>
-
-
 
     </div>
 
@@ -64,11 +171,29 @@
     }
 
     .trusts_container{
+        overflow:scroll;
         display:flex;
         flex-wrap:nowrap;
-        align-items:center;
-        justify-content: center;
+    }
 
+
+    .trusted{
+        display:flex;
+        flex-wrap:nowrap;
+        align-items:start;
+        justify-content: start;
+        width:fit-content;
+        animation: 5s slide infinite linear;
+    }
+
+    @keyframes slide{
+        from{
+            transform:translateX(0);
+        }
+
+        to{
+            transform:translateX(-100%);
+        }
     }
 
         .trust{
@@ -76,12 +201,10 @@
             flex-direction: column;
             justify-content: start;
             align-items: center;
-
+            height:100%;
+            margin:0px 15px;
         }
 
-            .trust:not(.trust:last-of-type){
-                margin-right:30px;
-            }
 
             .trust_pic{
                 background:silver;
