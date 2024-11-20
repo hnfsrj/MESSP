@@ -53,7 +53,7 @@
 
 <div class:margined = {margined} class:unmargined = {!margined}>
 
-    <button class = "effect_blur animation_blur">Services</button>
+    <button class = "effect_blur animation_blur">Our Services</button>
     
 </div>
 
@@ -62,7 +62,7 @@
 
     div{
         display:flex;
-        justify-content: center;
+        justify-content: start;
     }
 
         div.margined{

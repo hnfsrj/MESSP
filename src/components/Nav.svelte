@@ -3,7 +3,7 @@
     import { getContext, onMount, onDestroy } from "svelte";
 
     import {NavStore} from '../store/Store';
-    import ServicesButton from "./ServicesButton.svelte";
+    // import ServicesButton from "./ServicesButton.svelte";
 
 
     $: fix = $NavStore.fix;
@@ -138,9 +138,9 @@
     {/if}
 
 
-    {#if wide}
+    <!-- {#if wide}
         <ServicesButton />
-    {/if}
+    {/if} -->
 
 </nav>
 

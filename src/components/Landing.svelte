@@ -5,6 +5,7 @@
 
     import {NavStore} from '../store/Store';
     import ServicesButton from './ServicesButton.svelte';
+    import Grid from './Grid.svelte';
 
 
 
@@ -32,14 +33,14 @@
 
 <div class="blocker">
 <section id="landing">
-    <p class="effect_blur animate_blur">Adamant <br/>Engineering</p>
+    <p class="effect_blur animate_blur">Electro-Mechanical<br/>LLC</p>
 
-    <p class="effect_blur animate_blur">Committed to delivering premium<br/> engineering solutions</p>
+    <p class="effect_blur animate_blur">One stop solution for all<br/>your needs</p>
 
-    {#if !$NavStore.wide}
-        <ServicesButton margined=true />
-    {/if}
-
+    <ServicesButton margined=true />
+    
+    <Grid />
+    
 </section>
 </div>
 
@@ -62,7 +63,7 @@
 
     section>p:first-of-type{
         margin-top:20%;
-        text-align:center;
+        text-align:start;
         font-size:4rem;
         font-weight:700;
         color:var(--blue);
@@ -72,7 +73,7 @@
     section>p:last-of-type{
         color:var(--blue);
         font-size:1.6rem;
-        text-align:center;
+        text-align:start;
         margin-top:10%;
         font-weight:500;
     }
