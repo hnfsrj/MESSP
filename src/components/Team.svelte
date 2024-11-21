@@ -23,64 +23,67 @@
 
     <p>Team</p>
 
-    <p class="team_writing">
-        The foundation of MESSP’s success lies in our dedicated team of seasoned professionals and experienced management, boasting over 25 years of expertise in the electromechanical industry. Complemented by a team of highly skilled and self-driven technical staff, we bring unparalleled value to our clients.
-        <br/><br/>
-        At MESSP, our team is more than just a group of individuals; it is a community of passionate, honest, and solution-oriented experts. We believe that extraordinary results emerge when people work collaboratively with tenacity and a shared commitment to tackling the most complex challenges.
-    </p>
+    <div class="teaming">
+        <p class="team_writing">
+            The foundation of MESSP’s success lies in our dedicated team of seasoned professionals and experienced management, boasting over 25 years of expertise in the electromechanical industry. Complemented by a team of highly skilled and self-driven technical staff, we bring unparalleled value to our clients.
+            <br/><br/>
+            At MESSP, our team is more than just a group of individuals; it is a community of passionate, honest, and solution-oriented experts. We believe that extraordinary results emerge when people work collaboratively with tenacity and a shared commitment to tackling the most complex challenges.
+        </p>
 
-    <div class="ways_container">
-        <div class="effect_right animate_right way">
+        <div class="ways_container">
+            <div class="effect_right animate_right way">
 
-            <img src="images/electrical.svg" />
+                <img src="images/electrical.svg" />
 
-            <div class="way_text">
-                <p>Electrical Engineers</p>
+                <div class="way_text">
+                    <p>Electrical Engineers</p>
 
-                <p>Designing and implementing innovative electrical systems, ensuring efficiency, reliability, and adherence to safety standards.</p>
+                    <p>Designing and implementing innovative electrical systems, ensuring efficiency, reliability, and adherence to safety standards.</p>
+                </div>
+
             </div>
 
+            <div class="effect_right animate_right way">
+
+                <img src="images/mechanical.svg" />
+
+                <div class="way_text">
+                    <p>Mechanical Engineers</p>
+
+                    <p>Developing and maintaining mechanical systems, focusing on precision, durability, and seamless functionality for diverse applications.</p>
+                </div>
+
+            </div>
+
+
+            <div class="effect_right animate_right way">
+
+                <img src="images/technician.svg" />
+
+                <div class="way_text">
+                    <p>Technicians</p>
+
+                    <p>Providing hands-on expertise in installation, troubleshooting, and maintenance to keep systems running smoothly and effectively.</p>
+                </div>
+
+            </div>  
+
+
+            <div class="effect_right animate_right way">
+
+                <img src="images/administrator.svg" />
+
+                <div class="way_text">
+                    <p>Administration Staffs</p>
+
+                    <p>Managing operations, logistics, and client relations to ensure seamless service delivery and organizational efficiency.</p>
+                </div>
+
+            </div>  
+
+            
         </div>
 
-        <div class="effect_right animate_right way">
-
-            <img src="images/mechanical.svg" />
-
-            <div class="way_text">
-                <p>Mechanical Engineers</p>
-
-                <p>Developing and maintaining mechanical systems, focusing on precision, durability, and seamless functionality for diverse applications.</p>
-            </div>
-
-        </div>
-
-
-        <div class="effect_right animate_right way">
-
-            <img src="images/technician.svg" />
-
-            <div class="way_text">
-                <p>Technicians</p>
-
-                <p>Providing hands-on expertise in installation, troubleshooting, and maintenance to keep systems running smoothly and effectively.</p>
-            </div>
-
-        </div>  
-
-
-        <div class="effect_right animate_right way">
-
-            <img src="images/administrator.svg" />
-
-            <div class="way_text">
-                <p>Administration Staffs</p>
-
-                <p>Managing operations, logistics, and client relations to ensure seamless service delivery and organizational efficiency.</p>
-            </div>
-
-        </div>  
-
-        
     </div>
 
 
@@ -107,7 +110,7 @@
             margin-bottom:30px;
         }
 
-        #team > .team_writing{
+        #team .team_writing{
             color:black;
             margin-top:10%;
             margin-bottom:80px;
@@ -223,6 +226,37 @@
     .ways_container{
         width:95%;
     }
+
+}
+
+
+@media (min-width:1101px){
+    
+    #team{
+        padding-right:10%;
+        padding-left:10%;
+    }
+
+    .teaming{
+        display:flex;
+        justify-content: space-between;
+    }
+
+    #team .teaming > p.team_writing{
+        width:40%;
+        margin:0px;
+        font-size:1.9rem;
+        font-weight:500;
+    }
+
+    #team .teaming > div.ways_container{
+        width:50%;
+        margin:0px;
+    }
+        #team .teaming > div.ways_container > div.way{
+            margin-bottom:20px;
+        }
+
 
 }
 

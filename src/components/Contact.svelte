@@ -130,17 +130,17 @@
         padding-bottom:60px;
     }
 
-    .contact_left>p:first-of-type{
+    #contact .contact_left>p:first-of-type{
         font-size:4rem;
     }
 
-    .contact_left>p:nth-of-type(2){
+    #contact .contact_left>p:nth-of-type(2){
         font-size:2rem;
         font-weight:400;
         line-height:25px;
     }
 
-    .contact_left>p:last-of-type{
+    #contact .contact_left>p:last-of-type{
         font-size:1.6rem;
     }
 
@@ -164,31 +164,31 @@
 
 @media (min-width:501px){
     
-    .contact_left>p:nth-of-type(2){
-        font-weight:300;
+    #contact .contact_left>p:nth-of-type(2){
+        /* font-weight:300; */
     }
     
-    .contact_left>p:last-of-type{
-        font-weight:300;
+    #contact .contact_left>p:last-of-type{
+        /* font-weight:300; */
     }
 
-    .info p{
-        font-weight:300;
+    #contact .info p{
+        /* font-weight:300; */
     }
 
-    .infos_div{
+    #contact .infos_div{
         display:flex;
         justify-content: space-between;
         align-items: start;
         margin-bottom:40px;
     }
 
-    .info{
+    #contact .info{
         width:45%;
         margin:0px;
     }
 
-    .info>div{
+    #contact .info>div{
         width:80%;
         padding:0px;
         height:35px;
@@ -200,23 +200,23 @@
 
 @media (min-width:601px){
 
-    .contact_left>p:nth-of-type(2){
-        font-weight:300;
+    #contact .contact_left>p:nth-of-type(2){
+        /* font-weight:300; */
     }
     
-    .contact_left>p:last-of-type{
-        font-weight:300;
+    #contact .contact_left>p:last-of-type{
+        /* font-weight:300; */
     }
 
-    .infos_div{
+    #contact .infos_div{
         margin-bottom:15%;
     }
 
-    .info p{
-        font-weight:300;
+    #contact .info p{
+        /* font-weight:500;                      */
     }
 
-    .info>div{
+    #contact .info>div{
         width:65%;
 
     }
@@ -224,7 +224,7 @@
 
 @media (min-width:801px){
 
-    .info>div{
+    #contact .info>div{
         width:60%;
     }
 
@@ -247,30 +247,30 @@
         width:45%;
     }
 
-    .contact_left>p:nth-of-type(2){
+    #contact .contact_left>p:nth-of-type(2){
         font-size:1.8rem;
     }
 
-    .contact_left>p:last-of-type{
+    #contact .contact_left>p:last-of-type{
         font-size:1.6rem;
     }
 
-    .infos_div{
-        margin: top 15%;
+    #contact .infos_div{
+        margin-top: 15%;
     }
 
-    .info{
+    #contact .info{
         width:47%;
     }
 
-    .info>div{
+    #contact .info>div{
         width:90%;
         height:35px;
         font-size:1.6rem;
     }
 
     
-    .info p{
+    #contact .info p{
         font-size:1.5rem;
         margin-bottom:10px;
     }
@@ -289,7 +289,7 @@
         width:50%;
     }
 
-    .contact_left>p:nth-of-type(2){
+    #contact .contact_left>p:nth-of-type(2){
         font-size:1.9rem;
     }
 
@@ -300,10 +300,11 @@
 
     }
 
-    .info>div{
+    #contact .info>div{
         width:70%;
         font-size:1.7rem;
     }
+
 
     
 

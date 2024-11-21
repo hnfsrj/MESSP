@@ -255,6 +255,10 @@
             }
 
 
-
+@media (min-width:800px){
+    .trust{
+        margin:0px 30px;
+    }
+}
 
 </style>
