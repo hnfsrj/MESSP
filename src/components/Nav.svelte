@@ -27,9 +27,15 @@
             });
         }else if (target == document.querySelector('.name')){
             document.querySelector('#landing').scrollIntoView({ behavior: 'smooth'});
-        }else if (target == document.querySelector('.bottom_services')){
+        }else if (target.matches('.bottom>div.bottom_services') || target.matches('.bottom>div.bottom_services>p')){
             NavStore.update(current_state => {
-                return {...current_state, "services":true};
+                if (!services){
+                    return {...current_state, "services":true};
+
+                }else{
+                    return {...current_state, "services":false};
+
+                }
             });
         }else{
             
@@ -61,10 +67,16 @@
     function navigation_function(e){
         const target = e.target;
 
-        if (target.matches('.bottom>p') && !target.matches('.bottom>p.bottom_services')){
+        if (target.matches('.bottom>p') && !(target.matches('.bottom>div.bottom_services') || target.matches('.bottom>div.bottom_services>p'))){
             
             const to = target.innerText.toLowerCase();
             document.querySelector(`#${to}`).scrollIntoView({ behavior: 'smooth'});
+        }else{
+            if (services && !(target.matches('.bottom>div.bottom_services') || target.matches('.bottom>div.bottom_services>p'))){
+                NavStore.update(current_state => {
+                    return {...current_state, "services":false};
+                });
+            }
         }
 
     }
@@ -136,7 +148,26 @@
             <div class="bottom">
                 
                 <p>About</p>
-                <p class="bottom_services">Services</p>
+                <div style="position:relative;" class="bottom_services">
+
+                    <p>Services</p>
+
+                    {#if services && wide}
+
+                        <div style="position:absolute;width:250px;" class="dropdown">
+                            <a href="#"><p>Air-Condition Trading</p></a>
+                            <a href="#"><p>Pumps, Valves & Engines</p></a>
+                            <a href="#"><p>Lifts & Escalators</p></a>
+                            <a href="#"><p>Solar Systems & Components</p></a>
+                            <a href="#"><p>Power Equipment & Distribution</p></a>
+                            <a href="#"><p>Handling & Lifting Equipment</p></a>
+                            <a href="#"><p>Industrial Equipment & Spare Parts</p></a>
+                            <a href="#"><p>Refrigeration & Cold Storage</p></a>
+                        </div>
+            
+                    {/if}
+
+                </div>
                 <p>Vision</p>
                 <p>Credibility</p>
                 <p>Team</p>
@@ -145,17 +176,17 @@
             </div>
         {/if}
 
-        {#if services}
+        {#if services && !wide}
 
             <div class="dropdown">
-                <p>Air-Condition Trading</p>
-                <p>Pumps, Valves & Engines</p>
-                <p>Lifts & Escalators</p>
-                <p>Solar Systems & Components</p>
-                <p>Power Equipment & Distribution</p>
-                <p>Handling & Lifting Equipment</p>
-                <p>Industrial Equipment & Spare Parts</p>
-                <p>Refrigeration & Cold Storage</p>
+                <a href="#"><p>Air-Condition Trading</p></a>
+                <a href="#"><p>Pumps, Valves & Engines</p></a>
+                <a href="#"><p>Lifts & Escalators</p></a>
+                <a href="#"><p>Solar Systems & Components</p></a>
+                <a href="#"><p>Power Equipment & Distribution</p></a>
+                <a href="#"><p>Handling & Lifting Equipment</p></a>
+                <a href="#"><p>Industrial Equipment & Spare Parts</p></a>
+                <a href="#"><p>Refrigeration & Cold Storage</p></a>
             </div>
 
         {/if}
@@ -323,17 +354,25 @@
             box-shadow: 0px 4px 9.5px 0px rgba(0,0,0,0.25);
         }
 
-            .dropdown>p{
+            .dropdown p{
                 font-size:1.6rem;
                 padding:10px;
                 border-radius:10px;
             }
 
-            .dropdown>p:hover{
+            .dropdown p:hover{
                 cursor:pointer;
                 background:var(--blue);
                 color:white;
             }
+
+        
+        a{
+            width:100%;
+            text-decoration: none;
+            color:inherit;
+        }
+        
 
 
 
