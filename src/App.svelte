@@ -1,168 +1,29 @@
+
+
 <script>
 
-	import { onMount, onDestroy, setContext } from "svelte";
-
-	import {NavStore} from './store/Store';
-	import {OtherStates} from './store/Other';
-	import {ServicesState} from './store/Other';
-
-	import Nav from './components/Nav.svelte';
-	import Landing from './components/Landing.svelte';
-	import About from './components/About.svelte';
-	import Services from './components/Services.svelte';
-	import Vision from './components/Vision.svelte';
-	import Credibility from './components/Credibility.svelte';
-	import Team from './components/Team.svelte';
-	import Contact from './components/Contact.svelte';
-
-
-	const nav_observer = new IntersectionObserver((entries) => {
-		entries.forEach(entry => {
-			if (entry.isIntersecting) {
-				const classes = Array.from(entry.target.classList);
-
-				entry.target.classList.remove(classes[0]);
-
-				observer.unobserve(entry.target);
-			}
-			
-		});
-	}, {
-		rootMargin: '0px',
-		threshold: 0
-	});
-
-
-
-	const observer = new IntersectionObserver((entries) => {
-		entries.forEach(entry => {
-			if (entry.isIntersecting) {
-				const classes = Array.from(entry.target.classList);
-
-				entry.target.classList.remove(classes[0]);
-
-				observer.unobserve(entry.target);
-			}
-			
-		});
-	}, {
-		rootMargin: '-20px',
-		threshold: 0
-	});
-
-
-
-	const parent_observer = new IntersectionObserver((entries) => {
-		entries.forEach(entry => {
-			if (entry.isIntersecting) {
-
-				const elements = Array.from(entry.target.children);
-
-				elements.forEach(element=>{
-
-					const classes = Array.from(element.classList);
-
-					element.classList.remove(classes[0]);
-
-				});
-
-				observer.unobserve(entry.target);
-				
-			}
-			
-		});
-	}, {
-		rootMargin: '-20px',
-		threshold: 0
-	});
-
-
-
-	function observeElements(elements) {
-        elements.forEach((element) => {
-            observer.observe(element);
-        });
-    }
-
-    function unobserveElements(elements) {
-        elements.forEach((element) => {
-            observer.unobserve(element);
-        });
-    }
-
-	setContext('nav_observer', nav_observer);
-	setContext('observer', observer);
-	setContext('parent_observer', parent_observer);
-	setContext('observeElements', observeElements);
-	setContext('unobserveElements', unobserveElements);
-
-
-
-
-
-
-
-
-
-
-
-	function resize_handler(){
-		let width = window.innerWidth;
-
-		console.log(width);
-		
-		ServicesState.update(current_state => {
-            return {...current_state};
-        });
-
-		if (width >= 771){
-			NavStore.update(current_state => {
-                return {...current_state, "wide":true};
-            });
-		}else{
-			NavStore.update(current_state => {
-                return {...current_state, "wide":false};
-            });
-		}
-
-
-		if (width>=995){
-			OtherStates.update(current_state => {
-                return {...current_state, "split":true};
-            });
-		}else{
-			OtherStates.update(current_state => {
-                return {...current_state, "split":false};
-            });
-		}
-
-	}
-
-	onMount(()=>{
-		resize_handler();
-		window.addEventListener("resize", resize_handler);
-	});
-	
-	onDestroy(()=>{
-		window.removeEventListener("resize", resize_handler);
-	});
-
+	import Router from 'svelte-spa-router';
+	import Home from './Home.svelte';
+	import Air from './Air.svelte';
+	import Pump from './Pump.svelte';
+	import Lift from './Lift.svelte';
+	import Solar from './Solar.svelte';
+	import Power from './Power.svelte';
+	import Handling from './Handling.svelte';
+	import Industrial from './Industrial.svelte';
+	import Refrigeration from './Refrigeration.svelte';
 
 </script>
 
 
-<div id="container">
-	<Nav/>
-	<Landing/>
-	<About/>
-	<Services/>
-	<Vision/>
-	<Credibility/>
-	<Team/>
-	<Contact/>
-</div>
-
-
-<style>
-
-</style>
+<Router routes={{
+	'/': Home,
+	'/air': Air,
+	'/pump': Pump,
+	'/lift': Lift,
+	'/solar': Solar,
+	'/power': Power,
+	'/handling': Handling,
+	'/industrial': Industrial,
+	'/refrigeration': Refrigeration
+}} />
