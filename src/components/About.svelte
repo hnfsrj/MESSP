@@ -21,6 +21,8 @@
 
     #about{
         position:relative;
+        min-height: 0px;
+        padding-bottom:10%;
     }
 
     section>p:first-of-type{
@@ -34,9 +36,9 @@
     section>p:last-of-type{
         color:black;
         margin-top:10%;
-        margin-bottom:10%;
         font-size:1.7rem;
         font-weight:400;
+        /* margin-bottom:10%; */
     }
     
 
@@ -45,6 +47,10 @@
 
 @media (min-width:401px){
 
+    #about{
+        padding-bottom:25%;
+    }
+
     section>p:first-of-type{
         font-size:3.3rem; 
     }
@@ -52,6 +58,7 @@
     section>p:last-of-type{
         font-size:1.8rem;
         font-weight:400;
+        /* margin-bottom:30%; */
     }
 
 
@@ -67,13 +74,19 @@
         
     }
 
-
+    section>p:last-of-type{
+        /* margin-bottom:25%; */
+    }
 }
 
 
 
 
 @media (min-width:601px){
+
+    #about{
+        padding-bottom:20%;
+    }
 
     section>p:first-of-type{
         margin-top:12%;
@@ -95,6 +108,10 @@
 
 @media (min-width:801px){
 
+    #about{
+        padding-bottom:15%;
+    }
+
     section>p:first-of-type{
         margin-top:9%;
         
@@ -110,6 +127,9 @@
 
 @media (min-width:901px){
 
+    #about{
+        padding-bottom:13%;
+    }
 
     section>p:first-of-type{
         margin-top:6%;

@@ -104,7 +104,7 @@
 
     #vision{
         padding-top:30%;
-        padding-bottom:30%;
+        padding-bottom:20%;
     }
 
     .block:first-of-type{
@@ -209,7 +209,7 @@
     #vision{
 
         padding-top:20%;
-        padding-bottom:20%;
+        padding-bottom:15%;
 
     }
 
@@ -300,6 +300,17 @@
     }
 
 }
+
+
+
+@media (min-width:1001px){
+    #vision{
+
+        padding-bottom:10%;
+
+    }
+}
+
 
 @media (min-width:1051px){
 
