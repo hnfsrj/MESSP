@@ -17,7 +17,7 @@
 
     <p>Get in Touch</p>
 
-    <form action="https://formspree.io/f/xyzyeolz" method="POST">
+    <form action="" method="POST">
 
         <input type="text" placeholder="Name" name="Name" required />
         <input type="email" placeholder="Email" name="Email" required />

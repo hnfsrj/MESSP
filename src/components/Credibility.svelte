@@ -16,7 +16,7 @@
 
             <div class="trust">
 
-                <div class="trust_pic"></div>
+                <div style="background-image:url('./images/credibility/coca.webp');" class="trust_pic"></div>
                 <p class="trust_p">
                     Coca Cola
                 </p>
@@ -25,7 +25,7 @@
 
             <div class="trust">
 
-                <div class="trust_pic"></div>
+                <div style="background-image:url('./images/credibility/maaza.webp');" class="trust_pic"></div>
                 <p class="trust_p">
                     Maaza International
                 </p>
@@ -34,7 +34,7 @@
 
             <div class="trust">
 
-                <div class="trust_pic"></div>
+                <div style="background-image:url('./images/credibility/bgi.webp');" class="trust_pic"></div>
                 <p class="trust_p">
                     BGI Ethiopia
                 </p>
@@ -43,7 +43,7 @@
 
             <div class="trust">
 
-                <div class="trust_pic"></div>
+                <div style="background-image:url('./images/credibility/zebidar.webp');" class="trust_pic"></div>
                 <p class="trust_p">
                     Zebidar Brewery
                 </p>
@@ -52,7 +52,7 @@
 
             <div class="trust">
 
-                <div class="trust_pic"></div>
+                <div style="background-image:url('./images/credibility/dashen.webp');" class="trust_pic"></div>
                 <p class="trust_p">
                     Dashen Brewery
                 </p>
@@ -62,7 +62,7 @@
 
             <div class="trust">
 
-                <div class="trust_pic"></div>
+                <div style="background-image:url('./images/credibility/awash.webp');" class="trust_pic"></div>
                 <p class="trust_p">
                     Awash Winery
                 </p>
@@ -71,7 +71,7 @@
             
             <div class="trust">
 
-                <div class="trust_pic"></div>
+                <div style="background-image:url('./images/credibility/ambo.webp');" class="trust_pic"></div>
                 <p class="trust_p">
                     Ambo Mineral Water
                 </p>
@@ -79,13 +79,13 @@
             </div>
 
         </div>
-
-
+        
+        
         <div class="trusted">
 
             <div class="trust">
 
-                <div class="trust_pic"></div>
+                <div style="background-image:url('./images/credibility/coca.webp');" class="trust_pic"></div>
                 <p class="trust_p">
                     Coca Cola
                 </p>
@@ -94,7 +94,7 @@
 
             <div class="trust">
 
-                <div class="trust_pic"></div>
+                <div style="background-image:url('./images/credibility/maaza.webp');" class="trust_pic"></div>
                 <p class="trust_p">
                     Maaza International
                 </p>
@@ -103,7 +103,7 @@
 
             <div class="trust">
 
-                <div class="trust_pic"></div>
+                <div style="background-image:url('./images/credibility/bgi.webp');" class="trust_pic"></div>
                 <p class="trust_p">
                     BGI Ethiopia
                 </p>
@@ -112,7 +112,7 @@
 
             <div class="trust">
 
-                <div class="trust_pic"></div>
+                <div style="background-image:url('./images/credibility/zebidar.webp');" class="trust_pic"></div>
                 <p class="trust_p">
                     Zebidar Brewery
                 </p>
@@ -121,7 +121,7 @@
 
             <div class="trust">
 
-                <div class="trust_pic"></div>
+                <div style="background-image:url('./images/credibility/dashen.webp');" class="trust_pic"></div>
                 <p class="trust_p">
                     Dashen Brewery
                 </p>
@@ -131,7 +131,7 @@
 
             <div class="trust">
 
-                <div class="trust_pic"></div>
+                <div style="background-image:url('./images/credibility/awash.webp');" class="trust_pic"></div>
                 <p class="trust_p">
                     Awash Winery
                 </p>
@@ -140,7 +140,7 @@
             
             <div class="trust">
 
-                <div class="trust_pic"></div>
+                <div style="background-image:url('./images/credibility/ambo.webp');" class="trust_pic"></div>
                 <p class="trust_p">
                     Ambo Mineral Water
                 </p>
@@ -148,6 +148,11 @@
             </div>
 
         </div>
+
+
+        
+
+
 
     </div>
 
@@ -166,12 +171,12 @@
         text-align:center;
         font-size:3rem;
         font-weight:700;
-        color:var(--blue);
+        color:var(--red);
         margin-bottom:40px;
     }
 
     .trusts_container{
-        overflow:scroll;
+        overflow:hidden;
         display:flex;
         flex-wrap:nowrap;
     }
@@ -208,9 +213,12 @@
 
             .trust_pic{
                 background:silver;
-                width:60px;
+                width:80px;
                 aspect-ratio: 1/1;
                 border-radius: 50%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
             }
 
             .trust_p{

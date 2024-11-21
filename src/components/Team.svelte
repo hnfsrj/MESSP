@@ -19,7 +19,7 @@
 </script>
 
 <div class="blocker">
-<section id="approach">
+<section id="team">
 
     <p>Team</p>
 
@@ -32,7 +32,7 @@
     <div class="ways_container">
         <div class="effect_right animate_right way">
 
-            <img src="images/knowledge.svg" />
+            <img src="images/electrical.svg" />
 
             <div class="way_text">
                 <p>Electrical Engineers</p>
@@ -44,7 +44,7 @@
 
         <div class="effect_right animate_right way">
 
-            <img src="images/client.svg" />
+            <img src="images/mechanical.svg" />
 
             <div class="way_text">
                 <p>Mechanical Engineers</p>
@@ -57,7 +57,7 @@
 
         <div class="effect_right animate_right way">
 
-            <img src="images/future.svg" />
+            <img src="images/technician.svg" />
 
             <div class="way_text">
                 <p>Technicians</p>
@@ -70,7 +70,7 @@
 
         <div class="effect_right animate_right way">
 
-            <img src="images/future.svg" />
+            <img src="images/administrator.svg" />
 
             <div class="way_text">
                 <p>Administration Staffs</p>
@@ -97,17 +97,17 @@
         transition: transform 0.5s;
     }
     
-    #approach{}
+    #team{}
 
-        #approach > p{
+        #team > p{
             text-align:center;
             font-size:3rem;
             font-weight:700;
-            color:var(--blue);
-            margin-bottom:40px;
+            color:var(--red);
+            margin-bottom:30px;
         }
 
-        #approach > .team_writing{
+        #team > .team_writing{
             color:black;
             margin-top:10%;
             margin-bottom:80px;
@@ -150,14 +150,14 @@
 
 @media (min-width:401px){
 
-    #approach{
+    #team{
         padding-top:60px;
         padding-bottom:60px;
     }
 
-    #approach > p{
+    #team > p{
         font-size:3.3rem;
-        margin-bottom:70px;
+        margin-bottom:45px;
     }
 
     .way{

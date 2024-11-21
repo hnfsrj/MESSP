@@ -66,12 +66,12 @@
         text-align:start;
         font-size:4rem;
         font-weight:700;
-        color:var(--blue);
+        color:var(--red);
         
     }
 
     section>p:last-of-type{
-        color:var(--blue);
+        color:var(--metal);
         font-size:1.6rem;
         text-align:start;
         margin-top:10%;

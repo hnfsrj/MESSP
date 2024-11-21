@@ -2,7 +2,6 @@
 <script>
 
     import { getContext, onDestroy, onMount } from "svelte";
-    import { InstancedInterleavedBuffer } from "three";
 
     export let margined = false;
 
@@ -78,7 +77,7 @@
             }
 
     button{
-        background:var(--green);
+        background:var(--red);
         color:white;
         font-size:2.2rem;
         width:190px;

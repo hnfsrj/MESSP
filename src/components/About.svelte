@@ -27,7 +27,7 @@
         margin-top:20%;
         font-size:3rem;
         font-weight:700;
-        color:var(--blue);
+        color:var(--red);
         
     }
 

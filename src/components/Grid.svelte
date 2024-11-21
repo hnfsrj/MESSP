@@ -9,19 +9,19 @@
 <div class="grids_container">
 
     <div class="grid">
-        <div class="box"></div>
+        <div style="background-image:url('./images/industrial/industrial2.jpg');" class="box"></div>
     </div>
 
 
     <div class="grid">
-        <div class="box"></div>
-        <div class="box"></div>
+        <div style="background-image:url('./images/power/power2.jpg');" class="box"></div>
+        <div style="background-image:url('./images/pump/pump2.jpg');" class="box"></div>
     </div>
 
 
     <div class="grid">
-        <div class="box"></div>
-        <div class="box"></div>
+        <div style="background-image:url('./images/pump/pump4.jpg');" class="box"></div>
+        <div style="background-image:url('./images/refrigeration/refrigeration1.jpg');" class="box"></div>
     </div>
     
 
@@ -65,6 +65,9 @@
                 background:silver;
                 border:2px solid red;
                 border-radius: 10px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
             }
 
 </style>

@@ -1,16 +1,14 @@
 <script>
 
-    import * as Accordion from "$lib/ui/accordion";
-
     import { getContext, onMount, onDestroy } from "svelte";
 
     import {NavStore} from '../store/Store';
-    // import ServicesButton from "./ServicesButton.svelte";
 
 
     $: fix = $NavStore.fix;
     $: wide = $NavStore.wide;
     $: drop = $NavStore.drop;
+    $: services = $NavStore.services;
 
 
     function nav_buttons(e){
@@ -25,14 +23,20 @@
             
         }else if (target == document.querySelector('.close')){
             NavStore.update(current_state => {
-                return {...current_state, "drop":false};
+                return {...current_state, "drop":false, "services":false};
             });
         }else if (target == document.querySelector('.name')){
             document.querySelector('#landing').scrollIntoView({ behavior: 'smooth'});
-        }else{
+        }else if (target == document.querySelector('.bottom_services')){
             NavStore.update(current_state => {
-                return {...current_state, "drop":false};
+                return {...current_state, "services":true};
             });
+        }else{
+            
+            NavStore.update(current_state => {
+                return {...current_state, "drop":false, "services":false};
+            });
+            
         }
 
     }
@@ -127,44 +131,37 @@
     </div>
 
     {#if drop || wide}
-        <div class="bottom">
-            
-            <p>About</p>
-            <p>Services</p>
-            <p>Vision</p>
-            <p>Credibility</p>
-            <p>Team</p>
-            <p>Contact</p>
-            
-        </div>
 
-        <Accordion.Root class="w-full sm:max-w-[70%]">
-            <Accordion.Item value="item-1">
-              <Accordion.Trigger>Is it accessible?</Accordion.Trigger>
-              <Accordion.Content
-                >Yes. It adheres to the WAI-ARIA design pattern.</Accordion.Content
-              >
-            </Accordion.Item>
-            <Accordion.Item value="item-2">
-              <Accordion.Trigger>Is it styled?</Accordion.Trigger>
-              <Accordion.Content>
-                Yes. It comes with default styles that matches the other components'
-                aesthetic.
-              </Accordion.Content>
-            </Accordion.Item>
-            <Accordion.Item value="item-3">
-              <Accordion.Trigger>Is it animated?</Accordion.Trigger>
-              <Accordion.Content>
-                Yes. It's animated by default, but you can disable it if you prefer.
-              </Accordion.Content>
-            </Accordion.Item>
-          </Accordion.Root>
+        {#if wide || !services}
+            <div class="bottom">
+                
+                <p>About</p>
+                <p class="bottom_services">Services</p>
+                <p>Vision</p>
+                <p>Credibility</p>
+                <p>Team</p>
+                <p>Contact</p>
+                
+            </div>
+        {/if}
+
+        {#if services}
+
+            <div class="dropdown">
+                <p>Air-Condition Trading</p>
+                <p>Pumps, Valves & Engines</p>
+                <p>Lifts & Escalators</p>
+                <p>Solar Systems & Components</p>
+                <p>Power Equipment & Distribution</p>
+                <p>Handling & Lifting Equipment</p>
+                <p>Industrial Equipment & Spare Parts</p>
+                <p>Refrigeration & Cold Storage</p>
+            </div>
+
+        {/if}
+
     {/if}
 
-
-    <!-- {#if wide}
-        <ServicesButton />
-    {/if} -->
 
 </nav>
 
@@ -240,8 +237,12 @@
     }
 
         nav.fixation .top{
-            background:var(--blue);
+            background:var(--metal);
         }
+
+            nav.fixation .name{
+                color:white;
+            }
 
         nav.fixation .top .menu{
             background-image:url("images/menu2.svg");
@@ -302,14 +303,37 @@
                 font-size:1.6rem;
                 padding:10px;
                 border-radius:10px;
+                color:var(--metal);
             }
 
             .bottom p:hover{
                 cursor:pointer;
+                background:var(--red);
+                color:white;
+            }
+        
+        .dropdown{
+            display:flex;
+            flex-wrap:wrap;
+            flex-direction:column;
+            gap:0px;
+            padding:15px 16px;
+            background:rgba(255,255,255,0.75);
+            backdrop-filter: blur(5px);
+            box-shadow: 0px 4px 9.5px 0px rgba(0,0,0,0.25);
+        }
+
+            .dropdown>p{
+                font-size:1.6rem;
+                padding:10px;
+                border-radius:10px;
+            }
+
+            .dropdown>p:hover{
+                cursor:pointer;
                 background:var(--blue);
                 color:white;
             }
-
 
 
 
