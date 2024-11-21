@@ -33,7 +33,7 @@
 
 <div class="blocker">
 <section id="landing">
-    <p class="effect_blur animate_blur">Electro-Mechanical<br/>LLC</p>
+    <p class="effect_blur animate_blur">Electro-Mechanical<br/> LLC</p>
 
     <p class="effect_blur animate_blur">One stop solution for all<br/>your needs</p>
 
@@ -98,9 +98,9 @@
 
 @media (min-width:550px){
 
-    #landing p:first-of-type>br{
+    /* #landing p:first-of-type>br{
         display:none;
-    }
+    } */
     
     section>p:first-of-type{
         font-size:5rem;
@@ -149,6 +149,10 @@
 
 @media (min-width:901px){
 
+	#landing{
+		padding:30px 10%;
+	}
+
     section>p:first-of-type{
         font-size:5.7rem;
     }
@@ -183,10 +187,10 @@
 }
 
 @media (min-width:1051px){
-	#landing{
+	/* #landing{
 		padding-left:15%;
 		padding-right:15%;
-	}
+	} */
 }
 
 

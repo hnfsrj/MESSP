@@ -112,22 +112,21 @@
 }
 
 
+@media (min-width:601px){
 
-@media (min-width:771px){
     button{
-        width:100px;
-        height:35px;
-        font-size:1.6rem;
+        width:210px;
     }
-
-
 
 }
 
+@media (min-width:801px){
 
+    button{
+        width:220px;
+    }
 
-
-
+}
 
 
 </style>

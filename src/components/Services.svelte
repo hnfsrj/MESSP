@@ -138,6 +138,7 @@
         .service_container{
             width:100%;
             display:flex;
+            flex-wrap:wrap;
             flex-direction:column;
             justify-content: center;
             align-items: center;
@@ -181,7 +182,7 @@
 @media (min-width:401px){
 
     #services{
-        padding: 130px 16px;
+        padding: 0px 16px;
 
     }
 
@@ -205,6 +206,14 @@
 }
 
 
+@media (min-width:551px){
+
+    a{
+        width:80%;
+    }
+
+
+}
 
 
 @media (min-width:601px){
@@ -226,11 +235,20 @@
         margin-bottom:20px;
     }
 
-
+    a{
+        width:40%;
+    }
     
 }
 
 
+@media (min-width:1001px){
+
+    a{
+        width:30%;
+    }
+
+}
 
 
 </style>

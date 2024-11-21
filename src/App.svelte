@@ -109,6 +109,8 @@
 	function resize_handler(){
 		let width = window.innerWidth;
 
+		console.log(width);
+		
 		ServicesState.update(current_state => {
             return {...current_state};
         });

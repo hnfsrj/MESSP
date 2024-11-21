@@ -61,7 +61,7 @@
     function navigation_function(e){
         const target = e.target;
 
-        if (target.matches('.bottom>p')){
+        if (target.matches('.bottom>p') && !target.matches('.bottom>p.bottom_services')){
             
             const to = target.innerText.toLowerCase();
             document.querySelector(`#${to}`).scrollIntoView({ behavior: 'smooth'});
@@ -266,7 +266,7 @@
             .name{
                 color:var(--metal);
                 font-size:2rem;
-                font-weight:500;
+                font-weight:700;
             }
 
                 .name:hover{
@@ -392,10 +392,10 @@
     }
 
     nav.wide>div.bottom{
-        position:absolute;
+        /* position:absolute;
         top:52%;
         left:50%;
-        transform:translate(-50%,-50%);
+        transform:translate(-50%,-50%); */
     }
 
     nav.wide>div.bottom p{

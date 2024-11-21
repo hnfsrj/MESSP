@@ -26,6 +26,7 @@
     
 
 </div>
+<div style="clear: both;"></div>
 
 
 <style>
@@ -69,5 +70,43 @@
                 background-repeat: no-repeat;
                 background-position: center center;
             }
+
+
+@media (min-width:701px){
+
+    .grids_container{
+        margin-top:20%;
+        gap:25px;
+    }
+
+        .grid{
+            gap:25px;
+        }
+
+}
+
+
+@media (min-width:851px){
+
+    .grids_container{
+        margin-top:0%;
+        width:80%;
+        float:right;
+    }
+
+
+}
+
+
+@media (min-width:901px){
+
+    .grids_container{
+        width:70%;
+        transform:translateY(-20%);
+    }
+
+
+}
+
 
 </style>

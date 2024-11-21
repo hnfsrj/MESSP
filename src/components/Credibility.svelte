@@ -2,6 +2,30 @@
 
 <script>
 
+    import {onMount} from "svelte";
+
+    let scrollableDiv;
+
+    function left(){
+        scrollableDiv.scrollLeft = 0;
+    }
+
+    onMount(()=>{
+
+        scrollableDiv = document.querySelector(".trusts_container");
+
+        window.addEventListener("load", left);
+
+        window.addEventListener("resize", left);
+
+        return () => {
+            window.removeEventListener("load", left)
+            window.removeEventListener("resize", left)
+        };
+    });
+
+
+
 </script>
 
 
@@ -177,8 +201,10 @@
 
     .trusts_container{
         overflow:hidden;
+        justify-content: start;
         display:flex;
         flex-wrap:nowrap;
+        box-sizing: border-box;
     }
 
 
@@ -188,7 +214,7 @@
         align-items:start;
         justify-content: start;
         width:fit-content;
-        animation: 5s slide infinite linear;
+        animation: 15s slide infinite linear;
     }
 
     @keyframes slide{
@@ -227,5 +253,8 @@
                 font-size:1.4rem;
                 font-weight:500;
             }
+
+
+
 
 </style>

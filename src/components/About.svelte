@@ -34,7 +34,7 @@
     section>p:last-of-type{
         color:black;
         margin-top:10%;
-        margin-bottom:50%;
+        margin-bottom:10%;
         font-size:1.7rem;
         font-weight:400;
     }
@@ -52,7 +52,6 @@
     section>p:last-of-type{
         font-size:1.8rem;
         font-weight:400;
-        margin-bottom:30%;
     }
 
 
