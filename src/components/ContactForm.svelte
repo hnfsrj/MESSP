@@ -4,12 +4,14 @@
 
     const observer = getContext('observer');
 
-
+    let observeding;
     onMount(()=>{
 
-        observer.observe(document.querySelector("form>input[type='submit']"));
+        observeding = document.querySelector("form>input[type='submit']")
 
-        return () => observer.unobserve(document.querySelector("form>input[type='submit']"));
+        observer.observe(observeding);
+
+        return () => observer.unobserve(observeding);
     });
 </script>
 

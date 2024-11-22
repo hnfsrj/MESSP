@@ -84,10 +84,13 @@
 
     const nav_observer = getContext('nav_observer');
 
+    let observeding;
 
     onMount(()=>{
+        
+        observeding = document.querySelector('nav');
 
-        nav_observer.observe(document.querySelector('nav'));
+        nav_observer.observe(observeding);
         
 
         const top = document.querySelector('nav');
@@ -118,7 +121,7 @@
             navigation_function(e);
         })
 
-        nav_observer.unobserve(document.querySelector('nav'));
+        nav_observer.unobserve(observeding);
     });
 
 </script>

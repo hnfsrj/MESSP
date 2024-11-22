@@ -1,0 +1,79 @@
+
+
+<script>
+
+    export let images = [];
+</script>
+
+
+    <div class="pics_container">
+
+        
+
+        {#each images as image}
+
+            <div class="pic">
+                <div style="background-image:url('{image}');" class="image"></div>
+            </div>
+
+        {/each}
+
+    </div>
+
+
+
+<style>
+
+    .pics_container{
+        width:100%;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        align-items: center;
+        gap:25px;
+        margin-top:80px;
+    }
+
+        .pic{
+            width:100%;
+        }
+
+
+            .image{
+                width:100%;
+                aspect-ratio: 1/1;
+                background:silver;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+
+
+
+
+@media (min-width:551px){
+
+    .pic{
+        width:80%;
+    }
+
+}
+
+@media (min-width:701px){
+
+    .pic{
+        width:40%;
+    }
+
+}
+
+@media (min-width:1001px){
+
+    .pic{
+        width:30%;
+    }
+
+}
+
+
+</style>
