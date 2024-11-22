@@ -12,7 +12,7 @@
         font-weight:500;
         margin-top:70px;
         margin-bottom:70px;
-        color:var(--red);
+        color:var(--orange);
     }
 
 </style>

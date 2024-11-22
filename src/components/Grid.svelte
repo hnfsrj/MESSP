@@ -64,7 +64,7 @@
                 width:100%;
                 aspect-ratio: 1/1;
                 background:silver;
-                border:2px solid red;
+                border:2px solid var(--orange);
                 border-radius: 10px;
                 background-size: cover;
                 background-repeat: no-repeat;

@@ -106,7 +106,7 @@
             text-align:center;
             font-size:3rem;
             font-weight:700;
-            color:var(--red);
+            color:var(--orange);
             margin-bottom:30px;
         }
 
@@ -135,7 +135,7 @@
 
 
                 .way_text > p:first-of-type{
-                    color:var(--blue);
+                    color:var(--sky);
                     font-size:1.9rem;
                     font-weight:700;
                     margin-top:10px;

@@ -7,7 +7,17 @@
     import Description from './components/sub_components/Description.svelte';
     import Pictures from './components/sub_components/Pictures.svelte';
 
-    let imgs = [1,1,1,1,1];
+    let imgs = [
+        {
+            "title": "Refridgerator & Coldstorage 1",
+            "address": "./images/refrigeration/refrigeration1.jpg",
+        },
+        {
+            "title": "Refridgerator & Coldstorage 2",
+            "address": "./images/refrigeration/refrigeration2.jpg",
+        },
+
+    ];
 
 </script>
 

@@ -131,7 +131,7 @@
             text-align:center;
             font-size:3rem;
             font-weight:700;
-            color:var(--red);
+            color:var(--orange);
             margin-bottom:40px;
         }
 
@@ -166,7 +166,7 @@
 
 
             .service_content > p{
-                color:var(--blue_green);
+                color:var(--sky);
                 text-align:center;
                 font-size:1.7rem;
                 font-weight:600;

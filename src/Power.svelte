@@ -7,7 +7,17 @@
     import Description from './components/sub_components/Description.svelte';
     import Pictures from './components/sub_components/Pictures.svelte';
 
-    let imgs = [1,1,1,1,1];
+    let imgs = [
+        {
+            "title": "Ac-dc power distribution systems",
+            "address": "./images/power/power1.jpg",
+        },
+        {
+            "title": "Electricity generation, transmission, distribution guides",
+            "address": "./images/power/power2.jpg",
+        },
+
+    ];
 
 </script>
 

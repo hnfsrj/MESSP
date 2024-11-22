@@ -244,7 +244,7 @@
         nav.wide .bottom p{
             font-weight:500;
             font-size:1.4rem;
-            color:var(--blue);
+            color:var(--metal);
         }
 
             nav.wide .bottom p:hover{
@@ -253,25 +253,32 @@
             
             nav.wide.fixation .bottom p:hover{
                 color:white;
-                background:var(--green);
+                background:var(--orange);
             }
 
 
             nav.scrolled_wide{
-                background:var(--blue);
+                background:var(--sky);
             }
 
                 nav.scrolled_wide .bottom p{
                     color:white;
                 }
-        
+                
+                nav.scrolled_wide .bottom .bottom_services .dropdown p{
+                    color:var(--metal);
+                }
+                
+                nav.scrolled_wide .bottom .bottom_services .dropdown p:hover{
+                    color:white;
+                }
 
     nav.fixation{
         box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.4);
     }
 
         nav.fixation .top{
-            background:var(--metal);
+            background:var(--sky);
         }
 
             nav.fixation .name{
@@ -342,7 +349,7 @@
 
             .bottom p:hover{
                 cursor:pointer;
-                background:var(--red);
+                background:var(--orange);
                 color:white;
             }
         
@@ -365,7 +372,7 @@
 
             .dropdown p:hover{
                 cursor:pointer;
-                background:var(--blue);
+                background:var(--orange);
                 color:white;
             }
 

@@ -7,7 +7,17 @@
     import Description from './components/sub_components/Description.svelte';
     import Pictures from './components/sub_components/Pictures.svelte';
 
-    let imgs = [1,1,1,1,1];
+    let imgs = [
+        {
+            "title": "Solar Energy System & Components 1",
+            "address": "./images/solar/solar1.jpg",
+        },
+        {
+            "title": "Solar Energy System & Components 2",
+            "address": "./images/solar/solar2.jpg",
+        },
+
+    ];
 
 </script>
 

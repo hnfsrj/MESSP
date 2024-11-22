@@ -5,7 +5,7 @@
 
 <nav>
 
-    <p class="name">MESSP</p>
+    <a href="/"><p class="name">MESSP</p></a>
 
 </nav>
 
@@ -18,13 +18,19 @@
         left:0px;
         width:100%;
         box-sizing: border-box;
-        background:var(--metal);
+        background:var(--sky);
         backdrop-filter: blur(5px);
         box-shadow: 0px 4px 7px 2px rgba(0,0,0,0.4);
         padding:10px 16px;
         z-index:2;
     }
 
+    a{
+        text-decoration: none;
+        color:inherit;
+    }
+
+    
     .name{
         color:White;
         font-size:2rem;

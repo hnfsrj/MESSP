@@ -29,7 +29,7 @@
         margin-top:20%;
         font-size:3rem;
         font-weight:700;
-        color:var(--red);
+        color:var(--orange);
         
     }
 

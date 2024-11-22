@@ -136,7 +136,7 @@
             .block>div>p{
                 font-size:2.5rem;
                 font-weight:700;
-                color:var(--blue_green);
+                color:var(--sky);
             }
 
             .block>p>br{
@@ -158,7 +158,7 @@
     .line{
         width:5px;
         min-height:100%;
-        background:var(--blue_green);
+        background:var(--sky);
         border-radius:10px;
     }
 

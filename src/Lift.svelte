@@ -7,7 +7,13 @@
     import Description from './components/sub_components/Description.svelte';
     import Pictures from './components/sub_components/Pictures.svelte';
 
-    let imgs = [1,1,1,1,1];
+    let imgs = [
+        {
+            "title": "Lift Escalators",
+            "address": "./images/lift/lift1.webp",
+        },
+
+    ];
 
 </script>
 

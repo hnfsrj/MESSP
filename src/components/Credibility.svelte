@@ -195,7 +195,7 @@
         text-align:center;
         font-size:3rem;
         font-weight:700;
-        color:var(--red);
+        color:var(--orange);
         margin-bottom:40px;
     }
 

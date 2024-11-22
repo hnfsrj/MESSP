@@ -21,6 +21,9 @@ html{
 	--blue_green:#164852;
 	--background:#F0F9F4;
 	--greenish:#A4C639;
+
+	--orange:#FC980B;
+	--sky:#1D476D;
 }
 
 
@@ -55,7 +58,7 @@ body{
 	width:100vw;
     box-sizing: border-box;
     min-width:300px;
-	background:var(--blue);
+	background:var(--sky);
 	overflow: hidden;
 }
 
