@@ -158,14 +158,14 @@
                     {#if services && wide}
 
                         <div style="position:absolute;width:250px;" class="dropdown">
-                            <a href="/#/air"><p>Air-Condition Trading</p></a>
-                            <a href="/#/pump"><p>Pumps, Valves & Engines</p></a>
-                            <a href="/#/lift"><p>Lifts & Escalators</p></a>
-                            <a href="/#/solar"><p>Solar Systems & Components</p></a>
-                            <a href="/#/power"><p>Power Equipment & Distribution</p></a>
-                            <a href="/#/handling"><p>Handling & Lifting Equipment</p></a>
-                            <a href="/#/industrial"><p>Industrial Equipment & Spare Parts</p></a>
-                            <a href="/#/refrigeration"><p>Refrigeration & Cold Storage</p></a>
+                            <a href="/air"><p>Air-Condition Trading</p></a>
+                            <a href="/pump"><p>Pumps, Valves & Engines</p></a>
+                            <a href="/lift"><p>Lifts & Escalators</p></a>
+                            <a href="/solar"><p>Solar Systems & Components</p></a>
+                            <a href="/power"><p>Power Equipment & Distribution</p></a>
+                            <a href="/handling"><p>Handling & Lifting Equipment</p></a>
+                            <a href="/industrial"><p>Industrial Equipment & Spare Parts</p></a>
+                            <a href="/refrigeration"><p>Refrigeration & Cold Storage</p></a>
                         </div>
             
                     {/if}
@@ -182,14 +182,14 @@
         {#if services && !wide}
 
             <div class="dropdown">
-                <a href="/#/air"><p>Air-Condition Trading</p></a>
-                <a href="/#/pump"><p>Pumps, Valves & Engines</p></a>
-                <a href="/#/lift"><p>Lifts & Escalators</p></a>
-                <a href="/#/solar"><p>Solar Systems & Components</p></a>
-                <a href="/#/power"><p>Power Equipment & Distribution</p></a>
-                <a href="/#/handling"><p>Handling & Lifting Equipment</p></a>
-                <a href="/#/industrial"><p>Industrial Equipment & Spare Parts</p></a>
-                <a href="/#/refrigeration"><p>Refrigeration & Cold Storage</p></a>
+                <a href="/air"><p>Air-Condition Trading</p></a>
+                <a href="/pump"><p>Pumps, Valves & Engines</p></a>
+                <a href="/lift"><p>Lifts & Escalators</p></a>
+                <a href="/solar"><p>Solar Systems & Components</p></a>
+                <a href="/power"><p>Power Equipment & Distribution</p></a>
+                <a href="/handling"><p>Handling & Lifting Equipment</p></a>
+                <a href="/industrial"><p>Industrial Equipment & Spare Parts</p></a>
+                <a href="/refrigeration"><p>Refrigeration & Cold Storage</p></a>
             </div>
 
         {/if}

@@ -10,11 +10,11 @@
     let imgs = [
         {
             "title": "Ac-dc power distribution systems",
-            "address": "./images/power/power1.jpg",
+            "address": "../images/power/power1.jpg",
         },
         {
             "title": "Electricity generation, transmission, distribution guides",
-            "address": "./images/power/power2.jpg",
+            "address": "../images/power/power2.jpg",
         },
 
     ];

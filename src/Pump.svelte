@@ -10,19 +10,19 @@
     let imgs = [
         {
             "title": "Pumps, Engines & Valves 1",
-            "address": "./images/pump/pump1.jpg",
+            "address": "../images/pump/pump1.jpg",
         },
         {
             "title": "Pumps, Engines & Valves 2",
-            "address": "./images/pump/pump2.jpg",
+            "address": "../images/pump/pump2.jpg",
         },
         {
             "title": "Water Treatment Equipment 1",
-            "address": "./images/pump/pump3.jpg",
+            "address": "../images/pump/pump3.jpg",
         },
         {
             "title": "Water Treatment Equipment 2",
-            "address": "./images/pump/pump4.jpg",
+            "address": "../images/pump/pump4.jpg",
         },
 
     ];

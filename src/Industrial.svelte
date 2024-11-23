@@ -10,11 +10,11 @@
     let imgs = [
         {
             "title": "Industrial Plant & Spare parts 1",
-            "address": "./images/industrial/industrial1.jpg",
+            "address": "../images/industrial/industrial1.jpg",
         },
         {
             "title": "Industrial Plant & Spare Parts",
-            "address": "./images/industrial/industrial2.jpg",
+            "address": "../images/industrial/industrial2.jpg",
         },
 
     ];

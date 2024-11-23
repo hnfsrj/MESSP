@@ -10,7 +10,7 @@
     let imgs = [
         {
             "title": "Lift Escalators",
-            "address": "./images/lift/lift1.webp",
+            "address": "../images/lift/lift1.webp",
         },
 
     ];

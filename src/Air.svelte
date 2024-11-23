@@ -10,15 +10,15 @@
     let imgs = [
         {
             "title": "Air Condition Trading 1",
-            "address": "./images/air/air1.jpg",
+            "address": "../images/air/air1.jpg",
         },
         {
             "title": "Air Condition Trading 2",
-            "address": "./images/air/air2.jpg",
+            "address": "../images/air/air2.jpg",
         },
         {
             "title": "Air Condition Trading 3",
-            "address": "./images/air/air3.png",
+            "address": "../images/air/air3.png",
         },
 
     ];

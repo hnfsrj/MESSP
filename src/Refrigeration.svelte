@@ -10,11 +10,11 @@
     let imgs = [
         {
             "title": "Refridgerator & Coldstorage 1",
-            "address": "./images/refrigeration/refrigeration1.jpg",
+            "address": "../images/refrigeration/refrigeration1.jpg",
         },
         {
             "title": "Refridgerator & Coldstorage 2",
-            "address": "./images/refrigeration/refrigeration2.jpg",
+            "address": "../images/refrigeration/refrigeration2.jpg",
         },
 
     ];
