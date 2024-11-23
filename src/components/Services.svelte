@@ -162,6 +162,8 @@
                 background-color:silver;
                 margin-bottom:10px;
                 background-size: 100%;
+                border: 2px solid var(--sky);
+                outline: none;
             }
 
 
