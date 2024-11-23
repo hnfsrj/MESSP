@@ -77,7 +77,7 @@
             }
 
     button{
-        background:var(--orange);
+        background:var(--red);
         color:white;
         font-size:2.2rem;
         width:190px;

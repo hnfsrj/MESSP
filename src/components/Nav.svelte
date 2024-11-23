@@ -133,7 +133,11 @@
 
     <div class="top">
 
-        <p class="name">MESSP</p>
+        {#if fix}
+            <p class="name">MESSP</p>
+        {:else}
+            <div class="logo img"></div>
+        {/if}
 
         {#if !wide}
             {#if drop}
@@ -251,7 +255,7 @@
             
             nav.wide.fixation .bottom p:hover{
                 color:white;
-                background:var(--orange);
+                background:var(--red);
             }
 
 
@@ -295,12 +299,15 @@
         .top{
             display:flex;
             justify-content: space-between;
-            align-items: end;
+            align-items: center;
             padding:10px 16px;
-            height:30px;
         }
 
-
+            .logo{
+                width:80px;
+                aspect-ratio: 492/290;
+                background-image:url("./images/logo.svg");
+            }
 
             .name{
                 color:var(--metal);
@@ -347,7 +354,7 @@
 
             .bottom p:hover{
                 cursor:pointer;
-                background:var(--orange);
+                background:var(--red);
                 color:white;
             }
         
@@ -370,7 +377,7 @@
 
             .dropdown p:hover{
                 cursor:pointer;
-                background:var(--orange);
+                background:var(--red);
                 color:white;
             }
 
@@ -399,7 +406,7 @@
     }
 
     .logo{
-        width:40px;
+        width:100px;
     }
 
     .menu{
@@ -471,6 +478,10 @@
 
     nav.scrolled_wide{
         padding:5px 3.5%;
+    }
+
+    .logo{
+        width:120px;
     }
 
 }

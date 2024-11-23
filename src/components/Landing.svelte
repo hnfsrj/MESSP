@@ -66,7 +66,7 @@
         text-align:start;
         font-size:4rem;
         font-weight:700;
-        color:var(--orange);
+        color:var(--red);
         
     }
 

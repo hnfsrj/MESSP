@@ -21,8 +21,10 @@
                 <div class="info">
                     <div>Dubai Branch</div>
 
-                    <p>MOB: +971 50 278 8978<br/>(UAE)</p>
-                    <p>MOB: +251 911 20 60 64<br/>(ETH)</p>
+                    <p>Mob: +971 50 278 8978 (UAE)</p>
+                    <p>Mob: +251 911 20 60 64 (ETH)</p>
+                    <p>Al Zarooni Bldg</p>
+                    <p>P.O.Box 251006</p>
                     <p>DUBAI, UAE</p>
 
                 </div>
