@@ -171,8 +171,6 @@
                     {/if}
 
                 </div>
-                <p>Vision</p>
-                <p>Credibility</p>
                 <p>Team</p>
                 <p>Contact</p>
                 
