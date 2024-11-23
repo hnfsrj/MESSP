@@ -27,13 +27,13 @@
 
 
 <Router routes={{
-	// '/': Home,
-	// '/': Air,
-	// '/': Pump,
-	// '/': Lift,
-	// '/': Solar,
-	// '/': Power,
-	// '/': Handling,
-	// '/': Industrial,
-	'/': Refrigeration
+	'/': Home,
+	'/air': Air,
+	'/pump': Pump,
+	'/lift': Lift,
+	'/solar': Solar,
+	'/power': Power,
+	'/handling': Handling,
+	'/industrial': Industrial,
+	'/refrigeration': Refrigeration
 }} />

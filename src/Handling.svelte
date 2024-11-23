@@ -10,11 +10,11 @@
     let imgs = [
         {
             "title": "Handling, Loading & Lifting 1",
-            "address": "../images/handling/handling1.jpg",
+            "address": "./images/handling/handling1.jpg",
         },
         {
             "title": "Handling, Loading & Lifting 2",
-            "address": "../images/handling/handling2.jpg",
+            "address": "./images/handling/handling2.jpg",
         },
 
     ];
