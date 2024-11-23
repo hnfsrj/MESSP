@@ -10,11 +10,11 @@
     let imgs = [
         {
             "title": "Solar Energy System & Components 1",
-            "address": "./images/solar/solar1.jpg",
+            "address": "./images/solar/solar1.webp",
         },
         {
             "title": "Solar Energy System & Components 2",
-            "address": "./images/solar/solar2.jpg",
+            "address": "./images/solar/solar2.webp",
         },
 
     ];

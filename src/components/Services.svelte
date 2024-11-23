@@ -28,7 +28,7 @@
         <a href="/#/air">
             <div class="effect_shrink animate_shrink service_content">
 
-                <div style="background-image:url('./images/air/air1.jpg');" class="service_pic img"></div>
+                <div style="background-image:url('./images/air/air1.webp');" class="service_pic img"></div>
 
                 <p>Air-Condition Trading</p>
 
@@ -38,7 +38,7 @@
         <a href="/#/pump">
         <div class="effect_shrink animate_shrink service_content">
 
-            <div style="background-image:url('./images/pump/pump1.jpg');" class="service_pic img"></div>
+            <div style="background-image:url('./images/pump/pump1.webp');" class="service_pic img"></div>
 
             <p>Pumps, Valves & Engines</p>
 
@@ -58,7 +58,7 @@
         <a href="/#/solar">
         <div class="effect_shrink animate_shrink service_content">
 
-            <div style="background-image:url('./images/solar/solar1.jpg');" class="service_pic img"></div>
+            <div style="background-image:url('./images/solar/solar1.webp');" class="service_pic img"></div>
 
             <p>Solar Systems & Components</p>
 
@@ -68,7 +68,7 @@
         <a href="/#/power">
         <div class="effect_shrink animate_shrink service_content">
 
-            <div style="background-image:url('./images/power/power1.jpg');" class="service_pic img"></div>
+            <div style="background-image:url('./images/power/power1.webp');" class="service_pic img"></div>
 
             <p>Power Equipment & Distribution</p>
                 
@@ -78,7 +78,7 @@
         <a href="/#/handling">
         <div class="effect_shrink animate_shrink service_content">
 
-            <div style="background-image:url('./images/handling/handling1.jpg');" class="service_pic img"></div>
+            <div style="background-image:url('./images/handling/handling1.webp');" class="service_pic img"></div>
 
             <p>Handling & Lifting Equipment</p>
             
@@ -88,7 +88,7 @@
         <a href="/#/industrial">
         <div class="effect_shrink animate_shrink service_content">
 
-            <div style="background-image:url('./images/industrial/industrial1.jpg');" class="service_pic img"></div>
+            <div style="background-image:url('./images/industrial/industrial1.webp');" class="service_pic img"></div>
 
             <p>Industrial Equipment & Spare Parts</p>
             
@@ -98,7 +98,7 @@
         <a href="/#/refrigeration">
         <div class="effect_shrink animate_shrink service_content">
 
-            <div style="background-image:url('./images/refrigeration/refrigeration1.jpg');" class="service_pic img"></div>
+            <div style="background-image:url('./images/refrigeration/refrigeration1.webp');" class="service_pic img"></div>
 
             <p>Refrigeration & Cold Storage</p>
             

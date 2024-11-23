@@ -10,19 +10,19 @@
     let imgs = [
         {
             "title": " ",
-            "address": "./images/pump/pump1.jpg",
+            "address": "./images/pump/pump1.webp",
         },
         {
             "title": " ",
-            "address": "./images/pump/pump2.jpg",
+            "address": "./images/pump/pump2.webp",
         },
         {
             "title": " ",
-            "address": "./images/pump/pump3.jpg",
+            "address": "./images/pump/pump3.webp",
         },
         {
             "title": " ",
-            "address": "./images/pump/pump4.jpg",
+            "address": "./images/pump/pump4.webp",
         },
 
     ];

@@ -9,19 +9,19 @@
 <div class="grids_container">
 
     <div class="grid">
-        <div style="background-image:url('./images/industrial/industrial2.jpg');" class="box"></div>
+        <div style="background-image:url('./images/industrial/industrial2.webp');" class="box"></div>
     </div>
 
 
     <div class="grid">
-        <div style="background-image:url('./images/power/power2.jpg');" class="box"></div>
-        <div style="background-image:url('./images/pump/pump2.jpg');" class="box"></div>
+        <div style="background-image:url('./images/power/power2.webp');" class="box"></div>
+        <div style="background-image:url('./images/pump/pump2.webp');" class="box"></div>
     </div>
 
 
     <div class="grid">
-        <div style="background-image:url('./images/pump/pump4.jpg');" class="box"></div>
-        <div style="background-image:url('./images/refrigeration/refrigeration1.jpg');" class="box"></div>
+        <div style="background-image:url('./images/pump/pump4.webp');" class="box"></div>
+        <div style="background-image:url('./images/refrigeration/refrigeration1.webp');" class="box"></div>
     </div>
     
 
